@@ -1,0 +1,149 @@
+\hypertarget{class_group_t}{
+\section{Класс GroupT}
+\label{class_group_t}\index{GroupT@{GroupT}}
+}
+
+
+Граф наследования:GroupT:
+% FIG 0
+
+
+Граф связей класса GroupT:
+% FIG 1
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_group_t_a82eac24b629b793d3714333980da7ab6}{CalcTF0} ()
+\begin{DoxyCompactList}\small\item\em Вычисляет ПФ0 для группы. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{class_group_t_a5baed33fe3d4959f281b52dbc807e792}{CalcTF1} ()
+\begin{DoxyCompactList}\small\item\em Вычисляет ПФ1 для группы. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{class_group_t_a76fe8b08f12586e6218920d03e85aa91}{CalcTF2} ()
+\begin{DoxyCompactList}\small\item\em Вычисляет ПФ2 для группы. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{class_group_t_a3f133aa40421c31e618c72b9b215b291}{CalcReaction} ()
+\begin{DoxyCompactList}\small\item\em Вычисляет реакции в КП. \item\end{DoxyCompactList}\item 
+\hyperlink{class_group_t_a6cb2ea09b3f2b09b6f8a2a5f3da6c286}{GroupT} (\hyperlink{class_k_p_turn}{KPTurn} $\ast$K, \hyperlink{class_segment}{Segment} $\ast$\hyperlink{class_group1_a769c658c59d6045b6af2a6ba1d920660}{s0}, \hyperlink{class_segment}{Segment} $\ast$\hyperlink{class_group1_acf0f92405ee52288a65b0ec48d523c74}{s1})
+\begin{DoxyCompactList}\small\item\em конструктор групп Ассура 1-\/го класса с КПВ. \item\end{DoxyCompactList}\item 
+GROUP\_\-TYPE \hyperlink{class_group_t_a3ca588ef54c4fa87f769f4d679bff8ef}{Type} ()
+\end{DoxyCompactItemize}
+\subsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_group_t_ab6139ea63eb71bb7ea069e280978829c}{
+\hyperlink{class_k_p_turn}{KPTurn} $\ast$ \hyperlink{class_group_t_ab6139ea63eb71bb7ea069e280978829c}{O}}
+\label{class_group_t_ab6139ea63eb71bb7ea069e280978829c}
+
+\begin{DoxyCompactList}\small\item\em КПП группы первого класса. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_group_t_a6cb2ea09b3f2b09b6f8a2a5f3da6c286}{
+\index{GroupT@{GroupT}!GroupT@{GroupT}}
+\index{GroupT@{GroupT}!GroupT@{GroupT}}
+\subsubsection[{GroupT}]{\setlength{\rightskip}{0pt plus 5cm}GroupT::GroupT (
+\begin{DoxyParamCaption}
+\item[{{\bf KPTurn} $\ast$}]{ K, }
+\item[{{\bf Segment} $\ast$}]{ s0, }
+\item[{{\bf Segment} $\ast$}]{ s1}
+\end{DoxyParamCaption}
+)}}
+\label{class_group_t_a6cb2ea09b3f2b09b6f8a2a5f3da6c286}
+
+
+конструктор групп Ассура 1-\/го класса с КПВ. 
+
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em K}]указатель на КПВ \item[{\em s0}]указатель на землю \item[{\em s1}]указатель на ползун \end{DoxyParams}
+
+
+\subsection{Методы}
+\hypertarget{class_group_t_a3f133aa40421c31e618c72b9b215b291}{
+\index{GroupT@{GroupT}!CalcReaction@{CalcReaction}}
+\index{CalcReaction@{CalcReaction}!GroupT@{GroupT}}
+\subsubsection[{CalcReaction}]{\setlength{\rightskip}{0pt plus 5cm}void GroupT::CalcReaction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{class_group_t_a3f133aa40421c31e618c72b9b215b291}
+
+
+Вычисляет реакции в КП. 
+
+Вычисляет реакции сил в кинематических парах 
+
+Замещает \hyperlink{class_group_a279cef80ab134c00aae391ba9f7cff4f}{Group}.
+
+\hypertarget{class_group_t_a82eac24b629b793d3714333980da7ab6}{
+\index{GroupT@{GroupT}!CalcTF0@{CalcTF0}}
+\index{CalcTF0@{CalcTF0}!GroupT@{GroupT}}
+\subsubsection[{CalcTF0}]{\setlength{\rightskip}{0pt plus 5cm}void GroupT::CalcTF0 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{class_group_t_a82eac24b629b793d3714333980da7ab6}
+
+
+Вычисляет ПФ0 для группы. 
+
+Вычисляет передаточную функцию нулевого порядка по спечитальным формулам 
+
+Замещает \hyperlink{class_group_a97560c6c535ded0efecd0ae000980111}{Group}.
+
+\hypertarget{class_group_t_a5baed33fe3d4959f281b52dbc807e792}{
+\index{GroupT@{GroupT}!CalcTF1@{CalcTF1}}
+\index{CalcTF1@{CalcTF1}!GroupT@{GroupT}}
+\subsubsection[{CalcTF1}]{\setlength{\rightskip}{0pt plus 5cm}void GroupT::CalcTF1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{class_group_t_a5baed33fe3d4959f281b52dbc807e792}
+
+
+Вычисляет ПФ1 для группы. 
+
+Вычисляет передаточную функцию первого порядка (аналог скорости) по спечитальным формулам 
+
+Замещает \hyperlink{class_group_a12841149b92385cae555c58057d1369a}{Group}.
+
+\hypertarget{class_group_t_a76fe8b08f12586e6218920d03e85aa91}{
+\index{GroupT@{GroupT}!CalcTF2@{CalcTF2}}
+\index{CalcTF2@{CalcTF2}!GroupT@{GroupT}}
+\subsubsection[{CalcTF2}]{\setlength{\rightskip}{0pt plus 5cm}void GroupT::CalcTF2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{class_group_t_a76fe8b08f12586e6218920d03e85aa91}
+
+
+Вычисляет ПФ2 для группы. 
+
+Вычисляет передаточную функцию второго порядка (аналог ускорения) по спечитальным формулам 
+
+Замещает \hyperlink{class_group_a6e5bdd7e790ec9f64df582f0bf633dd9}{Group}.
+
+\hypertarget{class_group_t_a3ca588ef54c4fa87f769f4d679bff8ef}{
+\index{GroupT@{GroupT}!Type@{Type}}
+\index{Type@{Type}!GroupT@{GroupT}}
+\subsubsection[{Type}]{\setlength{\rightskip}{0pt plus 5cm}GROUP\_\-TYPE GroupT::Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{class_group_t_a3ca588ef54c4fa87f769f4d679bff8ef}
+\begin{DoxyReturn}{Возвращает}
+Тип группы (т.е. GROUP\_\-TYPE\_\-S) 
+\end{DoxyReturn}
+
+
+Замещает \hyperlink{class_group_a7398c21242d4663f5ef824a200d51f09}{Group}.
+
+
+
+Объявления и описания членов классов находятся в файлах:\begin{DoxyCompactItemize}
+\item 
+D:/dzen/project/project/tmm/GroupT.h\item 
+D:/dzen/project/project/tmm/GroupT.cpp\end{DoxyCompactItemize}

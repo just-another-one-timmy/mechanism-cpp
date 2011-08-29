@@ -1,0 +1,94 @@
+\hypertarget{struct_connector}{
+\section{Структура Connector}
+\label{struct_connector}\index{Connector@{Connector}}
+}
+
+
+коннектор.  
+
+
+
+
+{\ttfamily \#include $<$Connector.h$>$}
+
+
+
+Граф наследования:Connector:
+% FIG 0
+
+
+Граф связей класса Connector:
+% FIG 1
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+virtual CONNECTOR\_\-TYPE \hyperlink{struct_connector_a8f03cd9d05863a3c6a41c5282f9e5208}{Type} ()=0
+\begin{DoxyCompactList}\small\item\em Возвращает тип коннектора. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_connector_af120f4194a577a35d5f8b630cf41be6d}{
+\hyperlink{class_segment}{Segment} $\ast$ \hyperlink{struct_connector_af120f4194a577a35d5f8b630cf41be6d}{s}}
+\label{struct_connector_af120f4194a577a35d5f8b630cf41be6d}
+
+\begin{DoxyCompactList}\small\item\em Звено, на котором находится коннектор. \item\end{DoxyCompactList}\item 
+double \hyperlink{struct_connector_af5ac4b147ee893b40195fb36abda9a3d}{ro}
+\begin{DoxyCompactList}\small\item\em координаты коннектора в полярной системе. \item\end{DoxyCompactList}\item 
+\hypertarget{struct_connector_a55cd00b9d2cbb0e07430d8be63d7de78}{
+double {\bfseries phi}}
+\label{struct_connector_a55cd00b9d2cbb0e07430d8be63d7de78}
+
+\item 
+string \hyperlink{struct_connector_a2f236cf078849dbb78abc1fb8da87ace}{name}
+\begin{DoxyCompactList}\small\item\em имя коннектора. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+коннектор. коннектор служит для присоединения КП к звену 
+
+\subsection{Методы}
+\hypertarget{struct_connector_a8f03cd9d05863a3c6a41c5282f9e5208}{
+\index{Connector@{Connector}!Type@{Type}}
+\index{Type@{Type}!Connector@{Connector}}
+\subsubsection[{Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual CONNECTOR\_\-TYPE Connector::Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{struct_connector_a8f03cd9d05863a3c6a41c5282f9e5208}
+
+
+Возвращает тип коннектора. 
+
+Возвращет тип коннектора: вращательный , поступательный 
+
+Замещается в \hyperlink{struct_connector_sliding_a7173f59dba844524488032c3ebca3319}{ConnectorSliding} и \hyperlink{struct_connector_turn_a19022db1fade0b619030b82c184ff264}{ConnectorTurn}.
+
+
+
+\subsection{Данные класса}
+\hypertarget{struct_connector_a2f236cf078849dbb78abc1fb8da87ace}{
+\index{Connector@{Connector}!name@{name}}
+\index{name@{name}!Connector@{Connector}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf Connector::name}}}
+\label{struct_connector_a2f236cf078849dbb78abc1fb8da87ace}
+
+
+имя коннектора. 
+
+глобальное имя коннектора \begin{Desc}
+\item[\hyperlink{todo__todo000002}{Необходимо сделать}]ArcSin: предлага сделать локальные имена и глобальные, для возможности клонирования одинаковых сегментов \end{Desc}
+\hypertarget{struct_connector_af5ac4b147ee893b40195fb36abda9a3d}{
+\index{Connector@{Connector}!ro@{ro}}
+\index{ro@{ro}!Connector@{Connector}}
+\subsubsection[{ro}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf Connector::ro}}}
+\label{struct_connector_af5ac4b147ee893b40195fb36abda9a3d}
+
+
+координаты коннектора в полярной системе. 
+
+координаты коннектора в полярной системе координат, связанной со звеном, на котором находится коннектор 
+
+Объявления и описания членов структуры находятся в файле:\begin{DoxyCompactItemize}
+\item 
+D:/dzen/project/project/tmm/Connector.h\end{DoxyCompactItemize}

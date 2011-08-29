@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Tmmproject: Исходный файл D:/dzen/project/project/tmm/GroupTTS.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Создано системой Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&nbsp;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<h1>D:/dzen/project/project/tmm/GroupTTS.h</h1>  </div>
+</div>
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef GROUPTTS_H_INCLUDED</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define GROUPTTS_H_INCLUDED</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &quot;Group2.h&quot;</span>
+<a name="l00009"></a><a class="code" href="class_group_t_t_s.html">00009</a> <span class="keyword">class </span><a class="code" href="class_group_t_t_s.html" title="класс группы Ассура 2-го класса 2-го вида.">GroupTTS</a>:<span class="keyword">public</span> <a class="code" href="class_group2.html" title="Общий класс для групп Ассура 2-го класса.">Group2</a> <span class="comment">//Assur Group Second class TTS</span>
+<a name="l00010"></a>00010 {
+<a name="l00011"></a>00011     <span class="keyword">private</span>:
+<a name="l00012"></a>00012         <span class="keywordtype">double</span> lab,h;
+<a name="l00013"></a>00013         <span class="keywordtype">double</span> tg,tg_,tg__;
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015         <a class="code" href="struct_turn_t_f.html" title="Структура для хранения угловых ПФ.">TurnTF</a> AB,NC;
+<a name="l00016"></a>00016         <a class="code" href="struct_connector_turn.html" title="вращательный коннектор.">ConnectorTurn</a> *s1cA,*s1cB;
+<a name="l00017"></a>00017         <a class="code" href="struct_connector_turn.html" title="вращательный коннектор.">ConnectorTurn</a> *s2cB;
+<a name="l00018"></a>00018         <a class="code" href="struct_connector_sliding.html" title="поступательный коннектор.">ConnectorSliding</a> *s2cC;
+<a name="l00019"></a>00019         <a class="code" href="struct_connector_sliding.html" title="поступательный коннектор.">ConnectorSliding</a> *s0cC;  <span class="comment">// extern connector</span>
+<a name="l00020"></a>00020         <a class="code" href="struct_t_f.html">TF</a> yN0,tang;
+<a name="l00021"></a>00021 
+<a name="l00022"></a>00022 
+<a name="l00023"></a>00023     <span class="keyword">public</span>:
+<a name="l00024"></a>00024 
+<a name="l00033"></a>00033         <a class="code" href="class_group_t_t_s.html#a6cefcab3cb39f156bd1c8dc63ea051e4" title="конструктор группы.">GroupTTS</a>(<a class="code" href="class_k_p_turn.html" title="класс КПВ.">KPTurn</a> *K1,<a class="code" href="class_k_p_turn.html" title="класс КПВ.">KPTurn</a> *K2,<a class="code" href="class_k_p_sliding.html" title="класс КПП.">KPSliding</a> *K3,<a class="code" href="class_segment.html" title="звено.">Segment</a> *<a class="code" href="class_group2.html#a030b303d13894d1b4cc3fff13d0730e3" title="Указатель на первый сегмент, входящий в группу.">s1</a>, <a class="code" href="class_segment.html" title="звено.">Segment</a> *<a class="code" href="class_group2.html#aa48298daf05b4db8436dedf8d7b151ef" title="Указатель на второй сегмент, входящий в группу.">s2</a>);
+<a name="l00034"></a>00034 
+<a name="l00038"></a><a class="code" href="class_group_t_t_s.html#a489c16b3c3c44eada4d238951db47dc1">00038</a>         <a class="code" href="class_k_p_turn.html" title="класс КПВ.">KPTurn</a> * <a class="code" href="class_group_t_t_s.html#a489c16b3c3c44eada4d238951db47dc1" title="Указатель на КПВ A.">A</a>;
+<a name="l00039"></a>00039 
+<a name="l00043"></a><a class="code" href="class_group_t_t_s.html#a0220cbe5e2d099ff7dde9befc4ae464a">00043</a>         <a class="code" href="class_k_p_turn.html" title="класс КПВ.">KPTurn</a> * <a class="code" href="class_group_t_t_s.html#a0220cbe5e2d099ff7dde9befc4ae464a" title="Указатель на КПВ B.">B</a>;
+<a name="l00044"></a>00044 
+<a name="l00048"></a><a class="code" href="class_group_t_t_s.html#a4e82ef22141f9c5b06e9379269c282d7">00048</a>         <a class="code" href="class_k_p_sliding.html" title="класс КПП.">KPSliding</a> * <a class="code" href="class_group_t_t_s.html#a4e82ef22141f9c5b06e9379269c282d7" title="Указатель на КПП C.">C</a>;
+<a name="l00049"></a>00049 
+<a name="l00050"></a>00050         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_group_t_t_s.html#a5b88a7319af41fcd907f7c1dbc360535" title="Вычисляет ПФ0 для группы.">CalcTF0</a>();
+<a name="l00051"></a>00051         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_group_t_t_s.html#a61a8560b46b398bec329005e04dc4c0e" title="Вычисляет ПФ1 для группы.">CalcTF1</a>();
+<a name="l00052"></a>00052         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_group_t_t_s.html#a6f8491fcca4e6144eb9b8029e9e1f343" title="Вычисляет ПФ2 для группы.">CalcTF2</a>();
+<a name="l00053"></a>00053         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_group_t_t_s.html#a35255f38dcb14fd27097dd6be5305af1" title="Вычисляет реакции в КП.">CalcReaction</a>();
+<a name="l00054"></a>00054 
+<a name="l00058"></a>00058         GROUP_TYPE <a class="code" href="class_group_t_t_s.html#adc59bc6cba2abfaaaa19554f83cced9a">Type</a>();
+<a name="l00059"></a>00059         <span class="keyword">friend</span> <span class="keywordtype">void</span> PrintGroupTTSInfo(<a class="code" href="class_group_t_t_s.html" title="класс группы Ассура 2-го класса 2-го вида.">GroupTTS</a> *g, <span class="keywordtype">bool</span> extended, <span class="keywordtype">int</span> level);
+<a name="l00060"></a>00060 };
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062 
+<a name="l00063"></a>00063 <span class="preprocessor">#endif // GROUPTTS_H_INCLUDED</span>
+</pre></div></div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Переменные</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Документация по Tmmproject. Последние изменения: Thu Sep 9 2010 01:42:32. Создано системой&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

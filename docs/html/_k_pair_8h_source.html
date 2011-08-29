@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Tmmproject: Исходный файл D:/dzen/project/project/tmm/KPair.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Создано системой Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&nbsp;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<h1>D:/dzen/project/project/tmm/KPair.h</h1>  </div>
+</div>
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef KPAIR_H_INCLUDED</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define KPAIR_H_INCLUDED</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &quot;Connector.h&quot;</span>
+<a name="l00005"></a>00005 
+<a name="l00013"></a>00013 <span class="keyword">enum</span> KPAIR_TYPE {KPAIR_TYPE_SLIDING, KPAIR_TYPE_TURN};
+<a name="l00014"></a>00014 
+<a name="l00020"></a><a class="code" href="class_k_pair.html">00020</a> <span class="keyword">class </span><a class="code" href="class_k_pair.html" title="класс для описания КП.">KPair</a>
+<a name="l00021"></a>00021 {
+<a name="l00022"></a>00022 <span class="keyword">public</span>:
+<a name="l00026"></a><a class="code" href="class_k_pair.html#a61ee535f425051e90f4cac43b168a5b9">00026</a>     <a class="code" href="class_force.html">Force</a> *<a class="code" href="class_k_pair.html#a61ee535f425051e90f4cac43b168a5b9" title="сила реакции первая.">R1</a>;
+<a name="l00027"></a>00027 
+<a name="l00031"></a><a class="code" href="class_k_pair.html#a2d46bf51f1ecb50174b67009bed8c1a5">00031</a>     <a class="code" href="class_force.html">Force</a> *<a class="code" href="class_k_pair.html#a2d46bf51f1ecb50174b67009bed8c1a5" title="сила реакции вторая.">R2</a>;
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033     <a class="code" href="struct_linear_t_f.html" title="Структура для хранения линейных ПФ.">LinearTF</a> linear;
+<a name="l00034"></a>00034 
+<a name="l00038"></a><a class="code" href="class_k_pair.html#ae2868cc85dce1139586a5a60eab22400">00038</a>     <span class="keywordtype">string</span> <a class="code" href="class_k_pair.html#ae2868cc85dce1139586a5a60eab22400" title="имя КП.">name</a>;
+<a name="l00039"></a>00039 
+<a name="l00043"></a>00043     <span class="keyword">virtual</span> KPAIR_TYPE <a class="code" href="class_k_pair.html#a49bd9e2395097a4526cb0798892b0bb4">Type</a>()=0;
+<a name="l00044"></a>00044 
+<a name="l00048"></a>00048     <span class="keyword">virtual</span> <a class="code" href="struct_connector.html" title="коннектор.">Connector</a> * <a class="code" href="class_k_pair.html#a7b3efb4bf1ee83454b2cac85b3bae2ec">GetC1</a>()=0;
+<a name="l00049"></a>00049 
+<a name="l00053"></a>00053     <span class="keyword">virtual</span> <a class="code" href="struct_connector.html" title="коннектор.">Connector</a> * <a class="code" href="class_k_pair.html#af509813d22d38fcfad3266a9c78c94e7">GetC2</a>()=0;
+<a name="l00054"></a>00054 };
+<a name="l00055"></a>00055 
+<a name="l00059"></a><a class="code" href="class_k_p_sliding.html">00059</a> <span class="keyword">class </span><a class="code" href="class_k_p_sliding.html" title="класс КПП.">KPSliding</a>: <span class="keyword">public</span> <a class="code" href="class_k_pair.html" title="класс для описания КП.">KPair</a>
+<a name="l00060"></a>00060 {
+<a name="l00061"></a>00061 <span class="keyword">public</span>:
+<a name="l00062"></a>00062 
+<a name="l00066"></a><a class="code" href="class_k_p_sliding.html#ad6bc7cae8c3b668341911454f17c9a0d">00066</a>     <a class="code" href="struct_connector_sliding.html" title="поступательный коннектор.">ConnectorSliding</a> *<a class="code" href="class_k_p_sliding.html#ad6bc7cae8c3b668341911454f17c9a0d" title="первый коннектор.">c1</a>;
+<a name="l00067"></a>00067 
+<a name="l00071"></a><a class="code" href="class_k_p_sliding.html#a6f65155b81a19bc4e21a3dd4dee6e6db">00071</a>     <a class="code" href="struct_connector_sliding.html" title="поступательный коннектор.">ConnectorSliding</a> *<a class="code" href="class_k_p_sliding.html#a6f65155b81a19bc4e21a3dd4dee6e6db" title="второй коннектор.">c2</a>;
+<a name="l00072"></a>00072 
+<a name="l00076"></a><a class="code" href="class_k_p_sliding.html#a01e5013755146095c0607ed7ae2e7f1d">00076</a>     <a class="code" href="struct_turn_t_f.html" title="Структура для хранения угловых ПФ.">TurnTF</a> <a class="code" href="class_k_p_sliding.html#a01e5013755146095c0607ed7ae2e7f1d" title="ПФ угола наклона оси.">angle</a>;
+<a name="l00077"></a>00077 
+<a name="l00078"></a>00078     <span class="keyword">virtual</span> KPAIR_TYPE <a class="code" href="class_k_p_sliding.html#abc8a7db0983bf9b9b5c525ab5682b531">Type</a>();
+<a name="l00079"></a>00079     <span class="keyword">virtual</span> ~<a class="code" href="class_k_p_sliding.html" title="класс КПП.">KPSliding</a>();
+<a name="l00080"></a><a class="code" href="class_k_p_sliding.html#a45568125f197b4d80047760b69e46bbe">00080</a>     <span class="keyword">virtual</span> <a class="code" href="struct_connector.html" title="коннектор.">Connector</a> * <a class="code" href="class_k_p_sliding.html#a45568125f197b4d80047760b69e46bbe">GetC1</a>()
+<a name="l00081"></a>00081     {
+<a name="l00082"></a>00082         <span class="keywordflow">return</span> <a class="code" href="class_k_p_sliding.html#ad6bc7cae8c3b668341911454f17c9a0d" title="первый коннектор.">c1</a>;
+<a name="l00083"></a>00083     };
+<a name="l00084"></a><a class="code" href="class_k_p_sliding.html#a249d6c9c05c78ed47e5a3ef2a133a3e9">00084</a>     <span class="keyword">virtual</span> <a class="code" href="struct_connector.html" title="коннектор.">Connector</a> * <a class="code" href="class_k_p_sliding.html#a249d6c9c05c78ed47e5a3ef2a133a3e9">GetC2</a>()
+<a name="l00085"></a>00085     {
+<a name="l00086"></a>00086         <span class="keywordflow">return</span> <a class="code" href="class_k_p_sliding.html#a6f65155b81a19bc4e21a3dd4dee6e6db" title="второй коннектор.">c2</a>;
+<a name="l00087"></a>00087     };
+<a name="l00094"></a>00094     <a class="code" href="class_k_p_sliding.html#a3e8f5e46618137ee3b45249bebcea51a" title="ПФ угола наклона оси.">KPSliding</a>(<span class="keywordtype">string</span> <a class="code" href="class_k_pair.html#ae2868cc85dce1139586a5a60eab22400" title="имя КП.">name</a>, <a class="code" href="struct_connector_sliding.html" title="поступательный коннектор.">ConnectorSliding</a> *<a class="code" href="class_k_p_sliding.html#ad6bc7cae8c3b668341911454f17c9a0d" title="первый коннектор.">c1</a>, <a class="code" href="struct_connector_sliding.html" title="поступательный коннектор.">ConnectorSliding</a> *<a class="code" href="class_k_p_sliding.html#a6f65155b81a19bc4e21a3dd4dee6e6db" title="второй коннектор.">c2</a>);
+<a name="l00095"></a>00095 };
+<a name="l00096"></a>00096 
+<a name="l00100"></a><a class="code" href="class_k_p_turn.html">00100</a> <span class="keyword">class </span><a class="code" href="class_k_p_turn.html" title="класс КПВ.">KPTurn</a>: <span class="keyword">public</span> <a class="code" href="class_k_pair.html" title="класс для описания КП.">KPair</a>
+<a name="l00101"></a>00101 {
+<a name="l00102"></a>00102 <span class="keyword">public</span>:
+<a name="l00106"></a><a class="code" href="class_k_p_turn.html#ac0745319579d2359363ca7ae6f57ce7e">00106</a>     <a class="code" href="struct_connector_turn.html" title="вращательный коннектор.">ConnectorTurn</a> *<a class="code" href="class_k_p_turn.html#ac0745319579d2359363ca7ae6f57ce7e" title="первый коннектор.">c1</a>;
+<a name="l00107"></a>00107 
+<a name="l00111"></a><a class="code" href="class_k_p_turn.html#a02241f465d7bca987edbd8cfa780faf7">00111</a>     <a class="code" href="struct_connector_turn.html" title="вращательный коннектор.">ConnectorTurn</a> *<a class="code" href="class_k_p_turn.html#a02241f465d7bca987edbd8cfa780faf7" title="второй коннектор.">c2</a>;
+<a name="l00112"></a>00112 
+<a name="l00113"></a>00113     <span class="keyword">virtual</span> KPAIR_TYPE <a class="code" href="class_k_p_turn.html#a7997ae3d88f2c69a07d3982c152bc9f7">Type</a>();
+<a name="l00114"></a>00114     <span class="keyword">virtual</span> ~<a class="code" href="class_k_p_turn.html" title="класс КПВ.">KPTurn</a>();
+<a name="l00115"></a><a class="code" href="class_k_p_turn.html#a29f17c7b82b94d9be16cc7d5f6e2225c">00115</a>     <span class="keyword">virtual</span> <a class="code" href="struct_connector.html" title="коннектор.">Connector</a> * <a class="code" href="class_k_p_turn.html#a29f17c7b82b94d9be16cc7d5f6e2225c">GetC1</a>()
+<a name="l00116"></a>00116     {
+<a name="l00117"></a>00117         <span class="keywordflow">return</span> <a class="code" href="class_k_p_turn.html#ac0745319579d2359363ca7ae6f57ce7e" title="первый коннектор.">c1</a>;
+<a name="l00118"></a>00118     };
+<a name="l00119"></a><a class="code" href="class_k_p_turn.html#a306624183bfa0c1005954dab38ad4f52">00119</a>     <span class="keyword">virtual</span> <a class="code" href="struct_connector.html" title="коннектор.">Connector</a> * <a class="code" href="class_k_p_turn.html#a306624183bfa0c1005954dab38ad4f52">GetC2</a>()
+<a name="l00120"></a>00120     {
+<a name="l00121"></a>00121         <span class="keywordflow">return</span> <a class="code" href="class_k_p_turn.html#a02241f465d7bca987edbd8cfa780faf7" title="второй коннектор.">c2</a>;
+<a name="l00122"></a>00122     };
+<a name="l00123"></a>00123 
+<a name="l00130"></a>00130      <a class="code" href="class_k_p_turn.html#a5dc249e151604566735122bfa68ae484" title="конструктор.">KPTurn</a>(<span class="keywordtype">string</span> <a class="code" href="class_k_pair.html#ae2868cc85dce1139586a5a60eab22400" title="имя КП.">name</a>, <a class="code" href="struct_connector_turn.html" title="вращательный коннектор.">ConnectorTurn</a> *<a class="code" href="class_k_p_turn.html#ac0745319579d2359363ca7ae6f57ce7e" title="первый коннектор.">c1</a>, <a class="code" href="struct_connector_turn.html" title="вращательный коннектор.">ConnectorTurn</a> *<a class="code" href="class_k_p_turn.html#a02241f465d7bca987edbd8cfa780faf7" title="второй коннектор.">c2</a>);
+<a name="l00131"></a>00131 };
+<a name="l00132"></a>00132 
+<a name="l00133"></a>00133 <span class="preprocessor">#endif // KPAIR_H_INCLUDED</span>
+</pre></div></div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Переменные</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Документация по Tmmproject. Последние изменения: Thu Sep 9 2010 01:42:32. Создано системой&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

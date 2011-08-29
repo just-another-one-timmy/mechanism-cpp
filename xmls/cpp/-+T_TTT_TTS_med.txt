@@ -1,0 +1,39 @@
+//T TTT TTS   med
+/*
+   cm.AddSegment("Ground", 10000, 0);
+    cm.AddConnectorTurnD("s0c1", "Ground", 0,0.35);
+    cm.AddConnectorTurnD("s0c2", "Ground", 0.0, 0);
+    cm.AddConnectorSlidingD("s0c3","Ground",0.3,-0.1, pi/2);
+
+    cm.AddSegment("s1");
+    cm.AddConnectorTurn("s1c1", "s1", 0, 0);
+    cm.AddConnectorTurn("s1c2", "s1", 0.18,0);
+
+    cm.AddSegment("s2");
+    cm.AddConnectorTurn("s2c1", "s2",0.2, pi/2);
+    cm.AddConnectorTurn("s2c2", "s2",0.2, pi/2+pi/1.5);
+    cm.AddConnectorTurn("s2c3", "s2",0.2, pi/2-pi/1.5);
+
+    cm.AddSegment("s3");
+    cm.AddConnectorTurn("s3c1", "s3", -0.10, 0);
+    cm.AddConnectorTurn("s3c2", "s3", 0.2,pi/9);
+
+    cm.AddSegment("s4");
+    cm.AddConnectorTurn("s4c1", "s4", -0.25, 0);
+    cm.AddConnectorTurn("s4c2", "s4", 0.25, pi/9);
+
+    cm.AddSegment("s5");
+    cm.AddConnectorTurnD("s5c1", "s5", 0, 0);
+    cm.AddConnectorSlidingD("s5c2", "s5", 0.1, -0.1, 0);
+
+    cm.AddKPTurn("O", "s0c1", "s1c1");
+
+    cm.AddKPTurn("A", "s1c2", "s2c1");
+    cm.AddKPTurn("B", "s2c2", "s3c1");
+    cm.AddKPTurn("C", "s3c2", "s0c2");
+
+    cm.AddKPTurn("D", "s2c3", "s4c2");
+    cm.AddKPTurn("E", "s4c1", "s5c1");
+    cm.AddKPSliding("G","s5c2","s0c3");
+
+*/

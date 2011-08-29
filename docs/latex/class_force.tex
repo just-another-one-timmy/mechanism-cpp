@@ -1,0 +1,207 @@
+\hypertarget{class_force}{
+\section{Класс Force}
+\label{class_force}\index{Force@{Force}}
+}
+
+
+Граф связей класса Force:
+% FIG 0
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_force_a4406980b442fc6e0c9ba5269c1ceebdc}{SetForce} (double Fx, double Fy, double Torque)
+\begin{DoxyCompactList}\small\item\em устанавливает силу. \item\end{DoxyCompactList}\item 
+double \hyperlink{class_force_af9871872f602a852a9f97dbdc2b519e8}{GetForcex} ()
+\item 
+double \hyperlink{class_force_a4a618734ab7447127d1aea4f82ed8c3f}{GetForcey} ()
+\item 
+double \hyperlink{class_force_a587e479f76a4358438473b93bfa8e410}{GetForcet} ()
+\item 
+bool \hyperlink{class_force_abe8c0e0a00ceead9c635232fbec9fa94}{IsCalculatedx} ()
+\item 
+bool \hyperlink{class_force_a1d795809674b94a256bb28fc69ff1954}{IsCalculatedy} ()
+\item 
+bool \hyperlink{class_force_a0b7ae87846aacc79ba5f038ebdc6bec9}{IsCalculatedt} ()
+\item 
+FORCE\_\-TYPE \hyperlink{class_force_a052dfbe05633ac64ba3fede80b434e8e}{Type} ()
+\item 
+string \hyperlink{class_force_a6c0cfd770e849a8964121220b87c238c}{GetName} ()
+\item 
+\hyperlink{struct_connector}{Connector} $\ast$ \hyperlink{class_force_a48f0da53a2fc32a45f75131469ee3fd0}{GetConnector} ()
+\item 
+\hyperlink{class_force_a0ff81da9af3b8b5e08e10a66174bea06}{Force} (string name, FORCE\_\-TYPE type, \hyperlink{struct_connector}{Connector} $\ast$c)
+\begin{DoxyCompactList}\small\item\em конструктор силы. \item\end{DoxyCompactList}\item 
+\hypertarget{class_force_af7e8d6671f0861e28593fd9d7fbb459a}{
+void \hyperlink{class_force_af7e8d6671f0861e28593fd9d7fbb459a}{UnsetCalculated} ()}
+\label{class_force_af7e8d6671f0861e28593fd9d7fbb459a}
+
+\begin{DoxyCompactList}\small\item\em метод для обнуления вычисления значений. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_force_a0bd31c7b2074d0d1a250d977700245d9}{
+\hyperlink{struct_turn_t_f}{TurnTF} $\ast$ \hyperlink{class_force_a0bd31c7b2074d0d1a250d977700245d9}{turn}}
+\label{class_force_a0bd31c7b2074d0d1a250d977700245d9}
+
+\begin{DoxyCompactList}\small\item\em вращение точки, к которой приложена сила. \item\end{DoxyCompactList}\item 
+\hypertarget{class_force_a9577c16e54109f98add7be5c31250675}{
+\hyperlink{struct_linear_t_f}{LinearTF} $\ast$ \hyperlink{class_force_a9577c16e54109f98add7be5c31250675}{linear}}
+\label{class_force_a9577c16e54109f98add7be5c31250675}
+
+\begin{DoxyCompactList}\small\item\em линейное перемещение точки, к которой приложена сила. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_force_a0ff81da9af3b8b5e08e10a66174bea06}{
+\index{Force@{Force}!Force@{Force}}
+\index{Force@{Force}!Force@{Force}}
+\subsubsection[{Force}]{\setlength{\rightskip}{0pt plus 5cm}Force::Force (
+\begin{DoxyParamCaption}
+\item[{string}]{ name, }
+\item[{FORCE\_\-TYPE}]{ type, }
+\item[{{\bf Connector} $\ast$}]{ c}
+\end{DoxyParamCaption}
+)}}
+\label{class_force_a0ff81da9af3b8b5e08e10a66174bea06}
+
+
+конструктор силы. 
+
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em name}]имя силы \item[{\em type}]тип силы \item[{\em c}]указатель на коннектор \end{DoxyParams}
+
+
+\subsection{Методы}
+\hypertarget{class_force_a48f0da53a2fc32a45f75131469ee3fd0}{
+\index{Force@{Force}!GetConnector@{GetConnector}}
+\index{GetConnector@{GetConnector}!Force@{Force}}
+\subsubsection[{GetConnector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Connector} $\ast$ Force::GetConnector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_force_a48f0da53a2fc32a45f75131469ee3fd0}
+\begin{DoxyReturn}{Возвращает}
+коннектор, к которому присоединена сила 
+\end{DoxyReturn}
+\hypertarget{class_force_a587e479f76a4358438473b93bfa8e410}{
+\index{Force@{Force}!GetForcet@{GetForcet}}
+\index{GetForcet@{GetForcet}!Force@{Force}}
+\subsubsection[{GetForcet}]{\setlength{\rightskip}{0pt plus 5cm}double Force::GetForcet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_force_a587e479f76a4358438473b93bfa8e410}
+\begin{DoxyReturn}{Возвращает}
+момент 
+\end{DoxyReturn}
+\hypertarget{class_force_af9871872f602a852a9f97dbdc2b519e8}{
+\index{Force@{Force}!GetForcex@{GetForcex}}
+\index{GetForcex@{GetForcex}!Force@{Force}}
+\subsubsection[{GetForcex}]{\setlength{\rightskip}{0pt plus 5cm}double Force::GetForcex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_force_af9871872f602a852a9f97dbdc2b519e8}
+\begin{DoxyReturn}{Возвращает}
+проекцию силы на Ох 
+\end{DoxyReturn}
+\hypertarget{class_force_a4a618734ab7447127d1aea4f82ed8c3f}{
+\index{Force@{Force}!GetForcey@{GetForcey}}
+\index{GetForcey@{GetForcey}!Force@{Force}}
+\subsubsection[{GetForcey}]{\setlength{\rightskip}{0pt plus 5cm}double Force::GetForcey (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_force_a4a618734ab7447127d1aea4f82ed8c3f}
+\begin{DoxyReturn}{Возвращает}
+проекцию силы на Оу 
+\end{DoxyReturn}
+\hypertarget{class_force_a6c0cfd770e849a8964121220b87c238c}{
+\index{Force@{Force}!GetName@{GetName}}
+\index{GetName@{GetName}!Force@{Force}}
+\subsubsection[{GetName}]{\setlength{\rightskip}{0pt plus 5cm}string Force::GetName (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_force_a6c0cfd770e849a8964121220b87c238c}
+\begin{DoxyReturn}{Возвращает}
+имя силы 
+\end{DoxyReturn}
+\hypertarget{class_force_a0b7ae87846aacc79ba5f038ebdc6bec9}{
+\index{Force@{Force}!IsCalculatedt@{IsCalculatedt}}
+\index{IsCalculatedt@{IsCalculatedt}!Force@{Force}}
+\subsubsection[{IsCalculatedt}]{\setlength{\rightskip}{0pt plus 5cm}bool Force::IsCalculatedt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_force_a0b7ae87846aacc79ba5f038ebdc6bec9}
+\begin{DoxyReturn}{Возвращает}
+true , если посчитан момент 
+\end{DoxyReturn}
+\hypertarget{class_force_abe8c0e0a00ceead9c635232fbec9fa94}{
+\index{Force@{Force}!IsCalculatedx@{IsCalculatedx}}
+\index{IsCalculatedx@{IsCalculatedx}!Force@{Force}}
+\subsubsection[{IsCalculatedx}]{\setlength{\rightskip}{0pt plus 5cm}bool Force::IsCalculatedx (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_force_abe8c0e0a00ceead9c635232fbec9fa94}
+\begin{DoxyReturn}{Возвращает}
+true , если посчитана проекция силы на Ох 
+\end{DoxyReturn}
+\hypertarget{class_force_a1d795809674b94a256bb28fc69ff1954}{
+\index{Force@{Force}!IsCalculatedy@{IsCalculatedy}}
+\index{IsCalculatedy@{IsCalculatedy}!Force@{Force}}
+\subsubsection[{IsCalculatedy}]{\setlength{\rightskip}{0pt plus 5cm}bool Force::IsCalculatedy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_force_a1d795809674b94a256bb28fc69ff1954}
+\begin{DoxyReturn}{Возвращает}
+true , если посчитана проекция силы на Оy 
+\end{DoxyReturn}
+\hypertarget{class_force_a4406980b442fc6e0c9ba5269c1ceebdc}{
+\index{Force@{Force}!SetForce@{SetForce}}
+\index{SetForce@{SetForce}!Force@{Force}}
+\subsubsection[{SetForce}]{\setlength{\rightskip}{0pt plus 5cm}void Force::SetForce (
+\begin{DoxyParamCaption}
+\item[{double}]{ Fx, }
+\item[{double}]{ Fy, }
+\item[{double}]{ Torque}
+\end{DoxyParamCaption}
+)}}
+\label{class_force_a4406980b442fc6e0c9ba5269c1ceebdc}
+
+
+устанавливает силу. 
+
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em Fx}]проекция вектора силы на Ох \item[{\em Fy}]проекция вектора силы на Оy \item[{\em Torque}]момент \end{DoxyParams}
+\hypertarget{class_force_a052dfbe05633ac64ba3fede80b434e8e}{
+\index{Force@{Force}!Type@{Type}}
+\index{Type@{Type}!Force@{Force}}
+\subsubsection[{Type}]{\setlength{\rightskip}{0pt plus 5cm}FORCE\_\-TYPE Force::Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_force_a052dfbe05633ac64ba3fede80b434e8e}
+\begin{DoxyReturn}{Возвращает}
+тип силы 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах:\begin{DoxyCompactItemize}
+\item 
+D:/dzen/project/project/tmm/Force.h\item 
+D:/dzen/project/project/tmm/Force.cpp\end{DoxyCompactItemize}

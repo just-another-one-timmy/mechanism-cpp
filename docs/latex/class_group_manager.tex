@@ -1,0 +1,382 @@
+\hypertarget{class_group_manager}{
+\section{Класс GroupManager}
+\label{class_group_manager}\index{GroupManager@{GroupManager}}
+}
+
+
+Класс для управления группами.  
+
+
+
+
+{\ttfamily \#include $<$GroupManager.h$>$}
+
+
+
+Граф связей класса GroupManager:
+% FIG 0
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_group_manager_a94be481fda67cbbf340b9a32c1f52f0d}{BuildEdgesSets} ()
+\begin{DoxyCompactList}\small\item\em Строит списки вершин для каждого ребра графа. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_group_manager_a21932a91e45badc4247884883d8c91b0}{CalcNextStep} ()
+\begin{DoxyCompactList}\small\item\em Производит расчет механизма. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_group_manager_aa7f89b216d9d7e090f256c99a868f3c7}{MakeStep} ()
+\begin{DoxyCompactList}\small\item\em Делает шаг для первой группы (т.е. вычисляет ее следующее положение). \item\end{DoxyCompactList}\item 
+void \hyperlink{class_group_manager_a94361a7ba680e812f0b340efe7d109f4}{SetStepSize} (double s)
+\begin{DoxyCompactList}\small\item\em Устанавливает величину шага. \item\end{DoxyCompactList}\item 
+double \hyperlink{class_group_manager_ae1823aa7f061fef2ae743ff54292e877}{GetStepSize} ()
+\begin{DoxyCompactList}\small\item\em Возвращает текущую величину шага. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_group_manager_a1c120746c1fc72043791c64c6e24699a}{AddFirstGroupByName} (string KPName, string SegmentName1, string SegmentName2)
+\begin{DoxyCompactList}\small\item\em Добавляет первую группу. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_group_manager_ac9a283899c762a7b9d223068b49921d5}{AddSecondGroupByName} (string KP1Name, string KP2Name, string KP3Name, string SegmentName1, string SegmentName2, signed char mj1=1, signed char mj2=1)
+\begin{DoxyCompactList}\small\item\em Добавляет вторую группу. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_group_manager_afbbb35e0682e1f8d09b157e28fd3b7ee}{AddGround} (string GroundName)
+\begin{DoxyCompactList}\small\item\em Делает звено \char`\"{}землей\char`\"{}. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_group_manager_abbbf104fb7ed58d2113cdffbf070f0df}{Analyze} ()
+\item 
+void \hyperlink{class_group_manager_a2160abd085f628511331d8fb950ba226}{SetMaxGC} (double x)
+\begin{DoxyCompactList}\small\item\em Устанавливает максимально допустимое значение обобщенной координаты. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_group_manager_a3902f2dd35ec3bad963310f67369a379}{SetMinGC} (double x)
+\begin{DoxyCompactList}\small\item\em Устанавливает минимально допустимое значение обобщенной координаты. \item\end{DoxyCompactList}\item 
+double \hyperlink{class_group_manager_a7600fc05f8540db35c4eca2a67616f4a}{GetMaxGC} ()
+\begin{DoxyCompactList}\small\item\em Возвращаает максимальное значение обобщенной координаты. \item\end{DoxyCompactList}\item 
+double \hyperlink{class_group_manager_a72841948a7eba9945ac748db4eac7134}{GetMinGC} ()
+\begin{DoxyCompactList}\small\item\em Возвращаает минимально значение обобщенной координаты. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_group_manager_a12e6e41645ff6f838cd6816529e1fc9c}{SetJump} (bool x)
+\begin{DoxyCompactList}\small\item\em Устанавливает режим \char`\"{}прыжка\char`\"{}. \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_group_manager_a9d61ed908fb2c4b55b3bc832d1910e8a}{GetJump} ()
+\begin{DoxyCompactList}\small\item\em Возвращает, установлен ли режим прыжка. \item\end{DoxyCompactList}\item 
+\hyperlink{class_group_manager_ac7985f9186c573796ce0d6b693d1059c}{GroupManager} (\hyperlink{class_comp_manager}{CompManager} $\ast$cm)
+\begin{DoxyCompactList}\small\item\em Конструктор, производится начальная инициализация. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+list$<$ \hyperlink{class_group}{Group} $\ast$ $>$ \hyperlink{class_group_manager_ab8a15542235512daae8cdab78042d891}{groups}
+\begin{DoxyCompactList}\small\item\em Список групп. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Класс для управления группами. \begin{DoxyWarning}{Предупреждения}
+Нет полной документации для этого класса! Дописать! 
+\end{DoxyWarning}
+\begin{Desc}
+\item[\hyperlink{todo__todo000003}{Необходимо сделать}]Дописать документацию! \end{Desc}
+
+
+После того, как части механизма созданы с помощью \hyperlink{class_comp_manager}{CompManager}, надо использовать \hyperlink{class_group_manager}{GroupManager} для анализа групп. Данный класс позволяет: 
+\begin{DoxyItemize}
+\item Добавлять группы \char`\"{}вручную\char`\"{}, указывая, из каких звеньев и КП они состоят 
+\item Просчитывать параметры механизма для данного состояния первой группы 
+\item Задавать такие параметры механизма, как ограничения, которым подчиняется 1-\/ая группа и стиль ее движения (об этом ниже) 
+\item Изменять состояние первой группы (делать шаг), с учетом параметров механизма 
+\item Задавать стиль движения первой группы. Обобщенная координата первой группы сначала меняетс от minGC до maxGC. Потом если установлен флаг jump, координата меняется сразу на minGC и процесс повторяется. Если же jump=false, то сначала координата уменьшается от maxGC до minGC и процесс повторяется. 
+\item Разбивать механизм на группы в автоматическом режиме 
+\item Получать список групп механизма 
+\end{DoxyItemize}
+
+Для использования данного класса, надо создать его экземпляр, связав его с экземляром класса \hyperlink{class_comp_manager}{CompManager} (см. конструктор). Далее, необходимо установить параметры, вызывая методы SetJump, SetMaxGC, SetMinGC. После этого надо добавить первую группу, т.е. ту, с которой будут начинаться анализ и расчеты: AddFirstGroupByName. 
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_group_manager_ac7985f9186c573796ce0d6b693d1059c}{
+\index{GroupManager@{GroupManager}!GroupManager@{GroupManager}}
+\index{GroupManager@{GroupManager}!GroupManager@{GroupManager}}
+\subsubsection[{GroupManager}]{\setlength{\rightskip}{0pt plus 5cm}GroupManager::GroupManager (
+\begin{DoxyParamCaption}
+\item[{{\bf CompManager} $\ast$}]{ cm}
+\end{DoxyParamCaption}
+)}}
+\label{class_group_manager_ac7985f9186c573796ce0d6b693d1059c}
+
+
+Конструктор, производится начальная инициализация. 
+
+
+\begin{DoxyEnumerate}
+\item Устанавливается внутренний указатель на \hyperlink{class_comp_manager}{CompManager} 
+\item Мин. и макс. допустимые значения GC приравниваются к 0 
+\item Устанавливается режим движения вперед (GC имзеняется в сторону увеличения) 
+\item Устанавливается режим прыжка в true 
+\end{DoxyEnumerate}\begin{Desc}
+\item[\hyperlink{bug__bug000022}{Ошибка}]Не проверяется, доступен ли \hyperlink{class_comp_manager}{CompManager}. А вдруг переданный указатель -\/ NULL? \end{Desc}
+
+
+\subsection{Методы}
+\hypertarget{class_group_manager_a1c120746c1fc72043791c64c6e24699a}{
+\index{GroupManager@{GroupManager}!AddFirstGroupByName@{AddFirstGroupByName}}
+\index{AddFirstGroupByName@{AddFirstGroupByName}!GroupManager@{GroupManager}}
+\subsubsection[{AddFirstGroupByName}]{\setlength{\rightskip}{0pt plus 5cm}void GroupManager::AddFirstGroupByName (
+\begin{DoxyParamCaption}
+\item[{string}]{ KPName, }
+\item[{string}]{ SegmentName1, }
+\item[{string}]{ SegmentName2}
+\end{DoxyParamCaption}
+)}}
+\label{class_group_manager_a1c120746c1fc72043791c64c6e24699a}
+
+
+Добавляет первую группу. 
+
+
+\begin{DoxyEnumerate}
+\item Создает новую группу 1-\/го класса, называет ее \char`\"{}(\char`\"{}+S1-\/$>$name+\char`\"{},\char`\"{}+S2-\/$>$name+\char`\"{})\char`\"{}. 
+\item Добавляет группу в список групп механизма (важно, чтобы первой была добавлена группа, с которой надо начинать расчет!) 
+\item Отмечает данные звенья и КП как \char`\"{}черные\char`\"{} (см. Analyze) 
+\end{DoxyEnumerate}
+\begin{DoxyParams}{Аргументы}
+\item[{\em KPName,SegmentName1,SegmentName2}]Имена соответственно КП, первого звена и второго звеньев группы \end{DoxyParams}
+\hypertarget{class_group_manager_afbbb35e0682e1f8d09b157e28fd3b7ee}{
+\index{GroupManager@{GroupManager}!AddGround@{AddGround}}
+\index{AddGround@{AddGround}!GroupManager@{GroupManager}}
+\subsubsection[{AddGround}]{\setlength{\rightskip}{0pt plus 5cm}void GroupManager::AddGround (
+\begin{DoxyParamCaption}
+\item[{string}]{ GroundName}
+\end{DoxyParamCaption}
+)}}
+\label{class_group_manager_afbbb35e0682e1f8d09b157e28fd3b7ee}
+
+
+Делает звено \char`\"{}землей\char`\"{}. 
+
+Ищет звено с нужным именем и отмечает его как \char`\"{}земля\char`\"{}, добавляя во внутренний список \char`\"{}черных вершин\char`\"{} 
+\begin{DoxyParams}{Аргументы}
+\item[{\em GroundName}]Имя звена, которое нужно отметить землёй \end{DoxyParams}
+\hypertarget{class_group_manager_ac9a283899c762a7b9d223068b49921d5}{
+\index{GroupManager@{GroupManager}!AddSecondGroupByName@{AddSecondGroupByName}}
+\index{AddSecondGroupByName@{AddSecondGroupByName}!GroupManager@{GroupManager}}
+\subsubsection[{AddSecondGroupByName}]{\setlength{\rightskip}{0pt plus 5cm}void GroupManager::AddSecondGroupByName (
+\begin{DoxyParamCaption}
+\item[{string}]{ KP1Name, }
+\item[{string}]{ KP2Name, }
+\item[{string}]{ KP3Name, }
+\item[{string}]{ SegmentName1, }
+\item[{string}]{ SegmentName2, }
+\item[{signed char}]{ mj1 = {\ttfamily 1}, }
+\item[{signed char}]{ mj2 = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}
+\label{class_group_manager_ac9a283899c762a7b9d223068b49921d5}
+
+
+Добавляет вторую группу. 
+
+
+\begin{DoxyEnumerate}
+\item Создает новую группу 2-\/го класса, называет ее \char`\"{}(\char`\"{}+S1-\/$>$name+\char`\"{},\char`\"{}+S2-\/$>$name+\char`\"{})\char`\"{}. 
+\item Добавляет группу в список групп механизма 
+\end{DoxyEnumerate}
+\begin{DoxyParams}{Аргументы}
+\item[{\em KP1Name,KP2Name,KP3Name,SegmentName1,SegmentName2}]Имена соответственно первой, второй и третьй КП, а также первого и второго звеньев группы \item[{\em mj1,mj2}]Признаки сборки группы \end{DoxyParams}
+\begin{Desc}
+\item[\hyperlink{bug__bug000019}{Ошибка}]Нет проверок существования КП и сегментов с нужными именами \end{Desc}
+\hypertarget{class_group_manager_abbbf104fb7ed58d2113cdffbf070f0df}{
+\index{GroupManager@{GroupManager}!Analyze@{Analyze}}
+\index{Analyze@{Analyze}!GroupManager@{GroupManager}}
+\subsubsection[{Analyze}]{\setlength{\rightskip}{0pt plus 5cm}void GroupManager::Analyze (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_group_manager_abbbf104fb7ed58d2113cdffbf070f0df}
+\begin{Desc}
+\item[\hyperlink{todo__todo000004}{Необходимо сделать}]Написать подробное объяснение \end{Desc}
+\hypertarget{class_group_manager_a94be481fda67cbbf340b9a32c1f52f0d}{
+\index{GroupManager@{GroupManager}!BuildEdgesSets@{BuildEdgesSets}}
+\index{BuildEdgesSets@{BuildEdgesSets}!GroupManager@{GroupManager}}
+\subsubsection[{BuildEdgesSets}]{\setlength{\rightskip}{0pt plus 5cm}void GroupManager::BuildEdgesSets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_group_manager_a94be481fda67cbbf340b9a32c1f52f0d}
+
+
+Строит списки вершин для каждого ребра графа. 
+
+Ребрами графа являются КП, а вершинами -\/ звенья. Еще раз: ребрами графа являются КП, а вершинами -\/ звенья. Внутренний АМ edges по указателю на звено позволит получать список КП, связанных с этим звеном. \hypertarget{class_group_manager_a21932a91e45badc4247884883d8c91b0}{
+\index{GroupManager@{GroupManager}!CalcNextStep@{CalcNextStep}}
+\index{CalcNextStep@{CalcNextStep}!GroupManager@{GroupManager}}
+\subsubsection[{CalcNextStep}]{\setlength{\rightskip}{0pt plus 5cm}void GroupManager::CalcNextStep (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_group_manager_a21932a91e45badc4247884883d8c91b0}
+
+
+Производит расчет механизма. 
+
+Проходит по всем элементам списка groups, вызывает метод TF0. Потом тоже самое, но вызывает TF1. Потом TF2. \begin{Desc}
+\item[\hyperlink{bug__bug000018}{Ошибка}]Имя метода не соответсвтует действиям. \end{Desc}
+\hypertarget{class_group_manager_a9d61ed908fb2c4b55b3bc832d1910e8a}{
+\index{GroupManager@{GroupManager}!GetJump@{GetJump}}
+\index{GetJump@{GetJump}!GroupManager@{GroupManager}}
+\subsubsection[{GetJump}]{\setlength{\rightskip}{0pt plus 5cm}bool GroupManager::GetJump (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_group_manager_a9d61ed908fb2c4b55b3bc832d1910e8a}
+
+
+Возвращает, установлен ли режим прыжка. 
+
+\begin{DoxyReturn}{Возвращает}
+true, если установлен режим прыжка, false, если не установлен 
+\end{DoxyReturn}
+\hypertarget{class_group_manager_a7600fc05f8540db35c4eca2a67616f4a}{
+\index{GroupManager@{GroupManager}!GetMaxGC@{GetMaxGC}}
+\index{GetMaxGC@{GetMaxGC}!GroupManager@{GroupManager}}
+\subsubsection[{GetMaxGC}]{\setlength{\rightskip}{0pt plus 5cm}double GroupManager::GetMaxGC (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_group_manager_a7600fc05f8540db35c4eca2a67616f4a}
+
+
+Возвращаает максимальное значение обобщенной координаты. 
+
+\begin{DoxyReturn}{Возвращает}
+Максимально допустимое значение обобщенной координаты 
+\end{DoxyReturn}
+\hypertarget{class_group_manager_a72841948a7eba9945ac748db4eac7134}{
+\index{GroupManager@{GroupManager}!GetMinGC@{GetMinGC}}
+\index{GetMinGC@{GetMinGC}!GroupManager@{GroupManager}}
+\subsubsection[{GetMinGC}]{\setlength{\rightskip}{0pt plus 5cm}double GroupManager::GetMinGC (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_group_manager_a72841948a7eba9945ac748db4eac7134}
+
+
+Возвращаает минимально значение обобщенной координаты. 
+
+\begin{DoxyReturn}{Возвращает}
+Минимально допустимое значение обобщенной координаты 
+\end{DoxyReturn}
+\hypertarget{class_group_manager_ae1823aa7f061fef2ae743ff54292e877}{
+\index{GroupManager@{GroupManager}!GetStepSize@{GetStepSize}}
+\index{GetStepSize@{GetStepSize}!GroupManager@{GroupManager}}
+\subsubsection[{GetStepSize}]{\setlength{\rightskip}{0pt plus 5cm}double GroupManager::GetStepSize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_group_manager_ae1823aa7f061fef2ae743ff54292e877}
+
+
+Возвращает текущую величину шага. 
+
+\begin{DoxyReturn}{Возвращает}
+Величина шага 
+\end{DoxyReturn}
+\hypertarget{class_group_manager_aa7f89b216d9d7e090f256c99a868f3c7}{
+\index{GroupManager@{GroupManager}!MakeStep@{MakeStep}}
+\index{MakeStep@{MakeStep}!GroupManager@{GroupManager}}
+\subsubsection[{MakeStep}]{\setlength{\rightskip}{0pt plus 5cm}void GroupManager::MakeStep (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_group_manager_aa7f89b216d9d7e090f256c99a868f3c7}
+
+
+Делает шаг для первой группы (т.е. вычисляет ее следующее положение). 
+
+Изменяет обобщенную координату первой группы. Она меняется на step\_\-size в зависимости от того, в каком направлении сейчас движется механизм и ограничений mingc, maxgc. Если координата становится больше допустимой ( $>$ maxgc), то 
+\begin{DoxyItemize}
+\item Если jump==true, то координата приравнивается к mingc 
+\item Если jump==false, то меняется направление движения (move\_\-forward=false). Теперь координата будет медленно убывать до mingc. 
+\end{DoxyItemize}Если координата становится меньше допстимой ( $<$ mingc), то изменяется направление движения (move\_\-forward=true). \hypertarget{class_group_manager_a12e6e41645ff6f838cd6816529e1fc9c}{
+\index{GroupManager@{GroupManager}!SetJump@{SetJump}}
+\index{SetJump@{SetJump}!GroupManager@{GroupManager}}
+\subsubsection[{SetJump}]{\setlength{\rightskip}{0pt plus 5cm}void GroupManager::SetJump (
+\begin{DoxyParamCaption}
+\item[{bool}]{ x}
+\end{DoxyParamCaption}
+)}}
+\label{class_group_manager_a12e6e41645ff6f838cd6816529e1fc9c}
+
+
+Устанавливает режим \char`\"{}прыжка\char`\"{}. 
+
+При движении механизма, обобщенная координата 1-\/ой группы может превысить свое максимально допустимое значение. Тогда если режим прыжка установлен в true, то обобщенная координата сразу приравнивается к своему минимально допустимму значению. Иначе (режим прыжка в false) обобщенная координата остается равной своему макс. допустимому значению, но меняется направление ее изменения. Т.е. теперь GC начинает уменьшаться до минимально допустимого значения и тогда направление опять меняется. \hypertarget{class_group_manager_a2160abd085f628511331d8fb950ba226}{
+\index{GroupManager@{GroupManager}!SetMaxGC@{SetMaxGC}}
+\index{SetMaxGC@{SetMaxGC}!GroupManager@{GroupManager}}
+\subsubsection[{SetMaxGC}]{\setlength{\rightskip}{0pt plus 5cm}void GroupManager::SetMaxGC (
+\begin{DoxyParamCaption}
+\item[{double}]{ x}
+\end{DoxyParamCaption}
+)}}
+\label{class_group_manager_a2160abd085f628511331d8fb950ba226}
+
+
+Устанавливает максимально допустимое значение обобщенной координаты. 
+
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em x}]Устанавливаемое значение \end{DoxyParams}
+\begin{Desc}
+\item[\hyperlink{bug__bug000020}{Ошибка}]Никаких проверок \end{Desc}
+\hypertarget{class_group_manager_a3902f2dd35ec3bad963310f67369a379}{
+\index{GroupManager@{GroupManager}!SetMinGC@{SetMinGC}}
+\index{SetMinGC@{SetMinGC}!GroupManager@{GroupManager}}
+\subsubsection[{SetMinGC}]{\setlength{\rightskip}{0pt plus 5cm}void GroupManager::SetMinGC (
+\begin{DoxyParamCaption}
+\item[{double}]{ x}
+\end{DoxyParamCaption}
+)}}
+\label{class_group_manager_a3902f2dd35ec3bad963310f67369a379}
+
+
+Устанавливает минимально допустимое значение обобщенной координаты. 
+
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em x}]Устанавливаемое значение \end{DoxyParams}
+\begin{Desc}
+\item[\hyperlink{bug__bug000021}{Ошибка}]Никаких проверок \end{Desc}
+\hypertarget{class_group_manager_a94361a7ba680e812f0b340efe7d109f4}{
+\index{GroupManager@{GroupManager}!SetStepSize@{SetStepSize}}
+\index{SetStepSize@{SetStepSize}!GroupManager@{GroupManager}}
+\subsubsection[{SetStepSize}]{\setlength{\rightskip}{0pt plus 5cm}void GroupManager::SetStepSize (
+\begin{DoxyParamCaption}
+\item[{double}]{ s}
+\end{DoxyParamCaption}
+)}}
+\label{class_group_manager_a94361a7ba680e812f0b340efe7d109f4}
+
+
+Устанавливает величину шага. 
+
+Заносит величину шага в step\_\-size. Отрицательную величину умножает на -\/1. 
+\begin{DoxyParams}{Аргументы}
+\item[{\em s}]Величина шага, которую надо установить. \end{DoxyParams}
+
+
+\subsection{Данные класса}
+\hypertarget{class_group_manager_ab8a15542235512daae8cdab78042d891}{
+\index{GroupManager@{GroupManager}!groups@{groups}}
+\index{groups@{groups}!GroupManager@{GroupManager}}
+\subsubsection[{groups}]{\setlength{\rightskip}{0pt plus 5cm}list$<${\bf Group} $\ast$$>$ {\bf GroupManager::groups}}}
+\label{class_group_manager_ab8a15542235512daae8cdab78042d891}
+
+
+Список групп. 
+
+Список групп механизма. Пути, приводящие к добавлению элемента в этот список: 
+\begin{DoxyItemize}
+\item Вызов метода \hyperlink{class_group_manager_abbbf104fb7ed58d2113cdffbf070f0df}{Analyze()}, который нашел еще группы в механизме 
+\item Вызов методов AddFirstGroup(), AddSecondGroup() 
+\item Добавление какого-\/нибудь мусора путем обращения в списку извне! Плохо! {\bfseries Очень плохо!} 
+\end{DoxyItemize}\begin{Desc}
+\item[\hyperlink{bug__bug000023}{Ошибка}]Архитектурная ошибка, нельзя оставлять этот список в public \end{Desc}
+
+
+Объявления и описания членов классов находятся в файлах:\begin{DoxyCompactItemize}
+\item 
+D:/dzen/project/project/tmm/GroupManager.h\item 
+D:/dzen/project/project/tmm/GroupManager.cpp\end{DoxyCompactItemize}

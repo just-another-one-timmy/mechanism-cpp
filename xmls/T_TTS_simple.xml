@@ -1,0 +1,31 @@
+<Mechanism step_size="0.005">
+    <Segment name="Ground" mass="1000" rot_inertia="1000">
+        <ConnectorTurn name="s0c1" ro="0" phi="-0" />
+        <ConnectorSliding name="s0c2" ro="0" phi="0" alpha="0" />
+    </Segment>
+    <Segment name="s1" mass="1" rot_inertia="0.1">
+        <ConnectorTurn name="s1cS" ro="0.1" phi="0" />
+        <ConnectorTurn name="s1c1" ro="0" phi="0" />
+        <ConnectorTurn name="s1c2" ro="0.2" phi="0" />
+    </Segment>
+    <Segment name="s2" mass="2" rot_inertia="0.4">
+        <ConnectorTurn name="s2cS" ro="0.2" phi="0" />
+        <ConnectorTurn name="s2c1" ro="0" phi="0" />
+        <ConnectorTurn name="s2c2" ro="0.4" phi="0" />
+    </Segment>
+    <Segment name="s3" mass="1" rot_inertia="0.5">
+        <ConnectorTurn name="s3cS" ro="0" phi="0" />
+        <ConnectorTurn name="s3c1" ro="0" phi="0" />
+        <ConnectorSliding name="s3c2" ro="0" phi="0" alpha="0" />
+    </Segment>
+    <KPairs>
+        <KPTurn name="A" c1_name="s1c2" c2_name="s2c1" />
+        <KPTurn name="B" c1_name="s2c2" c2_name="s3c1" />
+        <KPSliding name="G" c1_name="s3c2" c2_name="s0c2" />
+        <KPTurn name="O" c1_name="s0c1" c2_name="s1c1" />
+    </KPairs>
+    <Groups need_analyze="no">
+        <Group1 kp_name="O" s1_name="Ground" s2_name="s1" />
+        <Group2 kp1_name="A" kp2_name="B" kp3_name="G" s1_name="s2" s2_name="s3" />
+    </Groups>
+</Mechanism>

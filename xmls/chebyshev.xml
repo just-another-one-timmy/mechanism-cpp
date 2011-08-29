@@ -1,0 +1,28 @@
+<Mechanism step_size="0.005" min="0" max="1" jump="no" name="Chebyshev">
+    <Segment name="Ground" mass="1000" rot_inertia="1000">
+        <ConnectorTurn name="s0c2" ro="0" phi="0" />
+        <ConnectorTurn name="s0c1" ro="0.25" phi="0" />
+    </Segment>
+    <Segment name="s1" mass="0" rot_inertia="2">
+        <ConnectorTurn name="s1c1" ro="0" phi="0" />
+        <ConnectorTurn name="s1c2" ro="0.11" phi="0" />
+    </Segment>
+    <Segment name="s2" mass="0" rot_inertia="9">
+        <ConnectorTurn name="s2c2" ro="0.31" phi="0" />
+        <ConnectorTurn name="s2c3" ro="0.62" phi="0" />
+    </Segment>
+    <Segment name="s3" mass="280" rot_inertia="6">
+        <ConnectorTurn name="s3c1" ro="0" phi="0" />
+        <ConnectorTurn name="s3c2" ro="0.31" phi="0" />
+    </Segment>
+    <KPairs>
+        <KPTurn name="A" c1_name="s1c2" c2_name="s2c3" />
+        <KPTurn name="B" c1_name="s2c2" c2_name="s3c2" />
+        <KPTurn name="C" c1_name="s3c1" c2_name="s0c2" />
+        <KPTurn name="O" c1_name="s0c1" c2_name="s1c1" />
+    </KPairs>
+    <Groups need_analyze="no">
+        <Group1 kp_name="O" s1_name="Ground" s2_name="s1" />
+        <Group2 kp1_name="C" kp2_name="B" kp3_name="A" s1_name="s3" s2_name="s2" sign1="+1" />
+    </Groups>
+</Mechanism>

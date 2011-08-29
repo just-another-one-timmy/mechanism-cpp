@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$struct_connector_sliding.html" title="поступательный коннектор." alt="" coords="5,83,125,112"/>
+<area shape="rect" id="node5" href="$struct_connector_turn.html" title="вращательный коннектор." alt="" coords="149,83,256,112"/>
+</map>

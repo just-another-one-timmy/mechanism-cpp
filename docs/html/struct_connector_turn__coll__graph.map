@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node4" href="$class_segment.html" title="звено." alt="" coords="15,336,89,365"/>
+<area shape="rect" id="node2" href="$struct_connector.html" title="коннектор." alt="" coords="61,432,141,461"/>
+<area shape="rect" id="node7" href="$struct_turn_t_f.html" title="Структура для хранения угловых ПФ." alt="" coords="5,171,67,200"/>
+<area shape="rect" id="node9" href="$struct_t_f.html" title="TF" alt="" coords="55,5,92,35"/>
+<area shape="rect" id="node11" href="$struct_linear_t_f.html" title="Структура для хранения линейных ПФ." alt="" coords="83,117,155,147"/>
+</map>

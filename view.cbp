@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="view" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\view" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-lsfml-graphics-d" />
+					<Add option="-lsfml-window-d" />
+					<Add option="-lsfml-system-d" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\view" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lsfml-graphics" />
+					<Add option="-lsfml-window" />
+					<Add option="-lsfml-system" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Linker>
+			<Add library="tinyxml\lib\libtinyxmlSTL.a" />
+		</Linker>
+		<Unit filename="description.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="tinyxml\tinyxml.h" />
+		<Unit filename="tmm\CompManager.cpp" />
+		<Unit filename="tmm\CompManager.h" />
+		<Unit filename="tmm\Connector.cpp" />
+		<Unit filename="tmm\Connector.h" />
+		<Unit filename="tmm\Force.cpp" />
+		<Unit filename="tmm\Force.h" />
+		<Unit filename="tmm\Group.cpp" />
+		<Unit filename="tmm\Group.h" />
+		<Unit filename="tmm\Group1.h" />
+		<Unit filename="tmm\Group2.h" />
+		<Unit filename="tmm\GroupBuilder.cpp" />
+		<Unit filename="tmm\GroupBuilder.h" />
+		<Unit filename="tmm\GroupManager.cpp" />
+		<Unit filename="tmm\GroupManager.h" />
+		<Unit filename="tmm\GroupS.cpp" />
+		<Unit filename="tmm\GroupS.h" />
+		<Unit filename="tmm\GroupSTS.cpp" />
+		<Unit filename="tmm\GroupSTS.h" />
+		<Unit filename="tmm\GroupT.cpp" />
+		<Unit filename="tmm\GroupT.h" />
+		<Unit filename="tmm\GroupTSS.cpp" />
+		<Unit filename="tmm\GroupTSS.h" />
+		<Unit filename="tmm\GroupTST.cpp" />
+		<Unit filename="tmm\GroupTST.h" />
+		<Unit filename="tmm\GroupTTS.cpp" />
+		<Unit filename="tmm\GroupTTS.h" />
+		<Unit filename="tmm\GroupTTT.cpp" />
+		<Unit filename="tmm\GroupTTT.h" />
+		<Unit filename="tmm\KPair.cpp" />
+		<Unit filename="tmm\KPair.h" />
+		<Unit filename="tmm\LinearTF.h" />
+		<Unit filename="tmm\Mechan.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="tmm\Mechan.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="tmm\SFMLVizualizer.cpp" />
+		<Unit filename="tmm\SFMLVizualizer.h" />
+		<Unit filename="tmm\Segment.cpp" />
+		<Unit filename="tmm\Segment.h" />
+		<Unit filename="tmm\TF.cpp" />
+		<Unit filename="tmm\TF.h" />
+		<Unit filename="tmm\TestMyself.cpp" />
+		<Unit filename="tmm\TestMyself.h" />
+		<Unit filename="tmm\TurnTF.h" />
+		<Unit filename="tmm\Vizualizer.cpp" />
+		<Unit filename="tmm\Vizualizer.h" />
+		<Unit filename="tmm\XMLLoader.cpp" />
+		<Unit filename="tmm\XMLLoader.h" />
+		<Unit filename="tmm\XMLSaver.cpp" />
+		<Unit filename="tmm\XMLSaver.h" />
+		<Unit filename="tmm\group2.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

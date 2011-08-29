@@ -1,0 +1,15 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$class_group2.html" title="Общий класс для групп Ассура 2&#45;го класса." alt="" coords="584,328,648,357"/>
+<area shape="rect" id="node4" href="$class_group.html" title="Класс родитель для групп Ассура." alt="" coords="588,213,644,243"/>
+<area shape="rect" id="node6" href="$class_segment.html" title="звено." alt="" coords="469,213,544,243"/>
+<area shape="rect" id="node10" href="$struct_connector.html" title="коннектор." alt="" coords="392,328,472,357"/>
+<area shape="rect" id="node8" href="$struct_connector_turn.html" title="вращательный коннектор." alt="" coords="380,427,486,456"/>
+<area shape="rect" id="node20" href="$class_k_p_turn.html" title="класс КПВ." alt="" coords="276,691,340,720"/>
+<area shape="rect" id="node24" href="$class_force.html" title="Force" alt="" coords="302,427,356,456"/>
+<area shape="rect" id="node32" href="$struct_connector_sliding.html" title="поступательный коннектор." alt="" coords="78,427,198,456"/>
+<area shape="rect" id="node13" href="$struct_linear_t_f.html" title="Структура для хранения линейных ПФ." alt="" coords="160,328,232,357"/>
+<area shape="rect" id="node22" href="$class_k_pair.html" title="класс для описания КП." alt="" coords="253,541,306,571"/>
+<area shape="rect" id="node15" href="$struct_t_f.html" title="TF" alt="" coords="8,5,45,35"/>
+<area shape="rect" id="node17" href="$struct_turn_t_f.html" title="Структура для хранения угловых ПФ." alt="" coords="62,101,124,131"/>
+<area shape="rect" id="node37" href="$class_k_p_sliding.html" title="класс КПП." alt="" coords="98,691,176,720"/>
+</map>

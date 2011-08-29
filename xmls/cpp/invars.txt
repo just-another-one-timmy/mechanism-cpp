@@ -1,0 +1,70 @@
+// ןאנאבמכמדנאפ Èםגאנסא
+/*
+    cm.AddSegment("Ground", 10000, 0);
+
+    cm.AddConnectorSlidingD("s0c1","Ground",0.0,-0.150, pi/2);
+    cm.AddConnectorTurnD("s0c2", "Ground", 0.20,0.10);
+    cm.AddConnectorTurnD("s0c3", "Ground", 0.20,0.10);
+
+    cm.AddSegment("s1");
+    cm.AddConnectorTurnD("s1c2", "s1", 0.0,0.0);
+    cm.AddConnectorSliding("s1c1","s1",0.0,0.0, 0);
+    cm.AddConnectorSliding("s1c3","s1",0.0,0.0, pi/2);
+    cm.AddConnectorTurnD("s1c4", "s1", 0.0,0.0);
+
+    cm.AddSegment("s2");
+    cm.AddConnectorTurn("s2c1", "s2", 0, 0.0);
+    cm.AddConnectorTurn("s2c2", "s2", 0.3, 0.0);
+    cm.AddConnectorTurn("s2c3", "s2", 0.3, 0.0);
+
+
+    cm.AddSegment("s3");
+    cm.AddConnectorTurn("s3c1", "s3", 0, 0.0);
+    cm.AddConnectorTurn("s3c2", "s3", 0.3, 0.0);
+
+
+    cm.AddSegment("s4");
+    cm.AddConnectorTurn("s4c1", "s4", 0, 0);
+    cm.AddConnectorTurn("s4c2", "s4", 0.3, 0);
+    cm.AddConnectorTurn("s4c3", "s4", 0.3, 0);
+
+
+    cm.AddSegment("s5");
+    cm.AddConnectorTurn("s5c1", "s5", 0.0, 0);
+    cm.AddConnectorTurn("s5c2", "s5", 0.3, 0);
+
+    cm.AddSegment("s6");
+    cm.AddConnectorTurn("s6c1", "s6", 0, 0);
+    cm.AddConnectorSliding("s6c2", "s6", 0, 0, 0);
+
+    cm.AddSegment("s7");
+    cm.AddConnectorTurn("s7c1", "s7", 0, 0);
+    cm.AddConnectorSliding("s7c2", "s7", 0, 0, 0);
+    cm.AddConnectorSliding("s7c3", "s7", 0, 0, 0);
+
+    cm.AddSegment("s8");
+    cm.AddConnectorTurn("s8c1", "s8", 0, 0);
+    cm.AddConnectorSliding("s8c2", "s8", 0, 0, 0);
+
+    cm.AddSegment("s9");
+    cm.AddConnectorTurn("s9c1", "s9", 0, 0);
+    cm.AddConnectorSliding("s9c2", "s9", 0, 0, 0);
+
+
+    cm.AddKPSliding("O", "s0c1", "s1c1");
+    cm.AddKPTurn("A", "s1c2", "s2c1");
+    cm.AddKPTurn("B", "s2c2", "s3c1");
+    cm.AddKPTurn("S", "s3c2", "s0c2");
+
+    cm.AddKPTurn("E", "s1c4", "s4c1");
+    cm.AddKPTurn("D", "s4c2", "s5c1");
+    cm.AddKPTurn("C", "s5c2", "s0c3");
+
+    cm.AddKPSliding("G", "s6c2", "s7c2");
+    cm.AddKPTurn("F", "s2c3", "s6c1");
+    cm.AddKPTurn("H", "s4c3", "s7c1");
+
+    cm.AddKPSliding("L", "s1c3", "s9c2");
+    cm.AddKPTurn("M", "s9c1", "s8c1");
+    cm.AddKPSliding("N", "s8c2", "s7c3");
+*/

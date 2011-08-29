@@ -1,0 +1,2582 @@
+# depslib dependency file v1.0
+1267996494 source:d:\project_02_03_10\view\main.cpp
+	"tmm/CompManager.h"
+	"tmm/GroupBuilder.h"
+	"tmm/SFMLVizualizer.h"
+	<SFML/graphics.hpp>
+
+1280114212 hics.hpp>
+
+1267546880 d:\project_02_03_10\view\tmm\compmanager.h
+	<string>
+	<map>
+	"TestMyself.h"
+	"Connector.h"
+	"KPair.h"
+	"Segment.h"
+	"GroupManager.h"
+
+1280856588 ger.h"
+
+1266278319 d:\project_02_03_10\view\tmm\testmyself.h
+	<iostream>
+	"CompManager.h"
+	"Connector.h"
+	"Force.h"
+	"KPair.h"
+	"Segment.h"
+	"Group.h"
+	"Group1.h"
+	"Group2.h"
+	"GroupS.h"
+	"GroupT.h"
+	"GroupSTS.h"
+	"GroupTSS.h"
+	"GroupTST.h"
+	"GroupTTS.h"
+	"GroupTTT.h"
+
+1280856019 h"
+
+1265720257 d:\project_02_03_10\view\tmm\connector.h
+	"LinearTF.h"
+	"TurnTF.h"
+	"Segment.h"
+
+1266263244 "
+
+1267547215 d:\project_02_03_10\view\tmm\lineartf.h
+	"TF.h"
+
+1267547017 d:\project_02_03_10\view\tmm\tf.h
+
+1265373371 d:\project_02_03_10\view\tmm\turntf.h
+	"TF.h"
+
+1266259613 d:\project_02_03_10\view\tmm\segment.h
+	<list>
+	<string>
+	"Force.h"
+	"Connector.h"
+
+1280855710 .h"
+
+1266351302 d:\project_02_03_10\view\tmm\force.h
+	<string>
+	"TurnTF.h"
+	"LinearTF.h"
+	"Segment.h"
+	"Connector.h"
+
+1266197301 d:\project_02_03_10\view\tmm\kpair.h
+	"Connector.h"
+
+1267546856 d:\project_02_03_10\view\tmm\group.h
+	"Segment.h"
+	"KPair.h"
+	<string>
+	<math.h>
+
+1266177650 
+
+1266705865 d:\project_02_03_10\view\tmm\group1.h
+	"Group.h"
+
+1265971050 d:\project_02_03_10\view\tmm\group2.h
+	"Group.h"
+
+1266967387 d:\project_02_03_10\view\tmm\groups.h
+	"Group1.h"
+
+1280853991 
+
+1267546385 d:\project_02_03_10\view\tmm\groupt.h
+	"Group1.h"
+
+1266346774 d:\project_02_03_10\view\tmm\groupsts.h
+	"Group2.h"
+
+1266346799 d:\project_02_03_10\view\tmm\grouptss.h
+	"Group2.h"
+
+1266346844 d:\project_02_03_10\view\tmm\grouptst.h
+	"Group2.h"
+
+1266668548 d:\project_02_03_10\view\tmm\grouptts.h
+	"Group2.h"
+
+1266346844 d:\project_02_03_10\view\tmm\groupttt.h
+	"Group2.h"
+
+1266967423 d:\project_02_03_10\view\tmm\groupmanager.h
+	<list>
+	<map>
+	<set>
+	<vector>
+	<algorithm>
+	"CompManager.h"
+	"GroupBuilder.h"
+	"Group.h"
+
+1266967272 d:\project_02_03_10\view\tmm\groupbuilder.h
+	"GroupT.h"
+	"GroupS.h"
+	"GroupSTS.h"
+	"GroupTSS.h"
+	"GroupTST.h"
+	"GroupTTS.h"
+	"GroupTTT.h"
+
+1267540756 d:\project_02_03_10\view\tmm\sfmlvizualizer.h
+	"Vizualizer.h"
+	<SFML/Graphics.hpp>
+
+1267540994 d:\project_02_03_10\view\tmm\vizualizer.h
+	"GroupManager.h"
+
+1267547173 source:d:\project_02_03_10\view\tmm\compmanager.cpp
+	"CompManager.h"
+
+1281387800 er.h"
+
+1265537589 source:d:\project_02_03_10\view\tmm\connector.cpp
+	"Connector.h"
+
+1265721708 source:d:\project_02_03_10\view\tmm\force.cpp
+	"Force.h"
+
+1267996310 source:d:\project_02_03_10\view\tmm\group.cpp
+	"Group.h"
+
+1266967283 source:d:\project_02_03_10\view\tmm\groupbuilder.cpp
+	"GroupBuilder.h"
+
+1266970883 der.h"
+
+1266967467 source:d:\project_02_03_10\view\tmm\groupmanager.cpp
+	"GroupManager.h"
+
+1266967485 source:d:\project_02_03_10\view\tmm\groups.cpp
+	"GroupS.h"
+
+1267974533 source:d:\project_02_03_10\view\tmm\groupsts.cpp
+	"GroupSTS.h"
+
+1267546397 source:d:\project_02_03_10\view\tmm\groupt.cpp
+	"GroupT.h"
+
+1266609749 source:d:\project_02_03_10\view\tmm\grouptss.cpp
+	"GroupTSS.h"
+
+1266608686 source:d:\project_02_03_10\view\tmm\grouptst.cpp
+	"GroupTST.h"
+
+1267996579 source:d:\project_02_03_10\view\tmm\grouptts.cpp
+	"GroupTTS.h"
+
+1267978365 source:d:\project_02_03_10\view\tmm\groupttt.cpp
+	"GroupTTT.h"
+
+1266174050 source:d:\project_02_03_10\view\tmm\kpair.cpp
+	"KPair.h"
+
+1267963759 source:d:\project_02_03_10\view\tmm\sfmlvizualizer.cpp
+	"SFMLVizualizer.h"
+	<SFML/Graphics.hpp>
+
+1266259644 source:d:\project_02_03_10\view\tmm\segment.cpp
+	"Segment.h"
+
+1267039334 source:d:\project_02_03_10\view\tmm\tf.cpp
+	"TF.h"
+
+1266705865 source:d:\project_02_03_10\view\tmm\testmyself.cpp
+	"TestMyself.h"
+
+1280748542 f.h"
+
+1267539234 source:d:\project_02_03_10\view\tmm\vizualizer.cpp
+	"Vizualizer.h"
+
+1267542834 r.h"
+
+1267547173 source:d:\project_07_03_10\view\tmm\compmanager.cpp
+	"CompManager.h"
+
+1267546880 d:\project_07_03_10\view\tmm\compmanager.h
+	<string>
+	<map>
+	"TestMyself.h"
+	"Connector.h"
+	"KPair.h"
+	"Segment.h"
+	"GroupManager.h"
+
+1266278319 d:\project_07_03_10\view\tmm\testmyself.h
+	<iostream>
+	"CompManager.h"
+	"Connector.h"
+	"Force.h"
+	"KPair.h"
+	"Segment.h"
+	"Group.h"
+	"Group1.h"
+	"Group2.h"
+	"GroupS.h"
+	"GroupT.h"
+	"GroupSTS.h"
+	"GroupTSS.h"
+	"GroupTST.h"
+	"GroupTTS.h"
+	"GroupTTT.h"
+
+1265720257 d:\project_07_03_10\view\tmm\connector.h
+	"LinearTF.h"
+	"TurnTF.h"
+	"Segment.h"
+
+1268430153 d:\project_07_03_10\view\tmm\lineartf.h
+	"TF.h"
+
+1267547017 d:\project_07_03_10\view\tmm\tf.h
+
+1265373371 d:\project_07_03_10\view\tmm\turntf.h
+	"TF.h"
+
+1266259613 d:\project_07_03_10\view\tmm\segment.h
+	<list>
+	<string>
+	"Force.h"
+	"Connector.h"
+
+1266351302 d:\project_07_03_10\view\tmm\force.h
+	<string>
+	"TurnTF.h"
+	"LinearTF.h"
+	"Segment.h"
+	"Connector.h"
+
+1266197301 d:\project_07_03_10\view\tmm\kpair.h
+	"Connector.h"
+
+1268521254 d:\project_07_03_10\view\tmm\group.h
+	"Segment.h"
+	"KPair.h"
+	<string>
+	<math.h>
+	<stdio.h>
+
+1268516605 d:\project_07_03_10\view\tmm\group1.h
+	"Group.h"
+
+1265971050 d:\project_07_03_10\view\tmm\group2.h
+	"Group.h"
+
+1268516731 d:\project_07_03_10\view\tmm\groups.h
+	"Group1.h"
+
+1268516605 d:\project_07_03_10\view\tmm\groupt.h
+	"Group1.h"
+
+1266346774 d:\project_07_03_10\view\tmm\groupsts.h
+	"Group2.h"
+
+1268430152 d:\project_07_03_10\view\tmm\grouptss.h
+	"Group2.h"
+
+1266346844 d:\project_07_03_10\view\tmm\grouptst.h
+	"Group2.h"
+
+1268044071 d:\project_07_03_10\view\tmm\grouptts.h
+	"Group2.h"
+
+1266346844 d:\project_07_03_10\view\tmm\groupttt.h
+	"Group2.h"
+
+1266967423 d:\project_07_03_10\view\tmm\groupmanager.h
+	<list>
+	<map>
+	<set>
+	<vector>
+	<algorithm>
+	"CompManager.h"
+	"GroupBuilder.h"
+	"Group.h"
+
+1266967272 d:\project_07_03_10\view\tmm\groupbuilder.h
+	"GroupT.h"
+	"GroupS.h"
+	"GroupSTS.h"
+	"GroupTSS.h"
+	"GroupTST.h"
+	"GroupTTS.h"
+	"GroupTTT.h"
+
+1265537589 source:d:\project_07_03_10\view\tmm\connector.cpp
+	"Connector.h"
+
+1265721708 source:d:\project_07_03_10\view\tmm\force.cpp
+	"Force.h"
+
+1268517961 source:d:\project_07_03_10\view\tmm\group.cpp
+	"Group.h"
+
+1266967283 source:d:\project_07_03_10\view\tmm\groupbuilder.cpp
+	"GroupBuilder.h"
+
+1266967467 source:d:\project_07_03_10\view\tmm\groupmanager.cpp
+	"GroupManager.h"
+
+1268521960 source:d:\project_07_03_10\view\tmm\groups.cpp
+	"GroupS.h"
+
+1268425490 source:d:\project_07_03_10\view\tmm\groupsts.cpp
+	"GroupSTS.h"
+
+1268517961 source:d:\project_07_03_10\view\tmm\groupt.cpp
+	"GroupT.h"
+
+1268478898 source:d:\project_07_03_10\view\tmm\grouptss.cpp
+	"GroupTSS.h"
+
+1268158322 source:d:\project_07_03_10\view\tmm\grouptst.cpp
+	"GroupTST.h"
+
+1268431054 source:d:\project_07_03_10\view\tmm\grouptts.cpp
+	"GroupTTS.h"
+
+1268522875 source:d:\project_07_03_10\view\tmm\groupttt.cpp
+	"GroupTTT.h"
+
+1266174050 source:d:\project_07_03_10\view\tmm\kpair.cpp
+	"KPair.h"
+
+1268523255 source:d:\project_07_03_10\view\tmm\sfmlvizualizer.cpp
+	"SFMLVizualizer.h"
+	<SFML/Graphics.hpp>
+
+1267540756 d:\project_07_03_10\view\tmm\sfmlvizualizer.h
+	"Vizualizer.h"
+	<SFML/Graphics.hpp>
+
+1267540994 d:\project_07_03_10\view\tmm\vizualizer.h
+	"GroupManager.h"
+
+1266259644 source:d:\project_07_03_10\view\tmm\segment.cpp
+	"Segment.h"
+
+1267039334 source:d:\project_07_03_10\view\tmm\tf.cpp
+	"TF.h"
+
+1266705865 source:d:\project_07_03_10\view\tmm\testmyself.cpp
+	"TestMyself.h"
+
+1267539234 source:d:\project_07_03_10\view\tmm\vizualizer.cpp
+	"Vizualizer.h"
+
+1268523222 source:d:\project_07_03_10\view\main.cpp
+	"tmm/CompManager.h"
+	"tmm/GroupBuilder.h"
+	"tmm/SFMLVizualizer.h"
+	<SFML/graphics.hpp>
+
+1271170010 source:d:\project_14_03_10\view\main.cpp
+	"tmm/CompManager.h"
+	"tmm/GroupBuilder.h"
+	"tmm/SFMLVizualizer.h"
+	<SFML/graphics.hpp>
+
+1267550480 d:\project_14_03_10\view\tmm\compmanager.h
+	<string>
+	<map>
+	"TestMyself.h"
+	"Connector.h"
+	"KPair.h"
+	"Segment.h"
+	"GroupManager.h"
+
+1266281919 d:\project_14_03_10\view\tmm\testmyself.h
+	<iostream>
+	"CompManager.h"
+	"Connector.h"
+	"Force.h"
+	"KPair.h"
+	"Segment.h"
+	"Group.h"
+	"Group1.h"
+	"Group2.h"
+	"GroupS.h"
+	"GroupT.h"
+	"GroupSTS.h"
+	"GroupTSS.h"
+	"GroupTST.h"
+	"GroupTTS.h"
+	"GroupTTT.h"
+
+1265723857 d:\project_14_03_10\view\tmm\connector.h
+	"LinearTF.h"
+	"TurnTF.h"
+	"Segment.h"
+
+1268433753 d:\project_14_03_10\view\tmm\lineartf.h
+	"TF.h"
+
+1267550617 d:\project_14_03_10\view\tmm\tf.h
+
+1265376971 d:\project_14_03_10\view\tmm\turntf.h
+	"TF.h"
+
+1266263213 d:\project_14_03_10\view\tmm\segment.h
+	<list>
+	<string>
+	"Force.h"
+	"Connector.h"
+
+1266354902 d:\project_14_03_10\view\tmm\force.h
+	<string>
+	"TurnTF.h"
+	"LinearTF.h"
+	"Segment.h"
+	"Connector.h"
+
+1266200901 d:\project_14_03_10\view\tmm\kpair.h
+	"Connector.h"
+
+1268524854 d:\project_14_03_10\view\tmm\group.h
+	"Segment.h"
+	"KPair.h"
+	<string>
+	<math.h>
+	<stdio.h>
+
+1268520205 d:\project_14_03_10\view\tmm\group1.h
+	"Group.h"
+
+1265974650 d:\project_14_03_10\view\tmm\group2.h
+	"Group.h"
+
+1268520331 d:\project_14_03_10\view\tmm\groups.h
+	"Group1.h"
+
+1268520205 d:\project_14_03_10\view\tmm\groupt.h
+	"Group1.h"
+
+1266350374 d:\project_14_03_10\view\tmm\groupsts.h
+	"Group2.h"
+
+1268433752 d:\project_14_03_10\view\tmm\grouptss.h
+	"Group2.h"
+
+1266350444 d:\project_14_03_10\view\tmm\grouptst.h
+	"Group2.h"
+
+1268047671 d:\project_14_03_10\view\tmm\grouptts.h
+	"Group2.h"
+
+1266350444 d:\project_14_03_10\view\tmm\groupttt.h
+	"Group2.h"
+
+1266971023 d:\project_14_03_10\view\tmm\groupmanager.h
+	<list>
+	<map>
+	<set>
+	<vector>
+	<algorithm>
+	"CompManager.h"
+	"GroupBuilder.h"
+	"Group.h"
+
+1266970872 d:\project_14_03_10\view\tmm\groupbuilder.h
+	"GroupT.h"
+	"GroupS.h"
+	"GroupSTS.h"
+	"GroupTSS.h"
+	"GroupTST.h"
+	"GroupTTS.h"
+	"GroupTTT.h"
+
+1267544356 d:\project_14_03_10\view\tmm\sfmlvizualizer.h
+	"Vizualizer.h"
+	<SFML/Graphics.hpp>
+
+1267544594 d:\project_14_03_10\view\tmm\vizualizer.h
+	"GroupManager.h"
+
+1267550773 source:d:\project_14_03_10\view\tmm\compmanager.cpp
+	"CompManager.h"
+
+1265541189 source:d:\project_14_03_10\view\tmm\connector.cpp
+	"Connector.h"
+
+1265725308 source:d:\project_14_03_10\view\tmm\force.cpp
+	"Force.h"
+
+1268521561 source:d:\project_14_03_10\view\tmm\group.cpp
+	"Group.h"
+
+1266970883 source:d:\project_14_03_10\view\tmm\groupbuilder.cpp
+	"GroupBuilder.h"
+
+1266971067 source:d:\project_14_03_10\view\tmm\groupmanager.cpp
+	"GroupManager.h"
+
+1268525560 source:d:\project_14_03_10\view\tmm\groups.cpp
+	"GroupS.h"
+
+1268429090 source:d:\project_14_03_10\view\tmm\groupsts.cpp
+	"GroupSTS.h"
+
+1268521561 source:d:\project_14_03_10\view\tmm\groupt.cpp
+	"GroupT.h"
+
+1268482498 source:d:\project_14_03_10\view\tmm\grouptss.cpp
+	"GroupTSS.h"
+
+1268161922 source:d:\project_14_03_10\view\tmm\grouptst.cpp
+	"GroupTST.h"
+
+1268434654 source:d:\project_14_03_10\view\tmm\grouptts.cpp
+	"GroupTTS.h"
+
+1268831542 source:d:\project_14_03_10\view\tmm\groupttt.cpp
+	"GroupTTT.h"
+
+1266177650 source:d:\project_14_03_10\view\tmm\kpair.cpp
+	"KPair.h"
+
+1268830466 source:d:\project_14_03_10\view\tmm\sfmlvizualizer.cpp
+	"SFMLVizualizer.h"
+	<SFML/Graphics.hpp>
+
+1266263244 source:d:\project_14_03_10\view\tmm\segment.cpp
+	"Segment.h"
+
+1267042934 source:d:\project_14_03_10\view\tmm\tf.cpp
+	"TF.h"
+
+1266709465 source:d:\project_14_03_10\view\tmm\testmyself.cpp
+	"TestMyself.h"
+
+1267542834 source:d:\project_14_03_10\view\tmm\vizualizer.cpp
+	"Vizualizer.h"
+
+1278764933 source:d:\project_13_04_10\view\main.cpp
+	"tmm/CompManager.h"
+	"tmm/GroupBuilder.h"
+	"tmm/SFMLVizualizer.h"
+	<SFML/graphics.hpp>
+	"tmm/Mechan.h"
+
+1279985769 n.h"
+
+1278703831 d:\project_13_04_10\view\tmm\compmanager.h
+	<string>
+	<map>
+	"TestMyself.h"
+	"Connector.h"
+	"KPair.h"
+	"Segment.h"
+	"GroupManager.h"
+
+1266281919 d:\project_13_04_10\view\tmm\testmyself.h
+	<iostream>
+	"CompManager.h"
+	"Connector.h"
+	"Force.h"
+	"KPair.h"
+	"Segment.h"
+	"Group.h"
+	"Group1.h"
+	"Group2.h"
+	"GroupS.h"
+	"GroupT.h"
+	"GroupSTS.h"
+	"GroupTSS.h"
+	"GroupTST.h"
+	"GroupTTS.h"
+	"GroupTTT.h"
+
+1265723857 d:\project_13_04_10\view\tmm\connector.h
+	"LinearTF.h"
+	"TurnTF.h"
+	"Segment.h"
+
+1268433753 d:\project_13_04_10\view\tmm\lineartf.h
+	"TF.h"
+
+1271447950 d:\project_13_04_10\view\tmm\tf.h
+
+1271515443 d:\project_13_04_10\view\tmm\turntf.h
+	"TF.h"
+
+1266263213 d:\project_13_04_10\view\tmm\segment.h
+	<list>
+	<string>
+	"Force.h"
+	"Connector.h"
+
+1271448358 d:\project_13_04_10\view\tmm\force.h
+	<string>
+	"TurnTF.h"
+	"LinearTF.h"
+	"Segment.h"
+	"Connector.h"
+
+1266200901 d:\project_13_04_10\view\tmm\kpair.h
+	"Connector.h"
+
+1278671774 d:\project_13_04_10\view\tmm\group.h
+	"Segment.h"
+	"KPair.h"
+	<string>
+	<math.h>
+	<stdio.h>
+
+1268520205 d:\project_13_04_10\view\tmm\group1.h
+	"Group.h"
+
+1265974650 d:\project_13_04_10\view\tmm\group2.h
+	"Group.h"
+
+1268520331 d:\project_13_04_10\view\tmm\groups.h
+	"Group1.h"
+
+1268520205 d:\project_13_04_10\view\tmm\groupt.h
+	"Group1.h"
+
+1278659395 d:\project_13_04_10\view\tmm\groupsts.h
+	"Group2.h"
+
+1268433752 d:\project_13_04_10\view\tmm\grouptss.h
+	"Group2.h"
+
+1278607629 d:\project_13_04_10\view\tmm\grouptst.h
+	"Group2.h"
+
+1278702250 d:\project_13_04_10\view\tmm\grouptts.h
+	"Group2.h"
+
+1266350444 d:\project_13_04_10\view\tmm\groupttt.h
+	"Group2.h"
+
+1266971023 d:\project_13_04_10\view\tmm\groupmanager.h
+	<list>
+	<map>
+	<set>
+	<vector>
+	<algorithm>
+	"CompManager.h"
+	"GroupBuilder.h"
+	"Group.h"
+
+1266970872 d:\project_13_04_10\view\tmm\groupbuilder.h
+	"GroupT.h"
+	"GroupS.h"
+	"GroupSTS.h"
+	"GroupTSS.h"
+	"GroupTST.h"
+	"GroupTTS.h"
+	"GroupTTT.h"
+
+1271435197 d:\project_13_04_10\view\tmm\sfmlvizualizer.h
+	"Vizualizer.h"
+	<SFML/Graphics.hpp>
+
+1267544594 d:\project_13_04_10\view\tmm\vizualizer.h
+	"GroupManager.h"
+
+1271515288 source:d:\project_13_04_10\view\tmm\compmanager.cpp
+	"CompManager.h"
+
+1265541189 source:d:\project_13_04_10\view\tmm\connector.cpp
+	"Connector.h"
+
+1271507739 source:d:\project_13_04_10\view\tmm\force.cpp
+	"Force.h"
+
+1266970883 source:d:\project_13_04_10\view\tmm\groupbuilder.cpp
+	"GroupBuilder.h"
+
+1278611546 source:d:\project_13_04_10\view\tmm\groupmanager.cpp
+	"GroupManager.h"
+
+1278679023 source:d:\project_13_04_10\view\tmm\groups.cpp
+	"GroupS.h"
+
+1278790831 source:d:\project_13_04_10\view\tmm\groupsts.cpp
+	"GroupSTS.h"
+
+1268482498 source:d:\project_13_04_10\view\tmm\grouptss.cpp
+	"GroupTSS.h"
+
+1278695773 source:d:\project_13_04_10\view\tmm\grouptst.cpp
+	"GroupTST.h"
+
+1278703832 source:d:\project_13_04_10\view\tmm\grouptts.cpp
+	"GroupTTS.h"
+
+1278672198 source:d:\project_13_04_10\view\tmm\groupttt.cpp
+	"GroupTTT.h"
+
+1266177650 source:d:\project_13_04_10\view\tmm\kpair.cpp
+	"KPair.h"
+
+1266263244 source:d:\project_13_04_10\view\tmm\segment.cpp
+	"Segment.h"
+
+1271448499 source:d:\project_13_04_10\view\tmm\tf.cpp
+	"TF.h"
+
+1266709465 source:d:\project_13_04_10\view\tmm\testmyself.cpp
+	"TestMyself.h"
+
+1267542834 source:d:\project_13_04_10\view\tmm\vizualizer.cpp
+	"Vizualizer.h"
+
+1278695876 source:d:\project_13_04_10\view\tmm\group.cpp
+	"Group.h"
+
+1271533847 source:d:\project_13_04_10\view\tmm\groupt.cpp
+	"GroupT.h"
+
+1278677624 source:d:\project_13_04_10\view\tmm\sfmlvizualizer.cpp
+	"SFMLVizualizer.h"
+	<SFML/Graphics.hpp>
+
+1278764803 d:\project_13_04_10\view\tmm\mechan.h
+
+1278764933 source:d:\dzen\project\project_13_04_10\view\main.cpp
+	"tmm/CompManager.h"
+	"tmm/GroupBuilder.h"
+	"tmm/SFMLVizualizer.h"
+	<SFML/graphics.hpp>
+	"tmm/Mechan.h"
+
+1278703831 d:\dzen\project\project_13_04_10\view\tmm\compmanager.h
+	<string>
+	<map>
+	"TestMyself.h"
+	"Connector.h"
+	"KPair.h"
+	"Segment.h"
+	"GroupManager.h"
+
+1266281919 d:\dzen\project\project_13_04_10\view\tmm\testmyself.h
+	<iostream>
+	"CompManager.h"
+	"Connector.h"
+	"Force.h"
+	"KPair.h"
+	"Segment.h"
+	"Group.h"
+	"Group1.h"
+	"Group2.h"
+	"GroupS.h"
+	"GroupT.h"
+	"GroupSTS.h"
+	"GroupTSS.h"
+	"GroupTST.h"
+	"GroupTTS.h"
+	"GroupTTT.h"
+
+1265723857 d:\dzen\project\project_13_04_10\view\tmm\connector.h
+	"LinearTF.h"
+	"TurnTF.h"
+	"Segment.h"
+
+1268433753 d:\dzen\project\project_13_04_10\view\tmm\lineartf.h
+	"TF.h"
+
+1271447950 d:\dzen\project\project_13_04_10\view\tmm\tf.h
+
+1271515443 d:\dzen\project\project_13_04_10\view\tmm\turntf.h
+	"TF.h"
+
+1266263213 d:\dzen\project\project_13_04_10\view\tmm\segment.h
+	<list>
+	<string>
+	"Force.h"
+	"Connector.h"
+
+1271448358 d:\dzen\project\project_13_04_10\view\tmm\force.h
+	<string>
+	"TurnTF.h"
+	"LinearTF.h"
+	"Segment.h"
+	"Connector.h"
+
+1266200901 d:\dzen\project\project_13_04_10\view\tmm\kpair.h
+	"Connector.h"
+
+1278671774 d:\dzen\project\project_13_04_10\view\tmm\group.h
+	"Segment.h"
+	"KPair.h"
+	<string>
+	<math.h>
+	<stdio.h>
+
+1268520205 d:\dzen\project\project_13_04_10\view\tmm\group1.h
+	"Group.h"
+
+1265974650 d:\dzen\project\project_13_04_10\view\tmm\group2.h
+	"Group.h"
+
+1268520331 d:\dzen\project\project_13_04_10\view\tmm\groups.h
+	"Group1.h"
+
+1268520205 d:\dzen\project\project_13_04_10\view\tmm\groupt.h
+	"Group1.h"
+
+1278659395 d:\dzen\project\project_13_04_10\view\tmm\groupsts.h
+	"Group2.h"
+
+1278851933 d:\dzen\project\project_13_04_10\view\tmm\grouptss.h
+	"Group2.h"
+
+1278607629 d:\dzen\project\project_13_04_10\view\tmm\grouptst.h
+	"Group2.h"
+
+1278702250 d:\dzen\project\project_13_04_10\view\tmm\grouptts.h
+	"Group2.h"
+
+1266350444 d:\dzen\project\project_13_04_10\view\tmm\groupttt.h
+	"Group2.h"
+
+1266971023 d:\dzen\project\project_13_04_10\view\tmm\groupmanager.h
+	<list>
+	<map>
+	<set>
+	<vector>
+	<algorithm>
+	"CompManager.h"
+	"GroupBuilder.h"
+	"Group.h"
+
+1266970872 d:\dzen\project\project_13_04_10\view\tmm\groupbuilder.h
+	"GroupT.h"
+	"GroupS.h"
+	"GroupSTS.h"
+	"GroupTSS.h"
+	"GroupTST.h"
+	"GroupTTS.h"
+	"GroupTTT.h"
+
+1271435197 d:\dzen\project\project_13_04_10\view\tmm\sfmlvizualizer.h
+	"Vizualizer.h"
+	<SFML/Graphics.hpp>
+
+1267544594 d:\dzen\project\project_13_04_10\view\tmm\vizualizer.h
+	"GroupManager.h"
+
+1278764803 d:\dzen\project\project_13_04_10\view\tmm\mechan.h
+
+1271515288 source:d:\dzen\project\project_13_04_10\view\tmm\compmanager.cpp
+	"CompManager.h"
+
+1265541189 source:d:\dzen\project\project_13_04_10\view\tmm\connector.cpp
+	"Connector.h"
+
+1271507739 source:d:\dzen\project\project_13_04_10\view\tmm\force.cpp
+	"Force.h"
+
+1278695876 source:d:\dzen\project\project_13_04_10\view\tmm\group.cpp
+	"Group.h"
+
+1266970883 source:d:\dzen\project\project_13_04_10\view\tmm\groupbuilder.cpp
+	"GroupBuilder.h"
+
+1278611546 source:d:\dzen\project\project_13_04_10\view\tmm\groupmanager.cpp
+	"GroupManager.h"
+
+1278679023 source:d:\dzen\project\project_13_04_10\view\tmm\groups.cpp
+	"GroupS.h"
+
+1279742932 source:d:\dzen\project\project_13_04_10\view\tmm\groupsts.cpp
+	"GroupSTS.h"
+
+1271533847 source:d:\dzen\project\project_13_04_10\view\tmm\groupt.cpp
+	"GroupT.h"
+
+1279742949 source:d:\dzen\project\project_13_04_10\view\tmm\grouptss.cpp
+	"GroupTSS.h"
+
+1278695773 source:d:\dzen\project\project_13_04_10\view\tmm\grouptst.cpp
+	"GroupTST.h"
+
+1278703832 source:d:\dzen\project\project_13_04_10\view\tmm\grouptts.cpp
+	"GroupTTS.h"
+
+1278672198 source:d:\dzen\project\project_13_04_10\view\tmm\groupttt.cpp
+	"GroupTTT.h"
+
+1266177650 source:d:\dzen\project\project_13_04_10\view\tmm\kpair.cpp
+	"KPair.h"
+
+1278677624 source:d:\dzen\project\project_13_04_10\view\tmm\sfmlvizualizer.cpp
+	"SFMLVizualizer.h"
+	<SFML/Graphics.hpp>
+
+1266263244 source:d:\dzen\project\project_13_04_10\view\tmm\segment.cpp
+	"Segment.h"
+
+1271448499 source:d:\dzen\project\project_13_04_10\view\tmm\tf.cpp
+	"TF.h"
+
+1266709465 source:d:\dzen\project\project_13_04_10\view\tmm\testmyself.cpp
+	"TestMyself.h"
+
+1267542834 source:d:\dzen\project\project_13_04_10\view\tmm\vizualizer.cpp
+	"Vizualizer.h"
+
+1279985769 source:d:\dzen\project\project_21_07_10\view\main.cpp
+	<cmath>
+	<sstream>
+	"tmm/CompManager.h"
+	"tmm/GroupBuilder.h"
+	"tmm/SFMLVizualizer.h"
+	<SFML/graphics.hpp>
+	"tmm/Mechan.h"
+
+1279978084 d:\dzen\project\project_21_07_10\view\tmm\compmanager.h
+	<string>
+	<map>
+	"..\tinyxml\tinyxml.h"
+	"TestMyself.h"
+	"Connector.h"
+	"KPair.h"
+	"Segment.h"
+	"GroupManager.h"
+
+1266281919 d:\dzen\project\project_21_07_10\view\tmm\testmyself.h
+	<iostream>
+	"CompManager.h"
+	"Connector.h"
+	"Force.h"
+	"KPair.h"
+	"Segment.h"
+	"Group.h"
+	"Group1.h"
+	"Group2.h"
+	"GroupS.h"
+	"GroupT.h"
+	"GroupSTS.h"
+	"GroupTSS.h"
+	"GroupTST.h"
+	"GroupTTS.h"
+	"GroupTTT.h"
+
+1265723857 d:\dzen\project\project_21_07_10\view\tmm\connector.h
+	"LinearTF.h"
+	"TurnTF.h"
+	"Segment.h"
+
+1268433753 d:\dzen\project\project_21_07_10\view\tmm\lineartf.h
+	"TF.h"
+
+1271447950 d:\dzen\project\project_21_07_10\view\tmm\tf.h
+
+1271515443 d:\dzen\project\project_21_07_10\view\tmm\turntf.h
+	"TF.h"
+
+1266263213 d:\dzen\project\project_21_07_10\view\tmm\segment.h
+	<list>
+	<string>
+	"Force.h"
+	"Connector.h"
+
+1271448358 d:\dzen\project\project_21_07_10\view\tmm\force.h
+	<string>
+	"TurnTF.h"
+	"LinearTF.h"
+	"Segment.h"
+	"Connector.h"
+
+1266200901 d:\dzen\project\project_21_07_10\view\tmm\kpair.h
+	"Connector.h"
+
+1279984627 d:\dzen\project\project_21_07_10\view\tmm\group.h
+	"Segment.h"
+	"KPair.h"
+	<string>
+	<math.h>
+	<stdio.h>
+
+1268520205 d:\dzen\project\project_21_07_10\view\tmm\group1.h
+	"Group.h"
+
+1265974650 d:\dzen\project\project_21_07_10\view\tmm\group2.h
+	"Group.h"
+
+1268520331 d:\dzen\project\project_21_07_10\view\tmm\groups.h
+	"Group1.h"
+
+1268520205 d:\dzen\project\project_21_07_10\view\tmm\groupt.h
+	"Group1.h"
+
+1278659395 d:\dzen\project\project_21_07_10\view\tmm\groupsts.h
+	"Group2.h"
+
+1278851933 d:\dzen\project\project_21_07_10\view\tmm\grouptss.h
+	"Group2.h"
+
+1278607629 d:\dzen\project\project_21_07_10\view\tmm\grouptst.h
+	"Group2.h"
+
+1278702250 d:\dzen\project\project_21_07_10\view\tmm\grouptts.h
+	"Group2.h"
+
+1266350444 d:\dzen\project\project_21_07_10\view\tmm\groupttt.h
+	"Group2.h"
+
+1266971023 d:\dzen\project\project_21_07_10\view\tmm\groupmanager.h
+	<list>
+	<map>
+	<set>
+	<vector>
+	<algorithm>
+	"CompManager.h"
+	"GroupBuilder.h"
+	"Group.h"
+
+1266970872 d:\dzen\project\project_21_07_10\view\tmm\groupbuilder.h
+	"GroupT.h"
+	"GroupS.h"
+	"GroupSTS.h"
+	"GroupTSS.h"
+	"GroupTST.h"
+	"GroupTTS.h"
+	"GroupTTT.h"
+
+1279947754 d:\dzen\project\project_21_07_10\view\tmm\sfmlvizualizer.h
+	"Vizualizer.h"
+	<SFML/Graphics.hpp>
+
+1279947754 d:\dzen\project\project_21_07_10\view\tmm\vizualizer.h
+	"GroupManager.h"
+
+1278764803 d:\dzen\project\project_21_07_10\view\tmm\mechan.h
+
+1279978215 source:d:\dzen\project\project_21_07_10\view\tmm\compmanager.cpp
+	"CompManager.h"
+
+1265541189 source:d:\dzen\project\project_21_07_10\view\tmm\connector.cpp
+	"Connector.h"
+
+1271507739 source:d:\dzen\project\project_21_07_10\view\tmm\force.cpp
+	"Force.h"
+
+1279984617 source:d:\dzen\project\project_21_07_10\view\tmm\group.cpp
+	"Group.h"
+	<cmath>
+
+1266970883 source:d:\dzen\project\project_21_07_10\view\tmm\groupbuilder.cpp
+	"GroupBuilder.h"
+
+1279983842 source:d:\dzen\project\project_21_07_10\view\tmm\groupmanager.cpp
+	"GroupManager.h"
+
+1278679023 source:d:\dzen\project\project_21_07_10\view\tmm\groups.cpp
+	"GroupS.h"
+
+1279742932 source:d:\dzen\project\project_21_07_10\view\tmm\groupsts.cpp
+	"GroupSTS.h"
+
+1271533847 source:d:\dzen\project\project_21_07_10\view\tmm\groupt.cpp
+	"GroupT.h"
+
+1279742949 source:d:\dzen\project\project_21_07_10\view\tmm\grouptss.cpp
+	"GroupTSS.h"
+
+1279985260 source:d:\dzen\project\project_21_07_10\view\tmm\grouptst.cpp
+	"GroupTST.h"
+
+1278703832 source:d:\dzen\project\project_21_07_10\view\tmm\grouptts.cpp
+	"GroupTTS.h"
+
+1278672198 source:d:\dzen\project\project_21_07_10\view\tmm\groupttt.cpp
+	"GroupTTT.h"
+
+1266177650 source:d:\dzen\project\project_21_07_10\view\tmm\kpair.cpp
+	"KPair.h"
+
+1279978083 source:d:\dzen\project\project_21_07_10\view\tmm\sfmlvizualizer.cpp
+	"SFMLVizualizer.h"
+	<SFML/Graphics.hpp>
+
+1266263244 source:d:\dzen\project\project_21_07_10\view\tmm\segment.cpp
+	"Segment.h"
+
+1271448499 source:d:\dzen\project\project_21_07_10\view\tmm\tf.cpp
+	"TF.h"
+
+1279755024 source:d:\dzen\project\project_21_07_10\view\tmm\testmyself.cpp
+	"TestMyself.h"
+
+1267542834 source:d:\dzen\project\project_21_07_10\view\tmm\vizualizer.cpp
+	"Vizualizer.h"
+
+1269288996 d:\dzen\project\project_21_07_10\view\tinyxml\tinyxml.h
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<string>
+	<iostream>
+	<sstream>
+	"tinystr.h"
+
+1269288996 d:\dzen\project\project_21_07_10\view\tinyxml\tinystr.h
+	<assert.h>
+	<string.h>
+
+1279985278 source:d:\dzen\project\project_21_07_10\view\tinyxml\tinyxml.cpp
+	<ctype.h>
+	<sstream>
+	<iostream>
+	"tinyxml.h"
+
+1269288996 source:d:\dzen\project\project_21_07_10\view\tinyxml\tinystr.cpp
+	"tinystr.h"
+
+1269288996 source:d:\dzen\project\project_21_07_10\view\tinyxml\tinyxmlerror.cpp
+	"tinyxml.h"
+
+1279967265 source:d:\dzen\project\project_21_07_10\view\tinyxml\tinyxmlparser.cpp
+	<ctype.h>
+	<stddef.h>
+	"tinyxml.h"
+	<windows.h>
+
+1279967265 >
+
+1281017963 source:d:\dzen\project\project_24_07_10\view\main.cpp
+	<cmath>
+	<sstream>
+	<SFML/graphics.hpp>
+	"tmm/CompManager.h"
+	"tmm/GroupBuilder.h"
+	"tmm/SFMLVizualizer.h"
+	"tmm/Mechan.h"
+	"tmm/XMLLoader.h"
+	"tmm/XMLSaver.h"
+
+1281815979 ver.h"
+
+1280224218 d:\dzen\project\project_24_07_10\view\tmm\compmanager.h
+	<string>
+	<map>
+	"TestMyself.h"
+	"Connector.h"
+	"KPair.h"
+	"Segment.h"
+	"GroupManager.h"
+
+1280049098 d:\dzen\project\project_24_07_10\view\tinyxml\tinyxml.h
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<string>
+	<iostream>
+	<sstream>
+	"tinystr.h"
+
+1269288996 d:\dzen\project\project_24_07_10\view\tinyxml\tinystr.h
+	<assert.h>
+	<string.h>
+
+1280749418 d:\dzen\project\project_24_07_10\view\tmm\testmyself.h
+	<iostream>
+	"CompManager.h"
+	"GroupManager.h"
+	"Connector.h"
+	"Force.h"
+	"KPair.h"
+	"Segment.h"
+	"Group.h"
+	"Group1.h"
+	"Group2.h"
+	"GroupS.h"
+	"GroupT.h"
+	"GroupSTS.h"
+	"GroupTSS.h"
+	"GroupTST.h"
+	"GroupTTS.h"
+	"GroupTTT.h"
+
+1265723857 d:\dzen\project\project_24_07_10\view\tmm\connector.h
+	"LinearTF.h"
+	"TurnTF.h"
+	"Segment.h"
+
+1268433753 d:\dzen\project\project_24_07_10\view\tmm\lineartf.h
+	"TF.h"
+
+1271447950 d:\dzen\project\project_24_07_10\view\tmm\tf.h
+
+1271515443 d:\dzen\project\project_24_07_10\view\tmm\turntf.h
+	"TF.h"
+
+1266263213 d:\dzen\project\project_24_07_10\view\tmm\segment.h
+	<list>
+	<string>
+	"Force.h"
+	"Connector.h"
+
+1271448358 d:\dzen\project\project_24_07_10\view\tmm\force.h
+	<string>
+	"TurnTF.h"
+	"LinearTF.h"
+	"Segment.h"
+	"Connector.h"
+
+1266200901 d:\dzen\project\project_24_07_10\view\tmm\kpair.h
+	"Connector.h"
+
+1280105737 d:\dzen\project\project_24_07_10\view\tmm\group.h
+	"Segment.h"
+	"KPair.h"
+	<string>
+	<math.h>
+	<iostream>
+	<stdio.h>
+
+1268520205 d:\dzen\project\project_24_07_10\view\tmm\group1.h
+	"Group.h"
+
+1280854092 d:\dzen\project\project_24_07_10\view\tmm\group2.h
+	"Group.h"
+
+1268520331 d:\dzen\project\project_24_07_10\view\tmm\groups.h
+	"Group1.h"
+
+1268520205 d:\dzen\project\project_24_07_10\view\tmm\groupt.h
+	"Group1.h"
+
+1278659395 d:\dzen\project\project_24_07_10\view\tmm\groupsts.h
+	"Group2.h"
+
+1278851933 d:\dzen\project\project_24_07_10\view\tmm\grouptss.h
+	"Group2.h"
+
+1278607629 d:\dzen\project\project_24_07_10\view\tmm\grouptst.h
+	"Group2.h"
+
+1280753040 d:\dzen\project\project_24_07_10\view\tmm\grouptts.h
+	"Group2.h"
+
+1280753183 d:\dzen\project\project_24_07_10\view\tmm\groupttt.h
+	"Group2.h"
+
+1280855578 d:\dzen\project\project_24_07_10\view\tmm\groupmanager.h
+	<list>
+	<map>
+	<set>
+	<vector>
+	<algorithm>
+	"CompManager.h"
+	"GroupBuilder.h"
+	"Group.h"
+
+1266970872 d:\dzen\project\project_24_07_10\view\tmm\groupbuilder.h
+	"GroupT.h"
+	"GroupS.h"
+	"GroupSTS.h"
+	"GroupTSS.h"
+	"GroupTST.h"
+	"GroupTTS.h"
+	"GroupTTT.h"
+
+1279947754 d:\dzen\project\project_24_07_10\view\tmm\sfmlvizualizer.h
+	"Vizualizer.h"
+	<SFML/Graphics.hpp>
+
+1279947754 d:\dzen\project\project_24_07_10\view\tmm\vizualizer.h
+	"GroupManager.h"
+
+1278764803 d:\dzen\project\project_24_07_10\view\tmm\mechan.h
+
+1269288996 source:d:\dzen\project\project_24_07_10\view\tinyxml\tinystr.cpp
+	"tinystr.h"
+
+1279985278 source:d:\dzen\project\project_24_07_10\view\tinyxml\tinyxml.cpp
+	<ctype.h>
+	<sstream>
+	<iostream>
+	"tinyxml.h"
+
+1269288996 source:d:\dzen\project\project_24_07_10\view\tinyxml\tinyxmlerror.cpp
+	"tinyxml.h"
+
+1279967265 source:d:\dzen\project\project_24_07_10\view\tinyxml\tinyxmlparser.cpp
+	<ctype.h>
+	<stddef.h>
+	"tinyxml.h"
+	<windows.h>
+
+1280749902 source:d:\dzen\project\project_24_07_10\view\tmm\compmanager.cpp
+	"CompManager.h"
+
+1265541189 source:d:\dzen\project\project_24_07_10\view\tmm\connector.cpp
+	"Connector.h"
+
+1271507739 source:d:\dzen\project\project_24_07_10\view\tmm\force.cpp
+	"Force.h"
+
+1280750173 source:d:\dzen\project\project_24_07_10\view\tmm\group.cpp
+	"Group.h"
+	<cmath>
+
+1266970883 source:d:\dzen\project\project_24_07_10\view\tmm\groupbuilder.cpp
+	"GroupBuilder.h"
+
+1280856588 source:d:\dzen\project\project_24_07_10\view\tmm\groupmanager.cpp
+	"GroupManager.h"
+
+1278679023 source:d:\dzen\project\project_24_07_10\view\tmm\groups.cpp
+	"GroupS.h"
+
+1279742932 source:d:\dzen\project\project_24_07_10\view\tmm\groupsts.cpp
+	"GroupSTS.h"
+
+1271533847 source:d:\dzen\project\project_24_07_10\view\tmm\groupt.cpp
+	"GroupT.h"
+
+1279742949 source:d:\dzen\project\project_24_07_10\view\tmm\grouptss.cpp
+	"GroupTSS.h"
+
+1279985260 source:d:\dzen\project\project_24_07_10\view\tmm\grouptst.cpp
+	"GroupTST.h"
+
+1280854413 source:d:\dzen\project\project_24_07_10\view\tmm\grouptts.cpp
+	"GroupTTS.h"
+
+1280753218 source:d:\dzen\project\project_24_07_10\view\tmm\groupttt.cpp
+	"GroupTTT.h"
+
+1266177650 source:d:\dzen\project\project_24_07_10\view\tmm\kpair.cpp
+	"KPair.h"
+
+1280114212 source:d:\dzen\project\project_24_07_10\view\tmm\sfmlvizualizer.cpp
+	"SFMLVizualizer.h"
+	<SFML/Graphics.hpp>
+
+1266263244 source:d:\dzen\project\project_24_07_10\view\tmm\segment.cpp
+	"Segment.h"
+
+1271448499 source:d:\dzen\project\project_24_07_10\view\tmm\tf.cpp
+	"TF.h"
+
+1280748542 source:d:\dzen\project\project_24_07_10\view\tmm\testmyself.cpp
+	"TestMyself.h"
+
+1267542834 source:d:\dzen\project\project_24_07_10\view\tmm\vizualizer.cpp
+	"Vizualizer.h"
+
+1280855710 source:d:\dzen\project\project_24_07_10\view\tmm\xmlloader.cpp
+	"XMLLoader.h"
+
+1280752999 d:\dzen\project\project_24_07_10\view\tmm\xmlloader.h
+	<string>
+	"..\tinyxml\tinyxml.h"
+	"CompManager.h"
+	"GroupManager.h"
+
+1280856019 source:d:\dzen\project\project_24_07_10\view\tmm\xmlsaver.cpp
+	"XMLSaver.h"
+
+1280752326 d:\dzen\project\project_24_07_10\view\tmm\xmlsaver.h
+	<string>
+	"..\tinyxml\tinyxml.h"
+	"CompManager.h"
+	"GroupManager.h"
+
+1280853991 source:d:\dzen\project\project_24_07_10\view\tmm\group2.cpp
+	"Group2.h"
+
+1269288996 source:d:\dzen\project\project_5_08_10\view\tinyxml\tinystr.cpp
+	"tinystr.h"
+
+1269288996 d:\dzen\project\project_5_08_10\view\tinyxml\tinystr.h
+	<assert.h>
+	<string.h>
+
+1279985278 source:d:\dzen\project\project_5_08_10\view\tinyxml\tinyxml.cpp
+	<ctype.h>
+	<sstream>
+	<iostream>
+	"tinyxml.h"
+
+1280049098 d:\dzen\project\project_5_08_10\view\tinyxml\tinyxml.h
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<string>
+	<iostream>
+	<sstream>
+	"tinystr.h"
+
+1269288996 source:d:\dzen\project\project_5_08_10\view\tinyxml\tinyxmlerror.cpp
+	"tinyxml.h"
+
+1279967265 source:d:\dzen\project\project_5_08_10\view\tinyxml\tinyxmlparser.cpp
+	<ctype.h>
+	<stddef.h>
+	"tinyxml.h"
+	<windows.h>
+
+1280749902 source:d:\dzen\project\project_5_08_10\view\tmm\compmanager.cpp
+	"CompManager.h"
+
+1280224218 d:\dzen\project\project_5_08_10\view\tmm\compmanager.h
+	<string>
+	<map>
+	"TestMyself.h"
+	"Connector.h"
+	"KPair.h"
+	"Segment.h"
+	"GroupManager.h"
+
+1280749418 d:\dzen\project\project_5_08_10\view\tmm\testmyself.h
+	<iostream>
+	"CompManager.h"
+	"GroupManager.h"
+	"Connector.h"
+	"Force.h"
+	"KPair.h"
+	"Segment.h"
+	"Group.h"
+	"Group1.h"
+	"Group2.h"
+	"GroupS.h"
+	"GroupT.h"
+	"GroupSTS.h"
+	"GroupTSS.h"
+	"GroupTST.h"
+	"GroupTTS.h"
+	"GroupTTT.h"
+
+1280855578 d:\dzen\project\project_5_08_10\view\tmm\groupmanager.h
+	<list>
+	<map>
+	<set>
+	<vector>
+	<algorithm>
+	"CompManager.h"
+	"GroupBuilder.h"
+	"Group.h"
+
+1266970872 d:\dzen\project\project_5_08_10\view\tmm\groupbuilder.h
+	"GroupT.h"
+	"GroupS.h"
+	"GroupSTS.h"
+	"GroupTSS.h"
+	"GroupTST.h"
+	"GroupTTS.h"
+	"GroupTTT.h"
+
+1268520205 d:\dzen\project\project_5_08_10\view\tmm\groupt.h
+	"Group1.h"
+
+1268520205 d:\dzen\project\project_5_08_10\view\tmm\group1.h
+	"Group.h"
+
+1280105737 d:\dzen\project\project_5_08_10\view\tmm\group.h
+	"Segment.h"
+	"KPair.h"
+	<string>
+	<math.h>
+	<iostream>
+	<stdio.h>
+
+1266263213 d:\dzen\project\project_5_08_10\view\tmm\segment.h
+	<list>
+	<string>
+	"Force.h"
+	"Connector.h"
+
+1271448358 d:\dzen\project\project_5_08_10\view\tmm\force.h
+	<string>
+	"TurnTF.h"
+	"LinearTF.h"
+	"Segment.h"
+	"Connector.h"
+
+1271515443 d:\dzen\project\project_5_08_10\view\tmm\turntf.h
+	"TF.h"
+
+1271447950 d:\dzen\project\project_5_08_10\view\tmm\tf.h
+
+1268433753 d:\dzen\project\project_5_08_10\view\tmm\lineartf.h
+	"TF.h"
+
+1265723857 d:\dzen\project\project_5_08_10\view\tmm\connector.h
+	"LinearTF.h"
+	"TurnTF.h"
+	"Segment.h"
+
+1266200901 d:\dzen\project\project_5_08_10\view\tmm\kpair.h
+	"Connector.h"
+
+1268520331 d:\dzen\project\project_5_08_10\view\tmm\groups.h
+	"Group1.h"
+
+1278659395 d:\dzen\project\project_5_08_10\view\tmm\groupsts.h
+	"Group2.h"
+
+1280854092 d:\dzen\project\project_5_08_10\view\tmm\group2.h
+	"Group.h"
+
+1278851933 d:\dzen\project\project_5_08_10\view\tmm\grouptss.h
+	"Group2.h"
+
+1278607629 d:\dzen\project\project_5_08_10\view\tmm\grouptst.h
+	"Group2.h"
+
+1280753040 d:\dzen\project\project_5_08_10\view\tmm\grouptts.h
+	"Group2.h"
+
+1280753183 d:\dzen\project\project_5_08_10\view\tmm\groupttt.h
+	"Group2.h"
+
+1265541189 source:d:\dzen\project\project_5_08_10\view\tmm\connector.cpp
+	"Connector.h"
+
+1271507739 source:d:\dzen\project\project_5_08_10\view\tmm\force.cpp
+	"Force.h"
+
+1280750173 source:d:\dzen\project\project_5_08_10\view\tmm\group.cpp
+	"Group.h"
+	<cmath>
+
+1266970883 source:d:\dzen\project\project_5_08_10\view\tmm\groupbuilder.cpp
+	"GroupBuilder.h"
+
+1280856588 source:d:\dzen\project\project_5_08_10\view\tmm\groupmanager.cpp
+	"GroupManager.h"
+
+1278679023 source:d:\dzen\project\project_5_08_10\view\tmm\groups.cpp
+	"GroupS.h"
+
+1279742932 source:d:\dzen\project\project_5_08_10\view\tmm\groupsts.cpp
+	"GroupSTS.h"
+
+1271533847 source:d:\dzen\project\project_5_08_10\view\tmm\groupt.cpp
+	"GroupT.h"
+
+1279742949 source:d:\dzen\project\project_5_08_10\view\tmm\grouptss.cpp
+	"GroupTSS.h"
+
+1279985260 source:d:\dzen\project\project_5_08_10\view\tmm\grouptst.cpp
+	"GroupTST.h"
+
+1280854413 source:d:\dzen\project\project_5_08_10\view\tmm\grouptts.cpp
+	"GroupTTS.h"
+
+1280753218 source:d:\dzen\project\project_5_08_10\view\tmm\groupttt.cpp
+	"GroupTTT.h"
+
+1266177650 source:d:\dzen\project\project_5_08_10\view\tmm\kpair.cpp
+	"KPair.h"
+
+1280114212 source:d:\dzen\project\project_5_08_10\view\tmm\sfmlvizualizer.cpp
+	"SFMLVizualizer.h"
+	<SFML/Graphics.hpp>
+
+1279947754 d:\dzen\project\project_5_08_10\view\tmm\sfmlvizualizer.h
+	"Vizualizer.h"
+	<SFML/Graphics.hpp>
+
+1279947754 d:\dzen\project\project_5_08_10\view\tmm\vizualizer.h
+	"GroupManager.h"
+
+1266263244 source:d:\dzen\project\project_5_08_10\view\tmm\segment.cpp
+	"Segment.h"
+
+1271448499 source:d:\dzen\project\project_5_08_10\view\tmm\tf.cpp
+	"TF.h"
+
+1280748542 source:d:\dzen\project\project_5_08_10\view\tmm\testmyself.cpp
+	"TestMyself.h"
+
+1267542834 source:d:\dzen\project\project_5_08_10\view\tmm\vizualizer.cpp
+	"Vizualizer.h"
+
+1280855710 source:d:\dzen\project\project_5_08_10\view\tmm\xmlloader.cpp
+	"XMLLoader.h"
+
+1280752999 d:\dzen\project\project_5_08_10\view\tmm\xmlloader.h
+	<string>
+	"..\tinyxml\tinyxml.h"
+	"CompManager.h"
+	"GroupManager.h"
+
+1280856019 source:d:\dzen\project\project_5_08_10\view\tmm\xmlsaver.cpp
+	"XMLSaver.h"
+
+1280752326 d:\dzen\project\project_5_08_10\view\tmm\xmlsaver.h
+	<string>
+	"..\tinyxml\tinyxml.h"
+	"CompManager.h"
+	"GroupManager.h"
+
+1280853991 source:d:\dzen\project\project_5_08_10\view\tmm\group2.cpp
+	"Group2.h"
+
+1281034164 source:d:\dzen\project\project_5_08_10\view\main.cpp
+	<cmath>
+	<sstream>
+	<SFML/graphics.hpp>
+	"tmm/CompManager.h"
+	"tmm/GroupBuilder.h"
+	"tmm/SFMLVizualizer.h"
+	"tmm/Mechan.h"
+	"tmm/XMLLoader.h"
+	"tmm/XMLSaver.h"
+
+1278764803 d:\dzen\project\project_5_08_10\view\tmm\mechan.h
+
+1281055126 source:d:\assur\project\project_6_08_10\project\view\main.cpp
+	<cmath>
+	<sstream>
+	<SFML/graphics.hpp>
+	"tmm/CompManager.h"
+	"tmm/GroupBuilder.h"
+	"tmm/SFMLVizualizer.h"
+	"tmm/Mechan.h"
+	"tmm/XMLLoader.h"
+	"tmm/XMLSaver.h"
+
+1280224218 d:\assur\project\project_6_08_10\project\view\tmm\compmanager.h
+	<string>
+	<map>
+	"TestMyself.h"
+	"Connector.h"
+	"KPair.h"
+	"Segment.h"
+	"GroupManager.h"
+
+1280749418 d:\assur\project\project_6_08_10\project\view\tmm\testmyself.h
+	<iostream>
+	"CompManager.h"
+	"GroupManager.h"
+	"Connector.h"
+	"Force.h"
+	"KPair.h"
+	"Segment.h"
+	"Group.h"
+	"Group1.h"
+	"Group2.h"
+	"GroupS.h"
+	"GroupT.h"
+	"GroupSTS.h"
+	"GroupTSS.h"
+	"GroupTST.h"
+	"GroupTTS.h"
+	"GroupTTT.h"
+
+1280855578 d:\assur\project\project_6_08_10\project\view\tmm\groupmanager.h
+	<list>
+	<map>
+	<set>
+	<vector>
+	<algorithm>
+	"CompManager.h"
+	"GroupBuilder.h"
+	"Group.h"
+
+1281053672 d:\assur\project\project_6_08_10\project\view\tmm\groupbuilder.h
+	"GroupT.h"
+	"GroupS.h"
+	"GroupSTS.h"
+	"GroupTSS.h"
+	"GroupTST.h"
+	"GroupTTS.h"
+	"GroupTTT.h"
+
+1281209986 d:\assur\project\project_6_08_10\project\view\tmm\groupt.h
+	"Group1.h"
+
+1281182427 d:\assur\project\project_6_08_10\project\view\tmm\group1.h
+	"Group.h"
+
+1281176962 d:\assur\project\project_6_08_10\project\view\tmm\group.h
+	"Segment.h"
+	"KPair.h"
+	<string>
+	<math.h>
+	<iostream>
+	<stdio.h>
+
+1281242600 d:\assur\project\project_6_08_10\project\view\tmm\segment.h
+	<list>
+	<string>
+	"Force.h"
+	"Connector.h"
+
+1281175626 d:\assur\project\project_6_08_10\project\view\tmm\force.h
+	<string>
+	"TurnTF.h"
+	"LinearTF.h"
+	"Segment.h"
+	"Connector.h"
+
+1281242108 d:\assur\project\project_6_08_10\project\view\tmm\turntf.h
+	"TF.h"
+
+1281242541 d:\assur\project\project_6_08_10\project\view\tmm\tf.h
+
+1281242875 d:\assur\project\project_6_08_10\project\view\tmm\lineartf.h
+	"TF.h"
+
+1281185274 d:\assur\project\project_6_08_10\project\view\tmm\connector.h
+	"LinearTF.h"
+	"TurnTF.h"
+	"Segment.h"
+
+1281249199 d:\assur\project\project_6_08_10\project\view\tmm\kpair.h
+	"Connector.h"
+
+1281182473 d:\assur\project\project_6_08_10\project\view\tmm\groups.h
+	"Group1.h"
+
+1281271358 d:\assur\project\project_6_08_10\project\view\tmm\groupsts.h
+	"Group2.h"
+
+1281209985 d:\assur\project\project_6_08_10\project\view\tmm\group2.h
+	"Group.h"
+
+1281242877 d:\assur\project\project_6_08_10\project\view\tmm\grouptss.h
+	"Group2.h"
+
+1281272041 d:\assur\project\project_6_08_10\project\view\tmm\grouptst.h
+	"Group2.h"
+
+1281272041 d:\assur\project\project_6_08_10\project\view\tmm\grouptts.h
+	"Group2.h"
+
+1281272041 d:\assur\project\project_6_08_10\project\view\tmm\groupttt.h
+	"Group2.h"
+
+1279947754 d:\assur\project\project_6_08_10\project\view\tmm\sfmlvizualizer.h
+	"Vizualizer.h"
+	<SFML/Graphics.hpp>
+
+1279947754 d:\assur\project\project_6_08_10\project\view\tmm\vizualizer.h
+	"GroupManager.h"
+
+1278764803 d:\assur\project\project_6_08_10\project\view\tmm\mechan.h
+
+1281054542 d:\assur\project\project_6_08_10\project\view\tmm\xmlloader.h
+	<string>
+	"..\tinyxml\tinyxml.h"
+	"CompManager.h"
+	"GroupManager.h"
+
+1280049098 d:\assur\project\project_6_08_10\project\view\tinyxml\tinyxml.h
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<string>
+	<iostream>
+	<sstream>
+	"tinystr.h"
+
+1269288996 d:\assur\project\project_6_08_10\project\view\tinyxml\tinystr.h
+	<assert.h>
+	<string.h>
+
+1280752326 d:\assur\project\project_6_08_10\project\view\tmm\xmlsaver.h
+	<string>
+	"..\tinyxml\tinyxml.h"
+	"CompManager.h"
+	"GroupManager.h"
+
+1269288996 source:d:\assur\project\project_6_08_10\project\view\tinyxml\tinystr.cpp
+	"tinystr.h"
+
+1279985278 source:d:\assur\project\project_6_08_10\project\view\tinyxml\tinyxml.cpp
+	<ctype.h>
+	<sstream>
+	<iostream>
+	"tinyxml.h"
+
+1269288996 source:d:\assur\project\project_6_08_10\project\view\tinyxml\tinyxmlerror.cpp
+	"tinyxml.h"
+
+1279967265 source:d:\assur\project\project_6_08_10\project\view\tinyxml\tinyxmlparser.cpp
+	<ctype.h>
+	<stddef.h>
+	"tinyxml.h"
+	<windows.h>
+
+1280749902 source:d:\assur\project\project_6_08_10\project\view\tmm\compmanager.cpp
+	"CompManager.h"
+
+1265541189 source:d:\assur\project\project_6_08_10\project\view\tmm\connector.cpp
+	"Connector.h"
+
+1271507739 source:d:\assur\project\project_6_08_10\project\view\tmm\force.cpp
+	"Force.h"
+
+1280750173 source:d:\assur\project\project_6_08_10\project\view\tmm\group.cpp
+	"Group.h"
+	<cmath>
+
+1266970883 source:d:\assur\project\project_6_08_10\project\view\tmm\groupbuilder.cpp
+	"GroupBuilder.h"
+
+1280856588 source:d:\assur\project\project_6_08_10\project\view\tmm\groupmanager.cpp
+	"GroupManager.h"
+
+1281184377 source:d:\assur\project\project_6_08_10\project\view\tmm\groups.cpp
+	"GroupS.h"
+
+1279742932 source:d:\assur\project\project_6_08_10\project\view\tmm\groupsts.cpp
+	"GroupSTS.h"
+
+1279742949 source:d:\assur\project\project_6_08_10\project\view\tmm\grouptss.cpp
+	"GroupTSS.h"
+
+1279985260 source:d:\assur\project\project_6_08_10\project\view\tmm\grouptst.cpp
+	"GroupTST.h"
+
+1280854413 source:d:\assur\project\project_6_08_10\project\view\tmm\grouptts.cpp
+	"GroupTTS.h"
+
+1280753218 source:d:\assur\project\project_6_08_10\project\view\tmm\groupttt.cpp
+	"GroupTTT.h"
+
+1266177650 source:d:\assur\project\project_6_08_10\project\view\tmm\kpair.cpp
+	"KPair.h"
+
+1280114212 source:d:\assur\project\project_6_08_10\project\view\tmm\sfmlvizualizer.cpp
+	"SFMLVizualizer.h"
+	<SFML/Graphics.hpp>
+
+1266263244 source:d:\assur\project\project_6_08_10\project\view\tmm\segment.cpp
+	"Segment.h"
+
+1271448499 source:d:\assur\project\project_6_08_10\project\view\tmm\tf.cpp
+	"TF.h"
+
+1280748542 source:d:\assur\project\project_6_08_10\project\view\tmm\testmyself.cpp
+	"TestMyself.h"
+
+1267542834 source:d:\assur\project\project_6_08_10\project\view\tmm\vizualizer.cpp
+	"Vizualizer.h"
+
+1280855710 source:d:\assur\project\project_6_08_10\project\view\tmm\xmlloader.cpp
+	"XMLLoader.h"
+
+1280856019 source:d:\assur\project\project_6_08_10\project\view\tmm\xmlsaver.cpp
+	"XMLSaver.h"
+
+1280853991 source:d:\assur\project\project_6_08_10\project\view\tmm\group2.cpp
+	"Group2.h"
+
+1281184374 source:d:\assur\project\project_6_08_10\project\view\tmm\groupt.cpp
+	"GroupT.h"
+
+1281055126 source:d:\dzen\project\project_8_08_10\project\view\main.cpp
+	<cmath>
+	<sstream>
+	<SFML/graphics.hpp>
+	"tmm/CompManager.h"
+	"tmm/GroupBuilder.h"
+	"tmm/SFMLVizualizer.h"
+	"tmm/Mechan.h"
+	"tmm/XMLLoader.h"
+	"tmm/XMLSaver.h"
+
+1281373374 d:\dzen\project\project_8_08_10\project\view\tmm\compmanager.h
+	<string>
+	<map>
+	"TestMyself.h"
+	"Connector.h"
+	"KPair.h"
+	"Segment.h"
+
+1280749418 d:\dzen\project\project_8_08_10\project\view\tmm\testmyself.h
+	<iostream>
+	"CompManager.h"
+	"GroupManager.h"
+	"Connector.h"
+	"Force.h"
+	"KPair.h"
+	"Segment.h"
+	"Group.h"
+	"Group1.h"
+	"Group2.h"
+	"GroupS.h"
+	"GroupT.h"
+	"GroupSTS.h"
+	"GroupTSS.h"
+	"GroupTST.h"
+	"GroupTTS.h"
+	"GroupTTT.h"
+
+1280855578 d:\dzen\project\project_8_08_10\project\view\tmm\groupmanager.h
+	<list>
+	<map>
+	<set>
+	<vector>
+	<algorithm>
+	"CompManager.h"
+	"GroupBuilder.h"
+	"Group.h"
+
+1281053672 d:\dzen\project\project_8_08_10\project\view\tmm\groupbuilder.h
+	"GroupT.h"
+	"GroupS.h"
+	"GroupSTS.h"
+	"GroupTSS.h"
+	"GroupTST.h"
+	"GroupTTS.h"
+	"GroupTTT.h"
+
+1281209986 d:\dzen\project\project_8_08_10\project\view\tmm\groupt.h
+	"Group1.h"
+
+1281182427 d:\dzen\project\project_8_08_10\project\view\tmm\group1.h
+	"Group.h"
+
+1281176962 d:\dzen\project\project_8_08_10\project\view\tmm\group.h
+	"Segment.h"
+	"KPair.h"
+	<string>
+	<math.h>
+	<iostream>
+	<stdio.h>
+
+1281242600 d:\dzen\project\project_8_08_10\project\view\tmm\segment.h
+	<list>
+	<string>
+	"Force.h"
+	"Connector.h"
+
+1281175626 d:\dzen\project\project_8_08_10\project\view\tmm\force.h
+	<string>
+	"TurnTF.h"
+	"LinearTF.h"
+	"Segment.h"
+	"Connector.h"
+
+1281242108 d:\dzen\project\project_8_08_10\project\view\tmm\turntf.h
+	"TF.h"
+
+1281242541 d:\dzen\project\project_8_08_10\project\view\tmm\tf.h
+
+1281242875 d:\dzen\project\project_8_08_10\project\view\tmm\lineartf.h
+	"TF.h"
+
+1281185274 d:\dzen\project\project_8_08_10\project\view\tmm\connector.h
+	"LinearTF.h"
+	"TurnTF.h"
+	"Segment.h"
+
+1281373325 d:\dzen\project\project_8_08_10\project\view\tmm\kpair.h
+	"Connector.h"
+
+1281182473 d:\dzen\project\project_8_08_10\project\view\tmm\groups.h
+	"Group1.h"
+
+1281272772 d:\dzen\project\project_8_08_10\project\view\tmm\groupsts.h
+	"Group2.h"
+
+1281209985 d:\dzen\project\project_8_08_10\project\view\tmm\group2.h
+	"Group.h"
+
+1281272773 d:\dzen\project\project_8_08_10\project\view\tmm\grouptss.h
+	"Group2.h"
+
+1281272770 d:\dzen\project\project_8_08_10\project\view\tmm\grouptst.h
+	"Group2.h"
+
+1281272771 d:\dzen\project\project_8_08_10\project\view\tmm\grouptts.h
+	"Group2.h"
+
+1281272771 d:\dzen\project\project_8_08_10\project\view\tmm\groupttt.h
+	"Group2.h"
+
+1279947754 d:\dzen\project\project_8_08_10\project\view\tmm\sfmlvizualizer.h
+	"Vizualizer.h"
+	<SFML/Graphics.hpp>
+
+1279947754 d:\dzen\project\project_8_08_10\project\view\tmm\vizualizer.h
+	"GroupManager.h"
+
+1278764803 d:\dzen\project\project_8_08_10\project\view\tmm\mechan.h
+
+1281054542 d:\dzen\project\project_8_08_10\project\view\tmm\xmlloader.h
+	<string>
+	"..\tinyxml\tinyxml.h"
+	"CompManager.h"
+	"GroupManager.h"
+
+1280049098 d:\dzen\project\project_8_08_10\project\view\tinyxml\tinyxml.h
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<string>
+	<iostream>
+	<sstream>
+	"tinystr.h"
+
+1269288996 d:\dzen\project\project_8_08_10\project\view\tinyxml\tinystr.h
+	<assert.h>
+	<string.h>
+
+1280752326 d:\dzen\project\project_8_08_10\project\view\tmm\xmlsaver.h
+	<string>
+	"..\tinyxml\tinyxml.h"
+	"CompManager.h"
+	"GroupManager.h"
+
+1269288996 source:d:\dzen\project\project_8_08_10\project\view\tinyxml\tinystr.cpp
+	"tinystr.h"
+
+1279985278 source:d:\dzen\project\project_8_08_10\project\view\tinyxml\tinyxml.cpp
+	<ctype.h>
+	<sstream>
+	<iostream>
+	"tinyxml.h"
+
+1269288996 source:d:\dzen\project\project_8_08_10\project\view\tinyxml\tinyxmlerror.cpp
+	"tinyxml.h"
+
+1279967265 source:d:\dzen\project\project_8_08_10\project\view\tinyxml\tinyxmlparser.cpp
+	<ctype.h>
+	<stddef.h>
+	"tinyxml.h"
+	<windows.h>
+
+1280749902 source:d:\dzen\project\project_8_08_10\project\view\tmm\compmanager.cpp
+	"CompManager.h"
+
+1265541189 source:d:\dzen\project\project_8_08_10\project\view\tmm\connector.cpp
+	"Connector.h"
+
+1271507739 source:d:\dzen\project\project_8_08_10\project\view\tmm\force.cpp
+	"Force.h"
+
+1280750173 source:d:\dzen\project\project_8_08_10\project\view\tmm\group.cpp
+	"Group.h"
+	<cmath>
+
+1266970883 source:d:\dzen\project\project_8_08_10\project\view\tmm\groupbuilder.cpp
+	"GroupBuilder.h"
+
+1280856588 source:d:\dzen\project\project_8_08_10\project\view\tmm\groupmanager.cpp
+	"GroupManager.h"
+
+1281272769 source:d:\dzen\project\project_8_08_10\project\view\tmm\groups.cpp
+	"GroupS.h"
+
+1279742932 source:d:\dzen\project\project_8_08_10\project\view\tmm\groupsts.cpp
+	"GroupSTS.h"
+
+1281184374 source:d:\dzen\project\project_8_08_10\project\view\tmm\groupt.cpp
+	"GroupT.h"
+
+1279742949 source:d:\dzen\project\project_8_08_10\project\view\tmm\grouptss.cpp
+	"GroupTSS.h"
+
+1279985260 source:d:\dzen\project\project_8_08_10\project\view\tmm\grouptst.cpp
+	"GroupTST.h"
+
+1280854413 source:d:\dzen\project\project_8_08_10\project\view\tmm\grouptts.cpp
+	"GroupTTS.h"
+
+1280753218 source:d:\dzen\project\project_8_08_10\project\view\tmm\groupttt.cpp
+	"GroupTTT.h"
+
+1266177650 source:d:\dzen\project\project_8_08_10\project\view\tmm\kpair.cpp
+	"KPair.h"
+
+1280114212 source:d:\dzen\project\project_8_08_10\project\view\tmm\sfmlvizualizer.cpp
+	"SFMLVizualizer.h"
+	<SFML/Graphics.hpp>
+
+1266263244 source:d:\dzen\project\project_8_08_10\project\view\tmm\segment.cpp
+	"Segment.h"
+
+1271448499 source:d:\dzen\project\project_8_08_10\project\view\tmm\tf.cpp
+	"TF.h"
+
+1280748542 source:d:\dzen\project\project_8_08_10\project\view\tmm\testmyself.cpp
+	"TestMyself.h"
+
+1267542834 source:d:\dzen\project\project_8_08_10\project\view\tmm\vizualizer.cpp
+	"Vizualizer.h"
+
+1280855710 source:d:\dzen\project\project_8_08_10\project\view\tmm\xmlloader.cpp
+	"XMLLoader.h"
+
+1280856019 source:d:\dzen\project\project_8_08_10\project\view\tmm\xmlsaver.cpp
+	"XMLSaver.h"
+
+1280853991 source:d:\dzen\project\project_8_08_10\project\view\tmm\group2.cpp
+	"Group2.h"
+
+1281815979 source:d:\dzen\project\project\main.cpp
+	<cmath>
+	<sstream>
+	<SFML/graphics.hpp>
+	"tmm/CompManager.h"
+	"tmm/GroupBuilder.h"
+	"tmm/SFMLVizualizer.h"
+	"tmm/Mechan.h"
+	"tmm/XMLLoader.h"
+	"tmm/XMLSaver.h"
+
+1281563938 d:\dzen\project\project\tmm\compmanager.h
+	<string>
+	<map>
+	"TestMyself.h"
+	"Connector.h"
+	"KPair.h"
+	"Segment.h"
+
+1280749418 d:\dzen\project\project\tmm\testmyself.h
+	<iostream>
+	"CompManager.h"
+	"GroupManager.h"
+	"Connector.h"
+	"Force.h"
+	"KPair.h"
+	"Segment.h"
+	"Group.h"
+	"Group1.h"
+	"Group2.h"
+	"GroupS.h"
+	"GroupT.h"
+	"GroupSTS.h"
+	"GroupTSS.h"
+	"GroupTST.h"
+	"GroupTTS.h"
+	"GroupTTT.h"
+
+1281742453 d:\dzen\project\project\tmm\groupmanager.h
+	<list>
+	<map>
+	<set>
+	<vector>
+	<algorithm>
+	"CompManager.h"
+	"GroupBuilder.h"
+	"Group.h"
+
+1281053672 d:\dzen\project\project\tmm\groupbuilder.h
+	"GroupT.h"
+	"GroupS.h"
+	"GroupSTS.h"
+	"GroupTSS.h"
+	"GroupTST.h"
+	"GroupTTS.h"
+	"GroupTTT.h"
+
+1281209986 d:\dzen\project\project\tmm\groupt.h
+	"Group1.h"
+
+1281182427 d:\dzen\project\project\tmm\group1.h
+	"Group.h"
+
+1281176962 d:\dzen\project\project\tmm\group.h
+	"Segment.h"
+	"KPair.h"
+	<string>
+	<math.h>
+	<iostream>
+	<stdio.h>
+
+1281242600 d:\dzen\project\project\tmm\segment.h
+	<list>
+	<string>
+	"Force.h"
+	"Connector.h"
+
+1281175626 d:\dzen\project\project\tmm\force.h
+	<string>
+	"TurnTF.h"
+	"LinearTF.h"
+	"Segment.h"
+	"Connector.h"
+
+1281242108 d:\dzen\project\project\tmm\turntf.h
+	"TF.h"
+
+1281242541 d:\dzen\project\project\tmm\tf.h
+
+1281242875 d:\dzen\project\project\tmm\lineartf.h
+	"TF.h"
+
+1281185274 d:\dzen\project\project\tmm\connector.h
+	"LinearTF.h"
+	"TurnTF.h"
+	"Segment.h"
+
+1281373325 d:\dzen\project\project\tmm\kpair.h
+	"Connector.h"
+
+1281182473 d:\dzen\project\project\tmm\groups.h
+	"Group1.h"
+
+1281272772 d:\dzen\project\project\tmm\groupsts.h
+	"Group2.h"
+
+1281209985 d:\dzen\project\project\tmm\group2.h
+	"Group.h"
+
+1281272773 d:\dzen\project\project\tmm\grouptss.h
+	"Group2.h"
+
+1281272770 d:\dzen\project\project\tmm\grouptst.h
+	"Group2.h"
+
+1281272771 d:\dzen\project\project\tmm\grouptts.h
+	"Group2.h"
+
+1281272771 d:\dzen\project\project\tmm\groupttt.h
+	"Group2.h"
+
+1279947754 d:\dzen\project\project\tmm\sfmlvizualizer.h
+	"Vizualizer.h"
+	<SFML/Graphics.hpp>
+
+1279947754 d:\dzen\project\project\tmm\vizualizer.h
+	"GroupManager.h"
+
+1278764803 d:\dzen\project\project\tmm\mechan.h
+
+1281054542 d:\dzen\project\project\tmm\xmlloader.h
+	<string>
+	"..\tinyxml\tinyxml.h"
+	"CompManager.h"
+	"GroupManager.h"
+
+1280049098 d:\dzen\project\project\tinyxml\tinyxml.h
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<string>
+	<iostream>
+	<sstream>
+	"tinystr.h"
+
+1269288996 d:\dzen\project\project\tinyxml\tinystr.h
+	<assert.h>
+	<string.h>
+
+1281787584 d:\dzen\project\project\tmm\xmlsaver.h
+	<string>
+	"..\tinyxml\tinyxml.h"
+	"CompManager.h"
+	"GroupManager.h"
+
+1269288996 source:d:\dzen\project\project\tinyxml\tinystr.cpp
+	"tinystr.h"
+
+1279985278 source:d:\dzen\project\project\tinyxml\tinyxml.cpp
+	<ctype.h>
+	<sstream>
+	<iostream>
+	"tinyxml.h"
+
+1269288996 source:d:\dzen\project\project\tinyxml\tinyxmlerror.cpp
+	"tinyxml.h"
+
+1279967265 source:d:\dzen\project\project\tinyxml\tinyxmlparser.cpp
+	<ctype.h>
+	<stddef.h>
+	"tinyxml.h"
+	<windows.h>
+
+1281387800 source:d:\dzen\project\project\tmm\compmanager.cpp
+	"CompManager.h"
+
+1265541189 source:d:\dzen\project\project\tmm\connector.cpp
+	"Connector.h"
+
+1271507739 source:d:\dzen\project\project\tmm\force.cpp
+	"Force.h"
+
+1280750173 source:d:\dzen\project\project\tmm\group.cpp
+	"Group.h"
+	<cmath>
+
+1266970883 source:d:\dzen\project\project\tmm\groupbuilder.cpp
+	"GroupBuilder.h"
+
+1280856588 source:d:\dzen\project\project\tmm\groupmanager.cpp
+	"GroupManager.h"
+
+1281272769 source:d:\dzen\project\project\tmm\groups.cpp
+	"GroupS.h"
+
+1279742932 source:d:\dzen\project\project\tmm\groupsts.cpp
+	"GroupSTS.h"
+
+1281184374 source:d:\dzen\project\project\tmm\groupt.cpp
+	"GroupT.h"
+
+1279742949 source:d:\dzen\project\project\tmm\grouptss.cpp
+	"GroupTSS.h"
+
+1279985260 source:d:\dzen\project\project\tmm\grouptst.cpp
+	"GroupTST.h"
+
+1280854413 source:d:\dzen\project\project\tmm\grouptts.cpp
+	"GroupTTS.h"
+
+1280753218 source:d:\dzen\project\project\tmm\groupttt.cpp
+	"GroupTTT.h"
+
+1266177650 source:d:\dzen\project\project\tmm\kpair.cpp
+	"KPair.h"
+
+1280114212 source:d:\dzen\project\project\tmm\sfmlvizualizer.cpp
+	"SFMLVizualizer.h"
+	<SFML/Graphics.hpp>
+
+1266263244 source:d:\dzen\project\project\tmm\segment.cpp
+	"Segment.h"
+
+1271448499 source:d:\dzen\project\project\tmm\tf.cpp
+	"TF.h"
+
+1280748542 source:d:\dzen\project\project\tmm\testmyself.cpp
+	"TestMyself.h"
+
+1267542834 source:d:\dzen\project\project\tmm\vizualizer.cpp
+	"Vizualizer.h"
+
+1280855710 source:d:\dzen\project\project\tmm\xmlloader.cpp
+	"XMLLoader.h"
+
+1280856019 source:d:\dzen\project\project\tmm\xmlsaver.cpp
+	"XMLSaver.h"
+
+1280853991 source:d:\dzen\project\project\tmm\group2.cpp
+	"Group2.h"
+
+1281831966 source:/windows/D/dzen/project/project/main.cpp
+	<cmath>
+	<sstream>
+	<SFML/graphics.hpp>
+	"tmm/CompManager.h"
+	"tmm/GroupBuilder.h"
+	"tmm/SFMLVizualizer.h"
+	"tmm/Mechan.h"
+	"tmm/XMLLoader.h"
+	"tmm/XMLSaver.h"
+
+1281563938 /windows/D/dzen/project/project/tmm/CompManager.h
+	<string>
+	<map>
+	"TestMyself.h"
+	"Connector.h"
+	"KPair.h"
+	"Segment.h"
+
+1280749418 /windows/D/dzen/project/project/tmm/TestMyself.h
+	<iostream>
+	"CompManager.h"
+	"GroupManager.h"
+	"Connector.h"
+	"Force.h"
+	"KPair.h"
+	"Segment.h"
+	"Group.h"
+	"Group1.h"
+	"Group2.h"
+	"GroupS.h"
+	"GroupT.h"
+	"GroupSTS.h"
+	"GroupTSS.h"
+	"GroupTST.h"
+	"GroupTTS.h"
+	"GroupTTT.h"
+
+1281742453 /windows/D/dzen/project/project/tmm/GroupManager.h
+	<list>
+	<map>
+	<set>
+	<vector>
+	<algorithm>
+	"CompManager.h"
+	"GroupBuilder.h"
+	"Group.h"
+
+1281053672 /windows/D/dzen/project/project/tmm/GroupBuilder.h
+	"GroupT.h"
+	"GroupS.h"
+	"GroupSTS.h"
+	"GroupTSS.h"
+	"GroupTST.h"
+	"GroupTTS.h"
+	"GroupTTT.h"
+
+1281209986 /windows/D/dzen/project/project/tmm/GroupT.h
+	"Group1.h"
+
+1281182427 /windows/D/dzen/project/project/tmm/Group1.h
+	"Group.h"
+
+1281176962 /windows/D/dzen/project/project/tmm/Group.h
+	"Segment.h"
+	"KPair.h"
+	<string>
+	<math.h>
+	<iostream>
+	<stdio.h>
+
+1281242600 /windows/D/dzen/project/project/tmm/Segment.h
+	<list>
+	<string>
+	"Force.h"
+	"Connector.h"
+
+1281175626 /windows/D/dzen/project/project/tmm/Force.h
+	<string>
+	"TurnTF.h"
+	"LinearTF.h"
+	"Segment.h"
+	"Connector.h"
+
+1281242108 /windows/D/dzen/project/project/tmm/TurnTF.h
+	"TF.h"
+
+1281242541 /windows/D/dzen/project/project/tmm/TF.h
+
+1281242875 /windows/D/dzen/project/project/tmm/LinearTF.h
+	"TF.h"
+
+1281185274 /windows/D/dzen/project/project/tmm/Connector.h
+	"LinearTF.h"
+	"TurnTF.h"
+	"Segment.h"
+
+1281373325 /windows/D/dzen/project/project/tmm/KPair.h
+	"Connector.h"
+
+1281182473 /windows/D/dzen/project/project/tmm/GroupS.h
+	"Group1.h"
+
+1281272772 /windows/D/dzen/project/project/tmm/GroupSTS.h
+	"Group2.h"
+
+1281209985 /windows/D/dzen/project/project/tmm/Group2.h
+	"Group.h"
+
+1281272773 /windows/D/dzen/project/project/tmm/GroupTSS.h
+	"Group2.h"
+
+1281272770 /windows/D/dzen/project/project/tmm/GroupTST.h
+	"Group2.h"
+
+1281272771 /windows/D/dzen/project/project/tmm/GroupTTS.h
+	"Group2.h"
+
+1281272771 /windows/D/dzen/project/project/tmm/GroupTTT.h
+	"Group2.h"
+
+1279947754 /windows/D/dzen/project/project/tmm/SFMLVizualizer.h
+	"Vizualizer.h"
+	<SFML/Graphics.hpp>
+
+1279947754 /windows/D/dzen/project/project/tmm/Vizualizer.h
+	"GroupManager.h"
+
+1278764803 /windows/D/dzen/project/project/tmm/Mechan.h
+
+1281054542 /windows/D/dzen/project/project/tmm/XMLLoader.h
+	<string>
+	"..\tinyxml\tinyxml.h"
+	"CompManager.h"
+	"GroupManager.h"
+
+1281787584 /windows/D/dzen/project/project/tmm/XMLSaver.h
+	<string>
+	"..\tinyxml\tinyxml.h"
+	"CompManager.h"
+	"GroupManager.h"
+
+1281387800 source:/windows/D/dzen/project/project/tmm/CompManager.cpp
+	"CompManager.h"
+
+1265537589 source:/windows/D/dzen/project/project/tmm/Connector.cpp
+	"Connector.h"
+
+1271507739 source:/windows/D/dzen/project/project/tmm/Force.cpp
+	"Force.h"
+
+1280750173 source:/windows/D/dzen/project/project/tmm/Group.cpp
+	"Group.h"
+	<cmath>
+
+1266967283 source:/windows/D/dzen/project/project/tmm/GroupBuilder.cpp
+	"GroupBuilder.h"
+
+1280856588 source:/windows/D/dzen/project/project/tmm/GroupManager.cpp
+	"GroupManager.h"
+
+1281272769 source:/windows/D/dzen/project/project/tmm/GroupS.cpp
+	"GroupS.h"
+
+1279742932 source:/windows/D/dzen/project/project/tmm/GroupSTS.cpp
+	"GroupSTS.h"
+
+1281184374 source:/windows/D/dzen/project/project/tmm/GroupT.cpp
+	"GroupT.h"
+
+1279742949 source:/windows/D/dzen/project/project/tmm/GroupTSS.cpp
+	"GroupTSS.h"
+
+1279985260 source:/windows/D/dzen/project/project/tmm/GroupTST.cpp
+	"GroupTST.h"
+
+1280854413 source:/windows/D/dzen/project/project/tmm/GroupTTS.cpp
+	"GroupTTS.h"
+
+1280753218 source:/windows/D/dzen/project/project/tmm/GroupTTT.cpp
+	"GroupTTT.h"
+
+1266174050 source:/windows/D/dzen/project/project/tmm/KPair.cpp
+	"KPair.h"
+
+1280114212 source:/windows/D/dzen/project/project/tmm/SFMLVizualizer.cpp
+	"SFMLVizualizer.h"
+	<SFML/Graphics.hpp>
+
+1266259644 source:/windows/D/dzen/project/project/tmm/Segment.cpp
+	"Segment.h"
+
+1271448499 source:/windows/D/dzen/project/project/tmm/TF.cpp
+	"TF.h"
+
+1280748542 source:/windows/D/dzen/project/project/tmm/TestMyself.cpp
+	"TestMyself.h"
+
+1267539234 source:/windows/D/dzen/project/project/tmm/Vizualizer.cpp
+	"Vizualizer.h"
+
+1280855710 source:/windows/D/dzen/project/project/tmm/XMLLoader.cpp
+	"XMLLoader.h"
+
+1280856019 source:/windows/D/dzen/project/project/tmm/XMLSaver.cpp
+	"XMLSaver.h"
+
+1280853991 source:/windows/D/dzen/project/project/tmm/group2.cpp
+	"Group2.h"
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Tmmproject: Исходный файл D:/dzen/project/project/tmm/TestMyself.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Создано системой Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&nbsp;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<h1>D:/dzen/project/project/tmm/TestMyself.h</h1>  </div>
+</div>
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef TESTMYSELF_H_INCLUDED</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define TESTMYSELF_H_INCLUDED</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00005"></a>00005 <span class="keyword">using namespace </span>std;
+<a name="l00006"></a>00006 
+<a name="l00007"></a>00007 <span class="preprocessor">#include &quot;CompManager.h&quot;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &quot;GroupManager.h&quot;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &quot;Connector.h&quot;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &quot;Force.h&quot;</span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &quot;KPair.h&quot;</span>
+<a name="l00012"></a>00012 <span class="preprocessor">#include &quot;Segment.h&quot;</span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;Group.h&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;Group1.h&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;Group2.h&quot;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;GroupS.h&quot;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &quot;GroupT.h&quot;</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#include &quot;GroupSTS.h&quot;</span>
+<a name="l00019"></a>00019 <span class="preprocessor">#include &quot;GroupTSS.h&quot;</span>
+<a name="l00020"></a>00020 <span class="preprocessor">#include &quot;GroupTST.h&quot;</span>
+<a name="l00021"></a>00021 <span class="preprocessor">#include &quot;GroupTTS.h&quot;</span>
+<a name="l00022"></a>00022 <span class="preprocessor">#include &quot;GroupTTT.h&quot;</span>
+<a name="l00023"></a>00023 
+<a name="l00024"></a>00024 <span class="keywordtype">void</span> PrintConnectorInfo(<a class="code" href="struct_connector.html" title="коннектор.">Connector</a> *c, <span class="keywordtype">bool</span> extended = <span class="keyword">true</span>, <span class="keywordtype">int</span> level = 0);
+<a name="l00025"></a>00025 <span class="keywordtype">void</span> PrintSegmentInfo(<a class="code" href="class_segment.html" title="звено.">Segment</a> *s, <span class="keywordtype">bool</span> extended = <span class="keyword">true</span>, <span class="keywordtype">int</span> level = 0);
+<a name="l00026"></a>00026 <span class="keywordtype">void</span> PrintKPInfo(<a class="code" href="class_k_pair.html" title="класс для описания КП.">KPair</a> *K, <span class="keywordtype">bool</span> extended = <span class="keyword">true</span>, <span class="keywordtype">int</span> level = 0);
+<a name="l00027"></a>00027 <span class="keywordtype">void</span> PrintForceInfo(<a class="code" href="class_force.html">Force</a> *f, <span class="keywordtype">bool</span> extended = <span class="keyword">true</span>, <span class="keywordtype">int</span> level = 0);
+<a name="l00028"></a>00028 <span class="keywordtype">void</span> PrintGroupInfo(<a class="code" href="class_group.html" title="Класс родитель для групп Ассура.">Group</a> *g, <span class="keywordtype">bool</span> extended = <span class="keyword">true</span>, <span class="keywordtype">int</span> level = 0);
+<a name="l00029"></a>00029 
+<a name="l00030"></a>00030 <span class="keyword">class </span><a class="code" href="class_comp_manager.html" title="Менеджер компонентов.">CompManager</a>;
+<a name="l00031"></a>00031 <span class="keyword">class </span><a class="code" href="class_group_manager.html" title="Класс для управления группами.">GroupManager</a>;
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033 <span class="keywordtype">void</span> PrintCompManagerInfo(<a class="code" href="class_comp_manager.html" title="Менеджер компонентов.">CompManager</a> *cm, <span class="keywordtype">int</span> level = 0);
+<a name="l00034"></a>00034 <span class="keywordtype">void</span> PrintGroupsInfo(<a class="code" href="class_group_manager.html" title="Класс для управления группами.">GroupManager</a> &amp;gm);
+<a name="l00035"></a>00035 
+<a name="l00036"></a>00036 <span class="preprocessor">#endif // TESTMYSELF_H_INCLUDED</span>
+</pre></div></div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Переменные</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Документация по Tmmproject. Последние изменения: Thu Sep 9 2010 01:42:32. Создано системой&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

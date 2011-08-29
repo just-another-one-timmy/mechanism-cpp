@@ -1,0 +1,131 @@
+\hypertarget{class_k_p_sliding}{
+\section{Класс KPSliding}
+\label{class_k_p_sliding}\index{KPSliding@{KPSliding}}
+}
+
+
+класс КПП.  
+
+
+
+
+{\ttfamily \#include $<$KPair.h$>$}
+
+
+
+Граф наследования:KPSliding:
+% FIG 0
+
+
+Граф связей класса KPSliding:
+% FIG 1
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+virtual KPAIR\_\-TYPE \hyperlink{class_k_p_sliding_abc8a7db0983bf9b9b5c525ab5682b531}{Type} ()
+\item 
+virtual \hyperlink{struct_connector}{Connector} $\ast$ \hyperlink{class_k_p_sliding_a45568125f197b4d80047760b69e46bbe}{GetC1} ()
+\item 
+virtual \hyperlink{struct_connector}{Connector} $\ast$ \hyperlink{class_k_p_sliding_a249d6c9c05c78ed47e5a3ef2a133a3e9}{GetC2} ()
+\item 
+\hyperlink{class_k_p_sliding_a3e8f5e46618137ee3b45249bebcea51a}{KPSliding} (string \hyperlink{class_k_pair_ae2868cc85dce1139586a5a60eab22400}{name}, \hyperlink{struct_connector_sliding}{ConnectorSliding} $\ast$\hyperlink{class_k_p_sliding_ad6bc7cae8c3b668341911454f17c9a0d}{c1}, \hyperlink{struct_connector_sliding}{ConnectorSliding} $\ast$\hyperlink{class_k_p_sliding_a6f65155b81a19bc4e21a3dd4dee6e6db}{c2})
+\begin{DoxyCompactList}\small\item\em ПФ угола наклона оси. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_k_p_sliding_ad6bc7cae8c3b668341911454f17c9a0d}{
+\hyperlink{struct_connector_sliding}{ConnectorSliding} $\ast$ \hyperlink{class_k_p_sliding_ad6bc7cae8c3b668341911454f17c9a0d}{c1}}
+\label{class_k_p_sliding_ad6bc7cae8c3b668341911454f17c9a0d}
+
+\begin{DoxyCompactList}\small\item\em первый коннектор. \item\end{DoxyCompactList}\item 
+\hypertarget{class_k_p_sliding_a6f65155b81a19bc4e21a3dd4dee6e6db}{
+\hyperlink{struct_connector_sliding}{ConnectorSliding} $\ast$ \hyperlink{class_k_p_sliding_a6f65155b81a19bc4e21a3dd4dee6e6db}{c2}}
+\label{class_k_p_sliding_a6f65155b81a19bc4e21a3dd4dee6e6db}
+
+\begin{DoxyCompactList}\small\item\em второй коннектор. \item\end{DoxyCompactList}\item 
+\hypertarget{class_k_p_sliding_a01e5013755146095c0607ed7ae2e7f1d}{
+\hyperlink{struct_turn_t_f}{TurnTF} \hyperlink{class_k_p_sliding_a01e5013755146095c0607ed7ae2e7f1d}{angle}}
+\label{class_k_p_sliding_a01e5013755146095c0607ed7ae2e7f1d}
+
+\begin{DoxyCompactList}\small\item\em ПФ угола наклона оси. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+класс КПП. 
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_k_p_sliding_a3e8f5e46618137ee3b45249bebcea51a}{
+\index{KPSliding@{KPSliding}!KPSliding@{KPSliding}}
+\index{KPSliding@{KPSliding}!KPSliding@{KPSliding}}
+\subsubsection[{KPSliding}]{\setlength{\rightskip}{0pt plus 5cm}KPSliding::KPSliding (
+\begin{DoxyParamCaption}
+\item[{string}]{ name, }
+\item[{{\bf ConnectorSliding} $\ast$}]{ c1, }
+\item[{{\bf ConnectorSliding} $\ast$}]{ c2}
+\end{DoxyParamCaption}
+)}}
+\label{class_k_p_sliding_a3e8f5e46618137ee3b45249bebcea51a}
+
+
+ПФ угола наклона оси. 
+
+
+\begin{DoxyParams}{Аргументы}
+\item[{\em name}]имя \item[{\em c1}]указатель на коннектор \item[{\em c2}]указатель на коннектор \end{DoxyParams}
+
+
+\subsection{Методы}
+\hypertarget{class_k_p_sliding_a45568125f197b4d80047760b69e46bbe}{
+\index{KPSliding@{KPSliding}!GetC1@{GetC1}}
+\index{GetC1@{GetC1}!KPSliding@{KPSliding}}
+\subsubsection[{GetC1}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Connector}$\ast$ KPSliding::GetC1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_k_p_sliding_a45568125f197b4d80047760b69e46bbe}
+\begin{DoxyReturn}{Возвращает}
+первый коннектор 
+\end{DoxyReturn}
+
+
+Замещает \hyperlink{class_k_pair_a7b3efb4bf1ee83454b2cac85b3bae2ec}{KPair}.
+
+\hypertarget{class_k_p_sliding_a249d6c9c05c78ed47e5a3ef2a133a3e9}{
+\index{KPSliding@{KPSliding}!GetC2@{GetC2}}
+\index{GetC2@{GetC2}!KPSliding@{KPSliding}}
+\subsubsection[{GetC2}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Connector}$\ast$ KPSliding::GetC2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_k_p_sliding_a249d6c9c05c78ed47e5a3ef2a133a3e9}
+\begin{DoxyReturn}{Возвращает}
+второй коннектор 
+\end{DoxyReturn}
+
+
+Замещает \hyperlink{class_k_pair_af509813d22d38fcfad3266a9c78c94e7}{KPair}.
+
+\hypertarget{class_k_p_sliding_abc8a7db0983bf9b9b5c525ab5682b531}{
+\index{KPSliding@{KPSliding}!Type@{Type}}
+\index{Type@{Type}!KPSliding@{KPSliding}}
+\subsubsection[{Type}]{\setlength{\rightskip}{0pt plus 5cm}KPAIR\_\-TYPE KPSliding::Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{class_k_p_sliding_abc8a7db0983bf9b9b5c525ab5682b531}
+\begin{DoxyReturn}{Возвращает}
+тип КП 
+\end{DoxyReturn}
+
+
+Замещает \hyperlink{class_k_pair_a49bd9e2395097a4526cb0798892b0bb4}{KPair}.
+
+
+
+Объявления и описания членов классов находятся в файлах:\begin{DoxyCompactItemize}
+\item 
+D:/dzen/project/project/tmm/KPair.h\item 
+D:/dzen/project/project/tmm/KPair.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,1061 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Tmmproject: Класс CompManager</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Создано системой Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&nbsp;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&nbsp;указатель&nbsp;классов</span></a></li>
+      <li><a href="hierarchy.html"><span>Иерархия&nbsp;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&nbsp;классов</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#friends">Друзья</a>  </div>
+  <div class="headertitle">
+<h1>Класс CompManager</h1>  </div>
+</div>
+<div class="contents">
+<!-- doxytag: class="CompManager" -->
+<p>Менеджер компонентов.  
+<a href="#_details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_comp_manager_8h_source.html">CompManager.h</a>&gt;</code></p>
+
+<p><a href="class_comp_manager-members.html">Полный список членов класса</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_segment.html">Segment</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comp_manager.html#a7ecbf9a15c3fc964ab7d6ab4024f25ac">AddSegment</a> (string name, double mass=1000, double rot_inertia=1000)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Добавляет сегмент.  <a href="#a7ecbf9a15c3fc964ab7d6ab4024f25ac"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comp_manager.html#ab8b0643ca8728557894ab34f47e47ae9">DelSegment</a> (string name)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Удаляет сегмент.  <a href="#ab8b0643ca8728557894ab34f47e47ae9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_segment.html">Segment</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comp_manager.html#a27e3139830fad4ef9585d614cafadfe4">GetSegment</a> (string name)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ищет сегмент по имени.  <a href="#a27e3139830fad4ef9585d614cafadfe4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_connector.html">Connector</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comp_manager.html#a912b25c0acff2591015e958bedd1d159">AddCMass</a> (string seg_name, double ro, double phi)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Добавляет центр масс для данного сегмента.  <a href="#a912b25c0acff2591015e958bedd1d159"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_k_pair.html">KPair</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comp_manager.html#ad772ce1d11dc2e636f02cf9b56cf90fb">AddKPTurn</a> (string name, string c1name, string c2name)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Добавляет кинематическую пару вращательного типа.  <a href="#ad772ce1d11dc2e636f02cf9b56cf90fb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_k_pair.html">KPair</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comp_manager.html#a4686577f86845ea8df4f3b2682782fac">AddKPSliding</a> (string name, string c1name, string c2name)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Добавляет кинематическую пару поступательного типа.  <a href="#a4686577f86845ea8df4f3b2682782fac"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_k_pair.html">KPair</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comp_manager.html#a339db4176aa621f6ee5571ac0b26635a">GetKPair</a> (string name)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ищет КП по имени.  <a href="#a339db4176aa621f6ee5571ac0b26635a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comp_manager.html#acf9a726c050661051e19eca9b6a7d51d">DelKPair</a> (string name)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Удаляет КП по имени.  <a href="#acf9a726c050661051e19eca9b6a7d51d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_connector.html">Connector</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comp_manager.html#a11f96f8ae164686d883b92605e3601d5">AddConnectorTurn</a> (string name, string segment_name, double ro, double phi)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Добавляет вращательный коннектор.  <a href="#a11f96f8ae164686d883b92605e3601d5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_connector.html">Connector</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comp_manager.html#a1cf12ded84bf7d17ebbd4c042971133a">AddConnectorSliding</a> (string name, string segment_name, double ro, double phi, double alpha)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Добавляет поступательный коннектор.  <a href="#a1cf12ded84bf7d17ebbd4c042971133a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_connector.html">Connector</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comp_manager.html#ab780d475031982a4f8630fbcae3f36f5">AddConnectorTurnD</a> (string name, string segment_name, double x, double y)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Добавляет вращательный коннектор.  <a href="#ab780d475031982a4f8630fbcae3f36f5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_connector.html">Connector</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comp_manager.html#a26f530dc0ce0747bad73f7c25f4aaa8e">AddConnectorSlidingD</a> (string name, string segment_name, double x, double y, double alpha)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Добавляет поступательный коннектор.  <a href="#a26f530dc0ce0747bad73f7c25f4aaa8e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_connector.html">Connector</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comp_manager.html#a7c71c8cd9c3d554bdad12e20e1fe5385">GetConnector</a> (string name)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ищет коннектор по имени.  <a href="#a7c71c8cd9c3d554bdad12e20e1fe5385"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comp_manager.html#a94587a431d85adb01d8cf016f115f32a">DelConnector</a> (string name)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Удаляет коннектор по имени.  <a href="#a94587a431d85adb01d8cf016f115f32a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_force.html">Force</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comp_manager.html#ae0d3f85a00d2413d78a7379592515266">AddTechnoForce</a> (string name, string con_name, double fx, double fy, double torque)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Добавляет силу с нужными параметрами.  <a href="#ae0d3f85a00d2413d78a7379592515266"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_force.html">Force</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comp_manager.html#a3fb340abc60404300b573ecbd3194e48">GetForce</a> (string name)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ищет силу по имени.  <a href="#a3fb340abc60404300b573ecbd3194e48"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comp_manager.html#a9029ca9d910c0a768cde3ba354d8b2cc">DelTechnoForce</a> (string name)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Удаляет силу по имени.  <a href="#a9029ca9d910c0a768cde3ba354d8b2cc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comp_manager.html#a1ed6c3cf414fd38d18193457c01a59e8">UnsetCalculated</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Сбросить флаги "Вычислено".  <a href="#a1ed6c3cf414fd38d18193457c01a59e8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comp_manager.html#a028278fd6a765ccd63b7b8f2596b501f">~CompManager</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Деструктор механизма.  <a href="#a028278fd6a765ccd63b7b8f2596b501f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const map&lt; string, <a class="el" href="class_segment.html">Segment</a> * &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comp_manager.html#ad06433257a643f6c256d0f5d6a886266">GetSegments</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Возвращает АМ сегментов.  <a href="#ad06433257a643f6c256d0f5d6a886266"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const map&lt; string, <a class="el" href="class_k_pair.html">KPair</a> * &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comp_manager.html#a8f9c981e2d449679b7c2e41d6904d6f0">GetKPairs</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Возвращает АМ КП.  <a href="#a8f9c981e2d449679b7c2e41d6904d6f0"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="friends"></a>
+Друзья</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b39947aaeec9f8319012e66f7469bcf"></a><!-- doxytag: member="CompManager::PrintCompManagerInfo" ref="a6b39947aaeec9f8319012e66f7469bcf" args="(CompManager *cm, int level)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><b>PrintCompManagerInfo</b> (<a class="el" href="class_comp_manager.html">CompManager</a> *cm, int level)</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Подробное описание</h2>
+<p>Менеджер компонентов. </p>
+<p>Класс нужен для более удобного управления составляющими механизма. Пользователю можно не объявлять все переменные самому, достаточно вызвать нужные методы этого класса.</p>
+<p>В целом, класс позволяет добавлять:</p>
+<ul>
+<li>именованые сегменты</li>
+<li>именованые коннекторы (с указанием имени сегмента, на который нужно добавить коннектор)</li>
+<li>именованые кинематические пары (с указанием имён коннекторов, с которыми нужно связать КП)</li>
+<li>именованые силы (с указанием коннектора, который будет являться точкой приложения силы)</li>
+</ul>
+<dl class="author"><dt><b>Автор:</b></dt><dd>jtim </dd></dl>
+<hr/><h2>Конструктор(ы)</h2>
+<a class="anchor" id="a028278fd6a765ccd63b7b8f2596b501f"></a><!-- doxytag: member="CompManager::~CompManager" ref="a028278fd6a765ccd63b7b8f2596b501f" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CompManager::~CompManager </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Деструктор механизма. </p>
+<ol>
+<li>
+Для каждого звена - удаляет его коннекторы, а потом само звено (вызывает деструкторы) </li>
+<li>
+Удаляет все оставшиеся коннекторы (вызывая деструктор) </li>
+<li>
+Удаляет все КП (вызывая деструктор) </li>
+<li>
+Очищает внутренние АМ звеньев, коннекторов, КП и сил </li>
+</ol>
+
+</div>
+</div>
+<hr/><h2>Методы</h2>
+<a class="anchor" id="a912b25c0acff2591015e958bedd1d159"></a><!-- doxytag: member="CompManager::AddCMass" ref="a912b25c0acff2591015e958bedd1d159" args="(string seg_name, double ro, double phi)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_connector.html">Connector</a> * CompManager::AddCMass </td>
+          <td>(</td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>seg_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>ro</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>phi</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Добавляет центр масс для данного сегмента. </p>
+<p>Более детально, метод делает следующее: </p>
+<ol>
+<li>
+Создает новый <a class="el" href="struct_connector_turn.html" title="вращательный коннектор.">ConnectorTurn</a> с именем seg_name+"cS", сохраняет указатель на него во внутреннем АМ коннекторов механизма </li>
+<li>
+Ищет сегмент с именем seg_name, присваивает его полю cmass указатель на созданный коннектор </li>
+<li>
+Создает <a class="el" href="struct_linear_t_f.html" title="Структура для хранения линейных ПФ.">LinearTF</a> и записывает указатель на него в поле linear созданного коннектора </li>
+<li>
+Создает новую силу гравитационного типа с именем "G_"+seg_name, равную силе mg (сила тяжести) для данного сегмента </li>
+<li>
+Добавляет созданную силу во внутренний АМ механизма </li>
+<li>
+Свойству linear данной силы присваивает linear коннектора, созданного в п1. </li>
+</ol>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>seg_name</em>&nbsp;</td><td>Имя сегмента, для которого создается ЦМ </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>ro,phi</em>&nbsp;</td><td>Координаты ЦМ в полярной системе </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Возвращает:</b></dt><dd>Указатель на коннектор, созданный в качестве ЦМ </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1cf12ded84bf7d17ebbd4c042971133a"></a><!-- doxytag: member="CompManager::AddConnectorSliding" ref="a1cf12ded84bf7d17ebbd4c042971133a" args="(string name, string segment_name, double ro, double phi, double alpha)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_connector.html">Connector</a> * CompManager::AddConnectorSliding </td>
+          <td>(</td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>segment_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>ro</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>phi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>alpha</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Добавляет поступательный коннектор. </p>
+<p>Происходит следующее: </p>
+<ol>
+<li>
+Создается новый коннектор </li>
+<li>
+Ему присваивается имя </li>
+<li>
+Ищется нужный сегмент, указатель на коннектор добавляется в список сегмента </li>
+<li>
+Коннектор добавляется во внутренний АМ механизма </li>
+<li>
+Устанавливаются свойства коннектора </li>
+<li>
+Для коннектора создается новый <a class="el" href="struct_linear_t_f.html" title="Структура для хранения линейных ПФ.">LinearTF</a> </li>
+</ol>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>Имя, которое будет присвоено коннектору </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>segment_name</em>&nbsp;</td><td>Имя звена, на котором будет размещен коннектор </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>ro,phi</em>&nbsp;</td><td>Координаты коннектора в полярной системе </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>alpha</em>&nbsp;</td><td>??????????????????????????????????????????? </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Возвращает:</b></dt><dd>Указатель на созданный коннектор </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000010">Ошибка:</a></b></dt><dd>Нет проверок, был ли такой сегмент в механизме и не было ли такого коннектора в механизме </dd></dl>
+<dl class="warning"><dt><b>Предупреждения:</b></dt><dd>Я не знаю, что делает параметр alpha </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a26f530dc0ce0747bad73f7c25f4aaa8e"></a><!-- doxytag: member="CompManager::AddConnectorSlidingD" ref="a26f530dc0ce0747bad73f7c25f4aaa8e" args="(string name, string segment_name, double x, double y, double alpha)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_connector.html">Connector</a> * CompManager::AddConnectorSlidingD </td>
+          <td>(</td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>segment_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>alpha</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Добавляет поступательный коннектор. </p>
+<p>Обертка для метода AddConnectorSliding, но сюда передаются координаты в декартовой системе. </p>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>Имя, которое будет присвоено коннектору </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>segment_name</em>&nbsp;</td><td>Имя звена, на котором будет размещен коннектор </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x,y</em>&nbsp;</td><td>Координаты коннектора в декартовой системе </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Возвращает:</b></dt><dd>Указатель на созданный коннектор </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a11f96f8ae164686d883b92605e3601d5"></a><!-- doxytag: member="CompManager::AddConnectorTurn" ref="a11f96f8ae164686d883b92605e3601d5" args="(string name, string segment_name, double ro, double phi)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_connector.html">Connector</a> * CompManager::AddConnectorTurn </td>
+          <td>(</td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>segment_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>ro</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>phi</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Добавляет вращательный коннектор. </p>
+<p>Происходит следующее: </p>
+<ol>
+<li>
+Создается новый коннектор </li>
+<li>
+Ему присваивается имя </li>
+<li>
+Ищется нужный сегмент, указатель на коннектор добавляется в список сегмента </li>
+<li>
+Коннектор добавляется во внутренний АМ механизма </li>
+<li>
+Устанавливаются свойства коннектора </li>
+</ol>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>Имя, которое будет присвоено коннектору </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>segment_name</em>&nbsp;</td><td>Имя звена, на котором будет размещен коннектор </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>ro,phi</em>&nbsp;</td><td>Координаты коннектора в полярной системе </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Возвращает:</b></dt><dd>Указатель на созданный коннектор </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000009">Ошибка:</a></b></dt><dd>Нет проверок, был ли такой сегмент в механизме и не было ли такого коннектора в механизме </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab780d475031982a4f8630fbcae3f36f5"></a><!-- doxytag: member="CompManager::AddConnectorTurnD" ref="ab780d475031982a4f8630fbcae3f36f5" args="(string name, string segment_name, double x, double y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_connector.html">Connector</a> * CompManager::AddConnectorTurnD </td>
+          <td>(</td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>segment_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>y</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Добавляет вращательный коннектор. </p>
+<p>Обертка для метода AddConnectorTurn, но сюда передаются координаты в декартовой системе. </p>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>Имя, которое будет присвоено коннектору </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>segment_name</em>&nbsp;</td><td>Имя звена, на котором будет размещен коннектор </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x,y</em>&nbsp;</td><td>Координаты коннектора в декартовой системе </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Возвращает:</b></dt><dd>Указатель на созданный коннектор </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4686577f86845ea8df4f3b2682782fac"></a><!-- doxytag: member="CompManager::AddKPSliding" ref="a4686577f86845ea8df4f3b2682782fac" args="(string name, string c1name, string c2name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_k_pair.html">KPair</a> * CompManager::AddKPSliding </td>
+          <td>(</td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>c1name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>c2name</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Добавляет кинематическую пару поступательного типа. </p>
+<p>Метод выполняет следующее: </p>
+<ol>
+<li>
+Создает КП поступательного типа </li>
+<li>
+Связывает ее с коннекторами c1name, c2name </li>
+<li>
+Помещает КП во внутренний АМ механизма </li>
+<li>
+Помещает силы реакции, созданные в конструкторе КП, во внутренний АМ механизма </li>
+</ol>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>Имя, которое будет присвоено КП </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>c1name</em>&nbsp;</td><td>Имя первого коннектора </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>c2name</em>&nbsp;</td><td>Имя второго коннектора </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Возвращает:</b></dt><dd>Указатель на созданную КП </dd></dl>
+<dl><dt><b>Исключения:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>AddKPSliding: i1-&gt;second-&gt;Type() != CONNECTOR_TYPE_SLIDING</em>&nbsp;</td><td>В случае неподходящего типа первого коннетора. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>AddKPSliding: i2-&gt;second-&gt;Type() != CONNECTOR_TYPE_SLIDING</em>&nbsp;</td><td>В случае неподходящего типа второго коннетора. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000006">Ошибка:</a></b></dt><dd>Не проверяется, действительно ли есть такие коннекторы в механизме </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad772ce1d11dc2e636f02cf9b56cf90fb"></a><!-- doxytag: member="CompManager::AddKPTurn" ref="ad772ce1d11dc2e636f02cf9b56cf90fb" args="(string name, string c1name, string c2name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_k_pair.html">KPair</a> * CompManager::AddKPTurn </td>
+          <td>(</td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>c1name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>c2name</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Добавляет кинематическую пару вращательного типа. </p>
+<p>Метод выполняет следующее: </p>
+<ol>
+<li>
+Создает КП поступательного типа </li>
+<li>
+Связывает ее с коннекторами c1name, c2name </li>
+<li>
+Помещает КП во внутренний АМ механизма </li>
+<li>
+Помещает силы реакции, созданные в конструкторе КП, во внутренний АМ механизма </li>
+</ol>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>Имя, которое будет присвоено КП </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>c1name</em>&nbsp;</td><td>Имя первого коннектора </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>c2name</em>&nbsp;</td><td>Имя второго коннектора </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Возвращает:</b></dt><dd>Указатель на созданную КП </dd></dl>
+<dl><dt><b>Исключения:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>AddKPTurn: i1-&gt;second-&gt;Type() != CONNECTOR_TYPE_TURN</em>&nbsp;</td><td>В случае неподходящего типа первого коннетора. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>AddKPTurn: i2-&gt;second-&gt;Type() != CONNECTOR_TYPE_TURN</em>&nbsp;</td><td>В случае неподходящего типа второго коннетора. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000005">Ошибка:</a></b></dt><dd>Не проверяется, действительно ли есть такие коннекторы в механизме </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7ecbf9a15c3fc964ab7d6ab4024f25ac"></a><!-- doxytag: member="CompManager::AddSegment" ref="a7ecbf9a15c3fc964ab7d6ab4024f25ac" args="(string name, double mass=1000, double rot_inertia=1000)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_segment.html">Segment</a> * CompManager::AddSegment </td>
+          <td>(</td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>mass</em> = <code>1000</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>rot_inertia</em> = <code>1000</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Добавляет сегмент. </p>
+<p>Метод делает в точности следующее: </p>
+<ol>
+<li>
+Выделяет память для нового сегмента и создает его </li>
+<li>
+Инициализирует поля созданного сегмента </li>
+<li>
+Добавляет сегмент во внутренний АМ сегментов (private) механизма </li>
+<li>
+Создает новый коннектор с именем "имя_сегмента+cP" (без кавычек) и делает его полюсом сегмента (т.е. в polus записывает указатель на новосозданный коннектор </li>
+<li>
+Создает новый <a class="el" href="struct_linear_t_f.html" title="Структура для хранения линейных ПФ.">LinearTF</a> и записывает указатель на него в linear </li>
+</ol>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>Имя создаваемого сегмента </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>mass</em>&nbsp;</td><td>Масса сегмента </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>rot_inertia</em>&nbsp;</td><td>Вращательный момент </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Возвращает:</b></dt><dd>Указатель на созданный сегмент </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000002">Ошибка:</a></b></dt><dd>Нет проверки, был ли уже сегмент с таким именем. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae0d3f85a00d2413d78a7379592515266"></a><!-- doxytag: member="CompManager::AddTechnoForce" ref="ae0d3f85a00d2413d78a7379592515266" args="(string name, string con_name, double fx, double fy, double torque)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_force.html">Force</a> * CompManager::AddTechnoForce </td>
+          <td>(</td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>con_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>fx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>fy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>torque</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Добавляет силу с нужными параметрами. </p>
+<ol>
+<li>
+Ищет коннектор с именем con_name </li>
+<li>
+Проверяет тип коннектора, если не CONNECTOR_TYPE_TURNING - исключение </li>
+<li>
+Создает новую силу с нужными параметрами, тип силы - FORCE_TYPE_TECHNO </li>
+<li>
+Добавляет силу во внутренний АМ механизма </li>
+<li>
+Делает это: f-&gt;linear = ct-&gt;linear; f-&gt;turn = &amp;(s-&gt;turn); </li>
+</ol>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>Имя силы, которая будет создана </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>con_name</em>&nbsp;</td><td>Имя коннектора, к которому будет приложена сила </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>fx,fy</em>&nbsp;</td><td>Проекции вектора силы на оси координат </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>torque</em>&nbsp;</td><td>Вращательный момент (??? точно?) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Возвращает:</b></dt><dd>Указатель на созданную силу </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000013">Ошибка:</a></b></dt><dd>Не проверяется, был ли коннектор с именем con_name, не было ли силы с именем name <dl><dt><b>Исключения:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>Force * CompManager::AddTechnoForce: c-&gt;Type() != CONNECTOR_TYPE_TURN</em>&nbsp;</td><td>Если тип коннектора не CONNECTOR_TYPE_TURN </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a94587a431d85adb01d8cf016f115f32a"></a><!-- doxytag: member="CompManager::DelConnector" ref="a94587a431d85adb01d8cf016f115f32a" args="(string name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CompManager::DelConnector </td>
+          <td>(</td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>name</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Удаляет коннектор по имени. </p>
+<ol>
+<li>
+Ищет коннектор с таким именем во внутреннем АМ механизма </li>
+<li>
+Удаляет коннектор из списка сегмента (в коннекторе есть указатель на сегмент, содеержащий этот коннектор) </li>
+<li>
+Удаляет коннектор из внутреннего АМ механизма </li>
+<li>
+Вызывает деструктор коннектора </li>
+</ol>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>Имя коннектора, который надо удалить </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000012">Ошибка:</a></b></dt><dd>Если коннектора с таким именем нет, то будет плохо </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acf9a726c050661051e19eca9b6a7d51d"></a><!-- doxytag: member="CompManager::DelKPair" ref="acf9a726c050661051e19eca9b6a7d51d" args="(string name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CompManager::DelKPair </td>
+          <td>(</td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>name</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Удаляет КП по имени. </p>
+<p>Удаляет КП из внутреннего АМ механизма, вызывает деструктор КП </p>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>Имя удаляемой КП </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000008">Ошибка:</a></b></dt><dd>Нет проверки, была ли такая КП в механизме </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab8b0643ca8728557894ab34f47e47ae9"></a><!-- doxytag: member="CompManager::DelSegment" ref="ab8b0643ca8728557894ab34f47e47ae9" args="(string name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CompManager::DelSegment </td>
+          <td>(</td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>name</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Удаляет сегмент. </p>
+<p>Метод делает следующее: </p>
+<ol>
+<li>
+Ищет данный сегмент по имени во внутреннем АМ механизма </li>
+<li>
+Проходится по списку коннекторов данного сегмента и удаляет их из списка коннекторов механизма </li>
+<li>
+Удаляет сегмент (освобождает память) </li>
+<li>
+Удаляет указатель на сегмент из списка сегментов механизма </li>
+</ol>
+<p>Важно заметить, что освобождение памяти, выделенной для коннекторов, происходит в деструкторе сегмента. Поэтому в данном методе всего лишь удаляются элементы списка коннекторов механизма (указатели). </p>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>Имя удаляемого сегмента </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000003">Ошибка:</a></b></dt><dd>Нет проверки, был ли в механизме сегмент с таким именем. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9029ca9d910c0a768cde3ba354d8b2cc"></a><!-- doxytag: member="CompManager::DelTechnoForce" ref="a9029ca9d910c0a768cde3ba354d8b2cc" args="(string name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CompManager::DelTechnoForce </td>
+          <td>(</td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>name</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Удаляет силу по имени. </p>
+<ol>
+<li>
+Ищет силу в списке сил механизма </li>
+<li>
+Сила приложена к коннектору, коннектор лежит на звене. Сила добавлялась в список сил звена. Сейчас она оттуда удаляется. </li>
+<li>
+Сила удаляется из внутреннего АМ механизма </li>
+<li>
+Вызывается деструктор </li>
+</ol>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>Имя силы, которую нужно удалить </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000015">Ошибка:</a></b></dt><dd>Не проверяется, была ли такая сила в механизме. Не проверяется, был ли тип силы FORCE_TYPE_TECHNO </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7c71c8cd9c3d554bdad12e20e1fe5385"></a><!-- doxytag: member="CompManager::GetConnector" ref="a7c71c8cd9c3d554bdad12e20e1fe5385" args="(string name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_connector.html">Connector</a> * CompManager::GetConnector </td>
+          <td>(</td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>name</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Ищет коннектор по имени. </p>
+<p>Ищет коннектор во внутреннем АМ механизма по имени. </p>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>Имя коннектора, который нужно найти </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Возвращает:</b></dt><dd>Указатель на коннектор с именем name </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000011">Ошибка:</a></b></dt><dd>Если коннектора с таким именем нет, то будет плохо </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3fb340abc60404300b573ecbd3194e48"></a><!-- doxytag: member="CompManager::GetForce" ref="a3fb340abc60404300b573ecbd3194e48" args="(string name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_force.html">Force</a> * CompManager::GetForce </td>
+          <td>(</td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>name</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Ищет силу по имени. </p>
+<p>Ищет силу по имени во внутреннем АМ механизма </p>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>Имя силы, которую нужно найти </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Возвращает:</b></dt><dd>Указатель на найденную силу </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000014">Ошибка:</a></b></dt><dd>Если силы с таким именем нет, будет плохо </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a339db4176aa621f6ee5571ac0b26635a"></a><!-- doxytag: member="CompManager::GetKPair" ref="a339db4176aa621f6ee5571ac0b26635a" args="(string name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_k_pair.html">KPair</a> * CompManager::GetKPair </td>
+          <td>(</td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>name</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Ищет КП по имени. </p>
+<p>Ищет КП по имени во внутреннем АМ механизме </p>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>Имя КП </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Возвращает:</b></dt><dd>Указатель на найденную КП </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000007">Ошибка:</a></b></dt><dd>Не проверяется, есть ли такая КП во внутреннем АМ механизма </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8f9c981e2d449679b7c2e41d6904d6f0"></a><!-- doxytag: member="CompManager::GetKPairs" ref="a8f9c981e2d449679b7c2e41d6904d6f0" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const map&lt; string, <a class="el" href="class_k_pair.html">KPair</a> * &gt; CompManager::GetKPairs </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Возвращает АМ КП. </p>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000017">Ошибка:</a></b></dt><dd>У пользователя есть возможность удалить КП, узнав её указатель с помощью этого АМ. Будет плохо. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a27e3139830fad4ef9585d614cafadfe4"></a><!-- doxytag: member="CompManager::GetSegment" ref="a27e3139830fad4ef9585d614cafadfe4" args="(string name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_segment.html">Segment</a> * CompManager::GetSegment </td>
+          <td>(</td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>name</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Ищет сегмент по имени. </p>
+<p>Ищет сегмент с нужным именем во внутреннем АМ механизма </p>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>Имя сегмента для поиска </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Возвращает:</b></dt><dd>Указатель на сегмент с именем name </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000004">Ошибка:</a></b></dt><dd>Нет проверки, был ли в механизме сегмент с таким именем. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad06433257a643f6c256d0f5d6a886266"></a><!-- doxytag: member="CompManager::GetSegments" ref="ad06433257a643f6c256d0f5d6a886266" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const map&lt; string, <a class="el" href="class_segment.html">Segment</a> * &gt; CompManager::GetSegments </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Возвращает АМ сегментов. </p>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000016">Ошибка:</a></b></dt><dd>У пользователя есть возможность удалить сегмент, узнав его указатель с помощью этого АМ. Будет плохо. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1ed6c3cf414fd38d18193457c01a59e8"></a><!-- doxytag: member="CompManager::UnsetCalculated" ref="a1ed6c3cf414fd38d18193457c01a59e8" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CompManager::UnsetCalculated </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Сбросить флаги "Вычислено". </p>
+<p>Проходит по всем силам и коннекторам механизма, ставит им флаг calculated в false. Это нужно делать перед тем, как вызывать процедуру просчета механизма. </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>D:/dzen/project/project/tmm/<a class="el" href="_comp_manager_8h_source.html">CompManager.h</a></li>
+<li>D:/dzen/project/project/tmm/CompManager.cpp</li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Переменные</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Документация по Tmmproject. Последние изменения: Thu Sep 9 2010 01:42:33. Создано системой&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

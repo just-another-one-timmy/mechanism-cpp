@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Tmmproject: Исходный файл D:/dzen/project/project/tmm/CompManager.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Создано системой Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&nbsp;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<h1>D:/dzen/project/project/tmm/CompManager.h</h1>  </div>
+</div>
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef COMPMANAGER_H_INCLUDED</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define COMPMANAGER_H_INCLUDED</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;string&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;map&gt;</span>
+<a name="l00006"></a>00006 <span class="keyword">using namespace </span>std;
+<a name="l00007"></a>00007 
+<a name="l00008"></a>00008 <span class="comment">//#include &quot;..\tinyxml\tinyxml.h&quot;</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#include &quot;TestMyself.h&quot;</span>
+<a name="l00011"></a>00011 
+<a name="l00012"></a>00012 <span class="preprocessor">#include &quot;Connector.h&quot;</span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;KPair.h&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;Segment.h&quot;</span>
+<a name="l00015"></a>00015 
+<a name="l00016"></a>00016 <span class="comment">//#include &quot;GroupManager.h&quot;</span>
+<a name="l00030"></a><a class="code" href="class_comp_manager.html">00030</a> <span class="comment"></span><span class="keyword">class </span><a class="code" href="class_comp_manager.html" title="Менеджер компонентов.">CompManager</a>
+<a name="l00031"></a>00031 {
+<a name="l00032"></a>00032     <span class="keyword">private</span>:
+<a name="l00033"></a>00033         map &lt;string, Connector*&gt; connectors;
+<a name="l00034"></a>00034         map &lt;string, KPair*&gt;     kpairs;
+<a name="l00035"></a>00035         map &lt;string, Segment*&gt;   segments;
+<a name="l00036"></a>00036         map &lt;string, Force *&gt;    forces;
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038         <span class="comment">// рекурсивный анализ узлов XML</span>
+<a name="l00039"></a>00039         <span class="comment">//void RecAnalyze(TiXmlNode *pParent);</span>
+<a name="l00040"></a>00040         <span class="comment">//void ProcessXmlElem(TiXmlElement* pElem);</span>
+<a name="l00041"></a>00041     <span class="keyword">public</span>:
+<a name="l00042"></a>00042         <a class="code" href="class_comp_manager.html" title="Менеджер компонентов.">CompManager</a>();
+<a name="l00043"></a>00043 
+<a name="l00061"></a>00061         <a class="code" href="class_segment.html" title="звено.">Segment</a> *AddSegment(<span class="keywordtype">string</span> name, <span class="keywordtype">double</span> mass = 1000, <span class="keywordtype">double</span> rot_inertia = 1000);
+<a name="l00062"></a>00062 
+<a name="l00078"></a>00078         <span class="keywordtype">void</span> DelSegment(<span class="keywordtype">string</span> name);
+<a name="l00086"></a>00086         <a class="code" href="class_segment.html" title="звено.">Segment</a> *GetSegment(<span class="keywordtype">string</span> name);
+<a name="l00087"></a>00087 
+<a name="l00103"></a>00103         <a class="code" href="struct_connector.html" title="коннектор.">Connector</a> *AddCMass(<span class="keywordtype">string</span> seg_name, <span class="keywordtype">double</span> ro, <span class="keywordtype">double</span> phi);
+<a name="l00104"></a>00104 
+<a name="l00122"></a>00122         <a class="code" href="class_k_pair.html" title="класс для описания КП.">KPair</a> *AddKPTurn(<span class="keywordtype">string</span> name, <span class="keywordtype">string</span> c1name, <span class="keywordtype">string</span> c2name);
+<a name="l00123"></a>00123 
+<a name="l00141"></a>00141         <a class="code" href="class_k_pair.html" title="класс для описания КП.">KPair</a> *AddKPSliding(<span class="keywordtype">string</span> name, <span class="keywordtype">string</span> c1name, <span class="keywordtype">string</span> c2name);
+<a name="l00142"></a>00142 
+<a name="l00150"></a>00150         <a class="code" href="class_k_pair.html" title="класс для описания КП.">KPair</a> *GetKPair(<span class="keywordtype">string</span> name);
+<a name="l00151"></a>00151 
+<a name="l00158"></a>00158         <span class="keywordtype">void</span> DelKPair(<span class="keywordtype">string</span> name);
+<a name="l00159"></a>00159 
+<a name="l00176"></a>00176         <a class="code" href="struct_connector.html" title="коннектор.">Connector</a> * AddConnectorTurn(<span class="keywordtype">string</span> name, <span class="keywordtype">string</span> segment_name, <span class="keywordtype">double</span> ro, <span class="keywordtype">double</span> phi);
+<a name="l00177"></a>00177 
+<a name="l00197"></a>00197         <a class="code" href="struct_connector.html" title="коннектор.">Connector</a> * AddConnectorSliding(<span class="keywordtype">string</span> name, <span class="keywordtype">string</span> segment_name, <span class="keywordtype">double</span> ro, <span class="keywordtype">double</span> phi, <span class="keywordtype">double</span> alpha);
+<a name="l00198"></a>00198 
+<a name="l00207"></a>00207         <a class="code" href="struct_connector.html" title="коннектор.">Connector</a> * AddConnectorTurnD(<span class="keywordtype">string</span> name, <span class="keywordtype">string</span> segment_name, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y);
+<a name="l00208"></a>00208 
+<a name="l00217"></a>00217         <a class="code" href="struct_connector.html" title="коннектор.">Connector</a> * AddConnectorSlidingD(<span class="keywordtype">string</span> name, <span class="keywordtype">string</span> segment_name, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> alpha);
+<a name="l00218"></a>00218 
+<a name="l00219"></a>00219 
+<a name="l00227"></a>00227         <a class="code" href="struct_connector.html" title="коннектор.">Connector</a> * GetConnector(<span class="keywordtype">string</span> name);
+<a name="l00228"></a>00228 
+<a name="l00240"></a>00240         <span class="keywordtype">void</span> DelConnector(<span class="keywordtype">string</span> name);
+<a name="l00241"></a>00241 
+<a name="l00259"></a>00259         <a class="code" href="class_force.html">Force</a> * AddTechnoForce(<span class="keywordtype">string</span> name, <span class="keywordtype">string</span> con_name, <span class="keywordtype">double</span> fx, <span class="keywordtype">double</span> fy, <span class="keywordtype">double</span> torque);
+<a name="l00260"></a>00260 
+<a name="l00268"></a>00268         <a class="code" href="class_force.html">Force</a> * GetForce(<span class="keywordtype">string</span> name);
+<a name="l00280"></a>00280         <span class="keywordtype">void</span> DelTechnoForce(<span class="keywordtype">string</span> name);
+<a name="l00281"></a>00281 
+<a name="l00287"></a>00287         <span class="keywordtype">void</span> UnsetCalculated();
+<a name="l00288"></a>00288 
+<a name="l00298"></a>00298         ~<a class="code" href="class_comp_manager.html" title="Менеджер компонентов.">CompManager</a>();
+<a name="l00299"></a>00299 
+<a name="l00300"></a>00300         <span class="keyword">friend</span> <span class="keywordtype">void</span> PrintCompManagerInfo(<a class="code" href="class_comp_manager.html" title="Менеджер компонентов.">CompManager</a> *cm, <span class="keywordtype">int</span> level);
+<a name="l00301"></a>00301 
+<a name="l00306"></a>00306         <span class="keyword">const</span> map&lt;string, Segment*&gt; GetSegments();
+<a name="l00311"></a>00311         <span class="keyword">const</span> map&lt;string, KPair*&gt; GetKPairs();
+<a name="l00312"></a>00312 };
+<a name="l00313"></a>00313 
+<a name="l00314"></a>00314 <span class="preprocessor">#endif // COMPMANAGER_H_INCLUDED</span>
+</pre></div></div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Переменные</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Документация по Tmmproject. Последние изменения: Thu Sep 9 2010 01:42:32. Создано системой&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<Mechanism step_size="0.005">
+    <Segment name="Ground" mass="10000" rot_inertia="0">
+        <ConnectorTurn name="s0c1" ro="0.35" phi="1.5708" />
+        <ConnectorTurn name="s0c2" ro="0" phi="0" />
+        <ConnectorSliding name="s0c3" ro="0.2" phi="0" alpha="0" />
+    </Segment>
+    <Segment name="s1" mass="1000" rot_inertia="1000">
+        <ConnectorTurn name="s1c1" ro="0" phi="0" />
+        <ConnectorTurn name="s1c2" ro="0.2" phi="0" />
+    </Segment>
+    <Segment name="s2" mass="1000" rot_inertia="1000">
+        <ConnectorTurn name="s2c1" ro="0" phi="0" />
+        <ConnectorTurn name="s2c2" ro="0.4" phi="0" />
+    </Segment>
+    <Segment name="s3" mass="1000" rot_inertia="1000">
+        <ConnectorTurn name="s3c1" ro="-0.1" phi="0" />
+        <ConnectorTurn name="s3c2" ro="0.2" phi="0" />
+        <ConnectorTurn name="s3c3" ro="0.1" phi="0" />
+    </Segment>
+    <Segment name="s4" mass="1000" rot_inertia="1000">
+        <ConnectorTurn name="s4c1" ro="0" phi="0" />
+        <ConnectorTurn name="s4c2" ro="0.5" phi="0" />
+    </Segment>
+    <Segment name="s5" mass="1000" rot_inertia="1000">
+        <ConnectorTurn name="s5c1" ro="0.15" phi="1.5708" />
+        <ConnectorSliding name="s5c2" ro="0" phi="0" alpha="0" />
+    </Segment>
+    <KPairs>
+        <KPTurn name="A" c1_name="s1c2" c2_name="s2c1" />
+        <KPTurn name="B" c1_name="s2c2" c2_name="s3c2" />
+        <KPTurn name="C" c1_name="s3c1" c2_name="s0c2" />
+        <KPTurn name="D" c1_name="s3c3" c2_name="s4c1" />
+        <KPTurn name="E" c1_name="s4c2" c2_name="s5c1" />
+        <KPSliding name="G" c1_name="s5c2" c2_name="s0c3" />
+        <KPTurn name="O" c1_name="s0c1" c2_name="s1c1" />
+    </KPairs>
+    <Groups need_analyze="no">
+        <Group1 kp_name="O" s1_name="Ground" s2_name="s1" />
+        <Group2 kp1_name="C" kp2_name="B" kp3_name="A" s1_name="s3" s2_name="s2" sign1="1" />
+        <Group2 kp1_name="D" kp2_name="E" kp3_name="G" s1_name="s4" s2_name="s5" sign1="1" sign2="0" />
+    </Groups>
+</Mechanism>

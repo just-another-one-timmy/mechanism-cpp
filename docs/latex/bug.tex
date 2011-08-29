@@ -1,0 +1,181 @@
+\label{bug__bug000010}
+\hypertarget{bug__bug000010}{}
+ 
+\begin{DoxyDescription}
+\item[Член \hyperlink{class_comp_manager_a1cf12ded84bf7d17ebbd4c042971133a}{CompManager::AddConnectorSliding}(string name, string segment\_\-name, double ro, double phi, double alpha) ]Нет проверок, был ли такой сегмент в механизме и не было ли такого коннектора в механизме 
+\end{DoxyDescription}
+
+\label{bug__bug000009}
+\hypertarget{bug__bug000009}{}
+ 
+\begin{DoxyDescription}
+\item[Член \hyperlink{class_comp_manager_a11f96f8ae164686d883b92605e3601d5}{CompManager::AddConnectorTurn}(string name, string segment\_\-name, double ro, double phi) ]Нет проверок, был ли такой сегмент в механизме и не было ли такого коннектора в механизме 
+\end{DoxyDescription}
+
+\label{bug__bug000006}
+\hypertarget{bug__bug000006}{}
+ 
+\begin{DoxyDescription}
+\item[Член \hyperlink{class_comp_manager_a4686577f86845ea8df4f3b2682782fac}{CompManager::AddKPSliding}(string name, string c1name, string c2name) ]Не проверяется, действительно ли есть такие коннекторы в механизме 
+\end{DoxyDescription}
+
+\label{bug__bug000005}
+\hypertarget{bug__bug000005}{}
+ 
+\begin{DoxyDescription}
+\item[Член \hyperlink{class_comp_manager_ad772ce1d11dc2e636f02cf9b56cf90fb}{CompManager::AddKPTurn}(string name, string c1name, string c2name) ]Не проверяется, действительно ли есть такие коннекторы в механизме 
+\end{DoxyDescription}
+
+\label{bug__bug000002}
+\hypertarget{bug__bug000002}{}
+ 
+\begin{DoxyDescription}
+\item[Член \hyperlink{class_comp_manager_a7ecbf9a15c3fc964ab7d6ab4024f25ac}{CompManager::AddSegment}(string name, double mass=1000, double rot\_\-inertia=1000) ]Нет проверки, был ли уже сегмент с таким именем. 
+\end{DoxyDescription}
+
+\label{bug__bug000013}
+\hypertarget{bug__bug000013}{}
+ 
+\begin{DoxyDescription}
+\item[Член \hyperlink{class_comp_manager_ae0d3f85a00d2413d78a7379592515266}{CompManager::AddTechnoForce}(string name, string con\_\-name, double fx, double fy, double torque) ]Не проверяется, был ли коннектор с именем con\_\-name, не было ли силы с именем name 
+\begin{DoxyExceptions}{Исключения}
+\item[{\em Force $\ast$ CompManager::AddTechnoForce: c-\/$>$Type() != CONNECTOR\_\-TYPE\_\-TURN}]Если тип коннектора не CONNECTOR\_\-TYPE\_\-TURN \end{DoxyExceptions}
+
+\end{DoxyDescription}
+
+\label{bug__bug000012}
+\hypertarget{bug__bug000012}{}
+ 
+\begin{DoxyDescription}
+\item[Член \hyperlink{class_comp_manager_a94587a431d85adb01d8cf016f115f32a}{CompManager::DelConnector}(string name) ]Если коннектора с таким именем нет, то будет плохо 
+\end{DoxyDescription}
+
+\label{bug__bug000008}
+\hypertarget{bug__bug000008}{}
+ 
+\begin{DoxyDescription}
+\item[Член \hyperlink{class_comp_manager_acf9a726c050661051e19eca9b6a7d51d}{CompManager::DelKPair}(string name) ]Нет проверки, была ли такая КП в механизме 
+\end{DoxyDescription}
+
+\label{bug__bug000003}
+\hypertarget{bug__bug000003}{}
+ 
+\begin{DoxyDescription}
+\item[Член \hyperlink{class_comp_manager_ab8b0643ca8728557894ab34f47e47ae9}{CompManager::DelSegment}(string name) ]Нет проверки, был ли в механизме сегмент с таким именем. 
+\end{DoxyDescription}
+
+\label{bug__bug000015}
+\hypertarget{bug__bug000015}{}
+ 
+\begin{DoxyDescription}
+\item[Член \hyperlink{class_comp_manager_a9029ca9d910c0a768cde3ba354d8b2cc}{CompManager::DelTechnoForce}(string name) ]Не проверяется, была ли такая сила в механизме. Не проверяется, был ли тип силы FORCE\_\-TYPE\_\-TECHNO 
+\end{DoxyDescription}
+
+\label{bug__bug000011}
+\hypertarget{bug__bug000011}{}
+ 
+\begin{DoxyDescription}
+\item[Член \hyperlink{class_comp_manager_a7c71c8cd9c3d554bdad12e20e1fe5385}{CompManager::GetConnector}(string name) ]Если коннектора с таким именем нет, то будет плохо 
+\end{DoxyDescription}
+
+\label{bug__bug000014}
+\hypertarget{bug__bug000014}{}
+ 
+\begin{DoxyDescription}
+\item[Член \hyperlink{class_comp_manager_a3fb340abc60404300b573ecbd3194e48}{CompManager::GetForce}(string name) ]Если силы с таким именем нет, будет плохо 
+\end{DoxyDescription}
+
+\label{bug__bug000007}
+\hypertarget{bug__bug000007}{}
+ 
+\begin{DoxyDescription}
+\item[Член \hyperlink{class_comp_manager_a339db4176aa621f6ee5571ac0b26635a}{CompManager::GetKPair}(string name) ]Не проверяется, есть ли такая КП во внутреннем АМ механизма 
+\end{DoxyDescription}
+
+\label{bug__bug000017}
+\hypertarget{bug__bug000017}{}
+ 
+\begin{DoxyDescription}
+\item[Член \hyperlink{class_comp_manager_a8f9c981e2d449679b7c2e41d6904d6f0}{CompManager::GetKPairs}() ]У пользователя есть возможность удалить КП, узнав её указатель с помощью этого АМ. Будет плохо. 
+\end{DoxyDescription}
+
+\label{bug__bug000004}
+\hypertarget{bug__bug000004}{}
+ 
+\begin{DoxyDescription}
+\item[Член \hyperlink{class_comp_manager_a27e3139830fad4ef9585d614cafadfe4}{CompManager::GetSegment}(string name) ]Нет проверки, был ли в механизме сегмент с таким именем. 
+\end{DoxyDescription}
+
+\label{bug__bug000016}
+\hypertarget{bug__bug000016}{}
+ 
+\begin{DoxyDescription}
+\item[Член \hyperlink{class_comp_manager_ad06433257a643f6c256d0f5d6a886266}{CompManager::GetSegments}() ]У пользователя есть возможность удалить сегмент, узнав его указатель с помощью этого АМ. Будет плохо. 
+\end{DoxyDescription}
+
+\label{bug__bug000019}
+\hypertarget{bug__bug000019}{}
+ 
+\begin{DoxyDescription}
+\item[Член \hyperlink{class_group_manager_ac9a283899c762a7b9d223068b49921d5}{GroupManager::AddSecondGroupByName}(string KP1Name, string KP2Name, string KP3Name, string SegmentName1, string SegmentName2, signed char mj1=1, signed char mj2=1) ]Нет проверок существования КП и сегментов с нужными именами 
+\end{DoxyDescription}
+
+\label{bug__bug000018}
+\hypertarget{bug__bug000018}{}
+ 
+\begin{DoxyDescription}
+\item[Член \hyperlink{class_group_manager_a21932a91e45badc4247884883d8c91b0}{GroupManager::CalcNextStep}() ]Имя метода не соответсвтует действиям. 
+\end{DoxyDescription}
+
+\label{bug__bug000022}
+\hypertarget{bug__bug000022}{}
+ 
+\begin{DoxyDescription}
+\item[Член \hyperlink{class_group_manager_ac7985f9186c573796ce0d6b693d1059c}{GroupManager::GroupManager}(\hyperlink{class_comp_manager}{CompManager} $\ast$cm) ]Не проверяется, доступен ли \hyperlink{class_comp_manager}{CompManager}. А вдруг переданный указатель -\/ NULL? 
+\end{DoxyDescription}
+
+\label{bug__bug000023}
+\hypertarget{bug__bug000023}{}
+ 
+\begin{DoxyDescription}
+\item[Член \hyperlink{class_group_manager_ab8a15542235512daae8cdab78042d891}{GroupManager::groups} ]Архитектурная ошибка, нельзя оставлять этот список в public 
+\end{DoxyDescription}
+
+\label{bug__bug000020}
+\hypertarget{bug__bug000020}{}
+ 
+\begin{DoxyDescription}
+\item[Член \hyperlink{class_group_manager_a2160abd085f628511331d8fb950ba226}{GroupManager::SetMaxGC}(double x) ]Никаких проверок 
+\end{DoxyDescription}
+
+\label{bug__bug000021}
+\hypertarget{bug__bug000021}{}
+ 
+\begin{DoxyDescription}
+\item[Член \hyperlink{class_group_manager_a3902f2dd35ec3bad963310f67369a379}{GroupManager::SetMinGC}(double x) ]Никаких проверок 
+\end{DoxyDescription}
+
+\label{bug__bug000001}
+\hypertarget{bug__bug000001}{}
+ 
+\begin{DoxyDescription}
+\item[page \hyperlink{index}{TMM Project} ]Не все механизмы работают 
+
+Режим SM\_\-HARD\_\-STEPS\_\-CNT не работает
+\end{DoxyDescription}
+
+\label{bug__bug000025}
+\hypertarget{bug__bug000025}{}
+ 
+\begin{DoxyDescription}
+\item[Член \hyperlink{class_x_m_l_saver_a3e5cc543b951b654aad70f0b219ce8eb}{XMLSaver::Save}(string filename) ]Пока что нет возможности передавать NULL вторым параметром, чтобы группы не сохранялись. А оно вообще надо? 
+\end{DoxyDescription}
+
+\label{bug__bug000024}
+\hypertarget{bug__bug000024}{}
+ 
+\begin{DoxyDescription}
+\item[Член \hyperlink{class_x_m_l_saver_add45cb0070d5d4a96f0f76fe2ac609ab}{XMLSaver::SetManagers}(\hyperlink{class_comp_manager}{CompManager} $\ast$c, \hyperlink{class_group_manager}{GroupManager} $\ast$g) ]Архитектурное решение может быть неверным. В частности, нет возможности работать в многопоточной среде. Вариант решения -\/ создание не статического класса \hyperlink{class_x_m_l_saver}{XMLSaver}, но теряется удобство пользования. 
+
+Нет проверки, совпадают ли \hyperlink{class_comp_manager}{CompManager} $\ast$c и g-\/$>$cm 
+\end{DoxyDescription}

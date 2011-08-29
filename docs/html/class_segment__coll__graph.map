@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node4" href="$struct_connector.html" title="коннектор." alt="" coords="75,323,155,352"/>
+<area shape="rect" id="node2" href="$struct_connector_turn.html" title="вращательный коннектор." alt="" coords="61,405,168,435"/>
+<area shape="rect" id="node7" href="$struct_linear_t_f.html" title="Структура для хранения линейных ПФ." alt="" coords="5,171,77,200"/>
+<area shape="rect" id="node9" href="$struct_t_f.html" title="TF" alt="" coords="52,5,89,35"/>
+<area shape="rect" id="node11" href="$struct_turn_t_f.html" title="Структура для хранения угловых ПФ." alt="" coords="83,117,144,147"/>
+</map>

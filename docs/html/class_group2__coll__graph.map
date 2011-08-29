@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$class_group.html" title="Класс родитель для групп Ассура." alt="" coords="36,224,92,253"/>
+<area shape="rect" id="node4" href="$class_segment.html" title="звено." alt="" coords="116,224,191,253"/>
+<area shape="rect" id="node8" href="$struct_connector.html" title="коннектор." alt="" coords="212,339,292,368"/>
+<area shape="rect" id="node6" href="$struct_connector_turn.html" title="вращательный коннектор." alt="" coords="95,421,202,451"/>
+<area shape="rect" id="node11" href="$struct_linear_t_f.html" title="Структура для хранения линейных ПФ." alt="" coords="6,171,78,200"/>
+<area shape="rect" id="node13" href="$struct_t_f.html" title="TF" alt="" coords="74,5,111,35"/>
+<area shape="rect" id="node15" href="$struct_turn_t_f.html" title="Структура для хранения угловых ПФ." alt="" coords="111,117,172,147"/>
+</map>

@@ -1,0 +1,69 @@
+\hypertarget{class_x_m_l_loader}{
+\section{Класс XMLLoader}
+\label{class_x_m_l_loader}\index{XMLLoader@{XMLLoader}}
+}
+
+
+Класс для загрузки механизмов из xml-\/файлов.  
+
+
+
+
+{\ttfamily \#include $<$XMLLoader.h$>$}
+
+
+
+Граф связей класса XMLLoader:
+% FIG 0
+\subsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_x_m_l_loader_afdf81d640def0b89125e0af69bbf1e10}{Load} (string filename)
+\begin{DoxyCompactList}\small\item\em Загружает механизм из файла с именем filename. \item\end{DoxyCompactList}\item 
+static void \hyperlink{class_x_m_l_loader_aac89ffceaadc3afd2b5e55b8000f424c}{SetManagers} (\hyperlink{class_comp_manager}{CompManager} $\ast$c, \hyperlink{class_group_manager}{GroupManager} $\ast$g)
+\begin{DoxyCompactList}\small\item\em Устанавливает указатели на менеджер компонентов и менеджер групп. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Класс для загрузки механизмов из xml-\/файлов. При этом для парсинга xml-\/файла используется библиотека TinyXML. 
+
+\subsection{Методы}
+\hypertarget{class_x_m_l_loader_afdf81d640def0b89125e0af69bbf1e10}{
+\index{XMLLoader@{XMLLoader}!Load@{Load}}
+\index{Load@{Load}!XMLLoader@{XMLLoader}}
+\subsubsection[{Load}]{\setlength{\rightskip}{0pt plus 5cm}void XMLLoader::Load (
+\begin{DoxyParamCaption}
+\item[{string}]{ filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_x_m_l_loader_afdf81d640def0b89125e0af69bbf1e10}
+
+
+Загружает механизм из файла с именем filename. 
+
+При этом вызывая нужные методы менеджера компонентов $\ast$c и менеджера групп $\ast$g 
+\begin{DoxyParams}{Аргументы}
+\item[{\em filename}]Имя загружаемого xml-\/файла \end{DoxyParams}
+\hypertarget{class_x_m_l_loader_aac89ffceaadc3afd2b5e55b8000f424c}{
+\index{XMLLoader@{XMLLoader}!SetManagers@{SetManagers}}
+\index{SetManagers@{SetManagers}!XMLLoader@{XMLLoader}}
+\subsubsection[{SetManagers}]{\setlength{\rightskip}{0pt plus 5cm}void XMLLoader::SetManagers (
+\begin{DoxyParamCaption}
+\item[{{\bf CompManager} $\ast$}]{ c, }
+\item[{{\bf GroupManager} $\ast$}]{ g}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_x_m_l_loader_aac89ffceaadc3afd2b5e55b8000f424c}
+
+
+Устанавливает указатели на менеджер компонентов и менеджер групп. 
+
+Это необходимо для последующей загрузки механизма в эти объекты 
+\begin{DoxyParams}{Аргументы}
+\item[{\em c}]Указатель на менеджер компонентов \item[{\em g}]Указатель на менеджер групп \end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах:\begin{DoxyCompactItemize}
+\item 
+D:/dzen/project/project/tmm/XMLLoader.h\item 
+D:/dzen/project/project/tmm/XMLLoader.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Tmmproject: Класс Segment</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Создано системой Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&nbsp;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&nbsp;указатель&nbsp;классов</span></a></li>
+      <li><a href="hierarchy.html"><span>Иерархия&nbsp;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&nbsp;классов</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Открытые атрибуты</a>  </div>
+  <div class="headertitle">
+<h1>Класс Segment</h1>  </div>
+</div>
+<div class="contents">
+<!-- doxytag: class="Segment" -->
+<p>звено.  
+<a href="#_details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_segment_8h_source.html">Segment.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса Segment:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_segment__coll__graph.png" border="0" usemap="#_segment_coll__map" alt="Collaboration graph"/></div>
+<!-- MAP 0 -->
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+
+<p><a href="class_segment-members.html">Полный список членов класса</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75cbf2471c706e881fb87ff71247a2fa"></a><!-- doxytag: member="Segment::connectors" ref="a75cbf2471c706e881fb87ff71247a2fa" args="" -->
+list&lt; <a class="el" href="struct_connector.html">Connector</a> * &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment.html#a75cbf2471c706e881fb87ff71247a2fa">connectors</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">список коннекторов. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5cf022f056558cef34766627bf4f1ecb"></a><!-- doxytag: member="Segment::forces" ref="a5cf022f056558cef34766627bf4f1ecb" args="" -->
+list&lt; <a class="el" href="class_force.html">Force</a> * &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment.html#a5cf022f056558cef34766627bf4f1ecb">forces</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">список сил. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_connector_turn.html">ConnectorTurn</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment.html#a0f3dc25d68321cd5c3e8595fcdbc2ea8">cmass</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">коннектор в центре масс звена.  <a href="#a0f3dc25d68321cd5c3e8595fcdbc2ea8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_connector_turn.html">ConnectorTurn</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment.html#ab137465e247c4b7f5584e4ad558e4138">polus</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">коннектор - полюс системы координат звена.  <a href="#ab137465e247c4b7f5584e4ad558e4138"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">string&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment.html#a0317dfdef4af06341f86ffbd77aeefd8">name</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">имя звена.  <a href="#a0317dfdef4af06341f86ffbd77aeefd8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment.html#ae2ac875b86cea3b0dbd60b318d953588">mass</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">масса.  <a href="#ae2ac875b86cea3b0dbd60b318d953588"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment.html#a9559a2939e6df5ff37f8b30bd2e489ad">rot_inertia</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">момент инерции.  <a href="#a9559a2939e6df5ff37f8b30bd2e489ad"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_turn_t_f.html">TurnTF</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_segment.html#af72f1d60a478761af1f157a4d949e660">turn</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">наклон звена.  <a href="#af72f1d60a478761af1f157a4d949e660"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Подробное описание</h2>
+<p>звено. </p>
+<hr/><h2>Данные класса</h2>
+<a class="anchor" id="a0f3dc25d68321cd5c3e8595fcdbc2ea8"></a><!-- doxytag: member="Segment::cmass" ref="a0f3dc25d68321cd5c3e8595fcdbc2ea8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_connector_turn.html">ConnectorTurn</a>* <a class="el" href="class_segment.html#a0f3dc25d68321cd5c3e8595fcdbc2ea8">Segment::cmass</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>коннектор в центре масс звена. </p>
+<p>к этому коннектору нужно подсоединять силы гравитации и инерции </p>
+
+</div>
+</div>
+<a class="anchor" id="ae2ac875b86cea3b0dbd60b318d953588"></a><!-- doxytag: member="Segment::mass" ref="ae2ac875b86cea3b0dbd60b318d953588" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="class_segment.html#ae2ac875b86cea3b0dbd60b318d953588">Segment::mass</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>масса. </p>
+<p>необязательна в расчетах ПФ , но необходима для силового расчета </p>
+
+</div>
+</div>
+<a class="anchor" id="a0317dfdef4af06341f86ffbd77aeefd8"></a><!-- doxytag: member="Segment::name" ref="a0317dfdef4af06341f86ffbd77aeefd8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string <a class="el" href="class_segment.html#a0317dfdef4af06341f86ffbd77aeefd8">Segment::name</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>имя звена. </p>
+<p>глобальное имя звена, идентификатор </p>
+
+</div>
+</div>
+<a class="anchor" id="ab137465e247c4b7f5584e4ad558e4138"></a><!-- doxytag: member="Segment::polus" ref="ab137465e247c4b7f5584e4ad558e4138" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_connector_turn.html">ConnectorTurn</a>* <a class="el" href="class_segment.html#ab137465e247c4b7f5584e4ad558e4138">Segment::polus</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>коннектор - полюс системы координат звена. </p>
+<p>используется при расчетах, как опорная точка добавляется автоматически </p>
+
+</div>
+</div>
+<a class="anchor" id="a9559a2939e6df5ff37f8b30bd2e489ad"></a><!-- doxytag: member="Segment::rot_inertia" ref="a9559a2939e6df5ff37f8b30bd2e489ad" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="class_segment.html#a9559a2939e6df5ff37f8b30bd2e489ad">Segment::rot_inertia</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>момент инерции. </p>
+<p>необязательный в расчетах ПФ , но необходим для силового расчета </p>
+
+</div>
+</div>
+<a class="anchor" id="af72f1d60a478761af1f157a4d949e660"></a><!-- doxytag: member="Segment::turn" ref="af72f1d60a478761af1f157a4d949e660" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_turn_t_f.html">TurnTF</a> <a class="el" href="class_segment.html#af72f1d60a478761af1f157a4d949e660">Segment::turn</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>наклон звена. </p>
+<p>наклон оси звена по отношению к глобальной системе координат </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>D:/dzen/project/project/tmm/<a class="el" href="_segment_8h_source.html">Segment.h</a></li>
+<li>D:/dzen/project/project/tmm/Segment.cpp</li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Переменные</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Документация по Tmmproject. Последние изменения: Thu Sep 9 2010 01:42:33. Создано системой&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

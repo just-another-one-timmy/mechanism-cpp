@@ -1,0 +1,75 @@
+\hypertarget{class_x_m_l_saver}{
+\section{Класс XMLSaver}
+\label{class_x_m_l_saver}\index{XMLSaver@{XMLSaver}}
+}
+
+
+Класс для сохранения механизма в файл xml.  
+
+
+
+
+{\ttfamily \#include $<$XMLSaver.h$>$}
+
+
+
+Граф связей класса XMLSaver:
+% FIG 0
+\subsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_x_m_l_saver_add45cb0070d5d4a96f0f76fe2ac609ab}{SetManagers} (\hyperlink{class_comp_manager}{CompManager} $\ast$c, \hyperlink{class_group_manager}{GroupManager} $\ast$g)
+\begin{DoxyCompactList}\small\item\em Установить менеджеры. \item\end{DoxyCompactList}\item 
+static void \hyperlink{class_x_m_l_saver_a3e5cc543b951b654aad70f0b219ce8eb}{Save} (string filename)
+\begin{DoxyCompactList}\small\item\em Сохраняет механизм в файл. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Класс для сохранения механизма в файл xml. После этого используя класс \hyperlink{class_x_m_l_loader}{XMLLoader} можно загрузить механизм из сохраненного файла. Класс является статическим. 
+
+\subsection{Методы}
+\hypertarget{class_x_m_l_saver_a3e5cc543b951b654aad70f0b219ce8eb}{
+\index{XMLSaver@{XMLSaver}!Save@{Save}}
+\index{Save@{Save}!XMLSaver@{XMLSaver}}
+\subsubsection[{Save}]{\setlength{\rightskip}{0pt plus 5cm}void XMLSaver::Save (
+\begin{DoxyParamCaption}
+\item[{string}]{ filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_x_m_l_saver_a3e5cc543b951b654aad70f0b219ce8eb}
+
+
+Сохраняет механизм в файл. 
+
+Сохраняет сначала cm в файл (информация о звеньях, КП, коннекторах), а затем gm (информация о группах) 
+\begin{DoxyParams}{Аргументы}
+\item[{\em filename}]Имя файла, в который будет сохранен механизм. \end{DoxyParams}
+\begin{Desc}
+\item[\hyperlink{bug__bug000025}{Ошибка}]Пока что нет возможности передавать NULL вторым параметром, чтобы группы не сохранялись. А оно вообще надо? \end{Desc}
+\hypertarget{class_x_m_l_saver_add45cb0070d5d4a96f0f76fe2ac609ab}{
+\index{XMLSaver@{XMLSaver}!SetManagers@{SetManagers}}
+\index{SetManagers@{SetManagers}!XMLSaver@{XMLSaver}}
+\subsubsection[{SetManagers}]{\setlength{\rightskip}{0pt plus 5cm}void XMLSaver::SetManagers (
+\begin{DoxyParamCaption}
+\item[{{\bf CompManager} $\ast$}]{ c, }
+\item[{{\bf GroupManager} $\ast$}]{ g}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_x_m_l_saver_add45cb0070d5d4a96f0f76fe2ac609ab}
+
+
+Установить менеджеры. 
+
+Устанавливает указатели на менеджер компонентов и менеджер групп, которые и составляют механизм. 
+\begin{DoxyParams}{Аргументы}
+\item[{\em c,g}]Указатели на менеджеры \end{DoxyParams}
+\begin{Desc}
+\item[\hyperlink{bug__bug000024}{Ошибка}]Архитектурное решение может быть неверным. В частности, нет возможности работать в многопоточной среде. Вариант решения -\/ создание не статического класса \hyperlink{class_x_m_l_saver}{XMLSaver}, но теряется удобство пользования. 
+
+Нет проверки, совпадают ли \hyperlink{class_comp_manager}{CompManager} $\ast$c и g-\/$>$cm \end{Desc}
+
+
+Объявления и описания членов классов находятся в файлах:\begin{DoxyCompactItemize}
+\item 
+D:/dzen/project/project/tmm/XMLSaver.h\item 
+D:/dzen/project/project/tmm/XMLSaver.cpp\end{DoxyCompactItemize}

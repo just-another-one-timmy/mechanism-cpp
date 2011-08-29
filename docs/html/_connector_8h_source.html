@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Tmmproject: Исходный файл D:/dzen/project/project/tmm/Connector.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Создано системой Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&nbsp;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<h1>D:/dzen/project/project/tmm/Connector.h</h1>  </div>
+</div>
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef CONNECTOR_H_INCLUDED</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define CONNECTOR_H_INCLUDED</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &quot;LinearTF.h&quot;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &quot;TurnTF.h&quot;</span>
+<a name="l00006"></a>00006 
+<a name="l00007"></a>00007 <span class="preprocessor">#include &quot;Segment.h&quot;</span>
+<a name="l00008"></a>00008 <span class="keyword">class </span><a class="code" href="class_segment.html" title="звено.">Segment</a>;
+<a name="l00009"></a>00009 
+<a name="l00013"></a>00013 <span class="keyword">enum</span> CONNECTOR_TYPE {CONNECTOR_TYPE_SLIDING, CONNECTOR_TYPE_TURN};
+<a name="l00014"></a>00014 
+<a name="l00020"></a><a class="code" href="struct_connector.html">00020</a> <span class="keyword">struct </span><a class="code" href="struct_connector.html" title="коннектор.">Connector</a>
+<a name="l00021"></a>00021 {
+<a name="l00022"></a>00022     <span class="keyword">public</span>:
+<a name="l00023"></a>00023 
+<a name="l00027"></a><a class="code" href="struct_connector.html#af120f4194a577a35d5f8b630cf41be6d">00027</a>         <a class="code" href="class_segment.html" title="звено.">Segment</a> *<a class="code" href="struct_connector.html#af120f4194a577a35d5f8b630cf41be6d" title="Звено, на котором находится коннектор.">s</a>;
+<a name="l00028"></a>00028 
+<a name="l00034"></a><a class="code" href="struct_connector.html#af5ac4b147ee893b40195fb36abda9a3d">00034</a>         <span class="keywordtype">double</span> <a class="code" href="struct_connector.html#af5ac4b147ee893b40195fb36abda9a3d" title="координаты коннектора в полярной системе.">ro</a>;
+<a name="l00035"></a>00035         <span class="keywordtype">double</span> phi;
+<a name="l00036"></a>00036 
+<a name="l00041"></a>00041         <span class="keyword">virtual</span> CONNECTOR_TYPE <a class="code" href="struct_connector.html#a8f03cd9d05863a3c6a41c5282f9e5208" title="Возвращает тип коннектора.">Type</a>()=0;
+<a name="l00042"></a>00042 
+<a name="l00049"></a><a class="code" href="struct_connector.html#a2f236cf078849dbb78abc1fb8da87ace">00049</a>         <span class="keywordtype">string</span> <a class="code" href="struct_connector.html#a2f236cf078849dbb78abc1fb8da87ace" title="имя коннектора.">name</a>;
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051 };
+<a name="l00052"></a>00052 
+<a name="l00059"></a><a class="code" href="struct_connector_sliding.html">00059</a> <span class="keyword">struct </span><a class="code" href="struct_connector_sliding.html" title="поступательный коннектор.">ConnectorSliding</a>: <span class="keyword">public</span> <a class="code" href="struct_connector.html" title="коннектор.">Connector</a>
+<a name="l00060"></a>00060 {
+<a name="l00061"></a>00061     <span class="keyword">public</span>:
+<a name="l00062"></a>00062 
+<a name="l00066"></a><a class="code" href="struct_connector_sliding.html#a285f90fc23abe40d919a2ac8064a9299">00066</a>         <a class="code" href="struct_linear_t_f.html" title="Структура для хранения линейных ПФ.">LinearTF</a> <a class="code" href="struct_connector_sliding.html#a285f90fc23abe40d919a2ac8064a9299" title="ПФ начальной точки.">linear0</a>;
+<a name="l00067"></a>00067 
+<a name="l00071"></a><a class="code" href="struct_connector_sliding.html#a1cacb3a42e8c2c12c5e0e76ead663f4e">00071</a>         <a class="code" href="struct_turn_t_f.html" title="Структура для хранения угловых ПФ.">TurnTF</a> *<a class="code" href="struct_connector_sliding.html#a1cacb3a42e8c2c12c5e0e76ead663f4e" title="ПФ угла наклона.">turn</a>;
+<a name="l00072"></a>00072 
+<a name="l00076"></a><a class="code" href="struct_connector_sliding.html#a6e6f56b4d66f5aeb7cc394b1d76c1fd9">00076</a>         <span class="keywordtype">double</span> <a class="code" href="struct_connector_sliding.html#a6e6f56b4d66f5aeb7cc394b1d76c1fd9" title="угол наклона в системе координат звена-хозяина.">alpha</a>;
+<a name="l00077"></a>00077 
+<a name="l00081"></a>00081         <span class="keyword">virtual</span> CONNECTOR_TYPE <a class="code" href="struct_connector_sliding.html#a7173f59dba844524488032c3ebca3319" title="возвращает тип коннектора.">Type</a>();
+<a name="l00082"></a>00082 };
+<a name="l00083"></a>00083 
+<a name="l00090"></a><a class="code" href="struct_connector_turn.html">00090</a> <span class="keyword">struct </span><a class="code" href="struct_connector_turn.html" title="вращательный коннектор.">ConnectorTurn</a>: <span class="keyword">public</span> <a class="code" href="struct_connector.html" title="коннектор.">Connector</a>
+<a name="l00091"></a>00091 {
+<a name="l00092"></a>00092     <span class="keyword">public</span>:
+<a name="l00093"></a>00093 
+<a name="l00097"></a><a class="code" href="struct_connector_turn.html#adad7f2a62edc82af3b5c0b3d5b93abf5">00097</a>         <a class="code" href="struct_linear_t_f.html" title="Структура для хранения линейных ПФ.">LinearTF</a> *<a class="code" href="struct_connector_turn.html#adad7f2a62edc82af3b5c0b3d5b93abf5" title="ПФ вращательного коннектора.">linear</a>;
+<a name="l00098"></a>00098 
+<a name="l00102"></a>00102         <span class="keyword">virtual</span> CONNECTOR_TYPE <a class="code" href="struct_connector_turn.html#a19022db1fade0b619030b82c184ff264" title="Возвращает тип коннектора.">Type</a>();
+<a name="l00103"></a>00103 };
+<a name="l00104"></a>00104 
+<a name="l00105"></a>00105 <span class="preprocessor">#endif // CONNECTOR_H_INCLUDED</span>
+</pre></div></div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Переменные</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Документация по Tmmproject. Последние изменения: Thu Sep 9 2010 01:42:32. Создано системой&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

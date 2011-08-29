@@ -1,0 +1,631 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Tmmproject: Класс GroupManager</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Создано системой Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&nbsp;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&nbsp;указатель&nbsp;классов</span></a></li>
+      <li><a href="hierarchy.html"><span>Иерархия&nbsp;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&nbsp;классов</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a>  </div>
+  <div class="headertitle">
+<h1>Класс GroupManager</h1>  </div>
+</div>
+<div class="contents">
+<!-- doxytag: class="GroupManager" -->
+<p>Класс для управления группами.  
+<a href="#_details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_group_manager_8h_source.html">GroupManager.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса GroupManager:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_group_manager__coll__graph.png" border="0" usemap="#_group_manager_coll__map" alt="Collaboration graph"/></div>
+<!-- MAP 0 -->
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+
+<p><a href="class_group_manager-members.html">Полный список членов класса</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_group_manager.html#a94be481fda67cbbf340b9a32c1f52f0d">BuildEdgesSets</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Строит списки вершин для каждого ребра графа.  <a href="#a94be481fda67cbbf340b9a32c1f52f0d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_group_manager.html#a21932a91e45badc4247884883d8c91b0">CalcNextStep</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Производит расчет механизма.  <a href="#a21932a91e45badc4247884883d8c91b0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_group_manager.html#aa7f89b216d9d7e090f256c99a868f3c7">MakeStep</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Делает шаг для первой группы (т.е. вычисляет ее следующее положение).  <a href="#aa7f89b216d9d7e090f256c99a868f3c7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_group_manager.html#a94361a7ba680e812f0b340efe7d109f4">SetStepSize</a> (double s)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Устанавливает величину шага.  <a href="#a94361a7ba680e812f0b340efe7d109f4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_group_manager.html#ae1823aa7f061fef2ae743ff54292e877">GetStepSize</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Возвращает текущую величину шага.  <a href="#ae1823aa7f061fef2ae743ff54292e877"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_group_manager.html#a1c120746c1fc72043791c64c6e24699a">AddFirstGroupByName</a> (string KPName, string SegmentName1, string SegmentName2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Добавляет первую группу.  <a href="#a1c120746c1fc72043791c64c6e24699a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_group_manager.html#ac9a283899c762a7b9d223068b49921d5">AddSecondGroupByName</a> (string KP1Name, string KP2Name, string KP3Name, string SegmentName1, string SegmentName2, signed char mj1=1, signed char mj2=1)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Добавляет вторую группу.  <a href="#ac9a283899c762a7b9d223068b49921d5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_group_manager.html#afbbb35e0682e1f8d09b157e28fd3b7ee">AddGround</a> (string GroundName)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Делает звено "землей".  <a href="#afbbb35e0682e1f8d09b157e28fd3b7ee"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_group_manager.html#abbbf104fb7ed58d2113cdffbf070f0df">Analyze</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_group_manager.html#a2160abd085f628511331d8fb950ba226">SetMaxGC</a> (double x)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Устанавливает максимально допустимое значение обобщенной координаты.  <a href="#a2160abd085f628511331d8fb950ba226"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_group_manager.html#a3902f2dd35ec3bad963310f67369a379">SetMinGC</a> (double x)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Устанавливает минимально допустимое значение обобщенной координаты.  <a href="#a3902f2dd35ec3bad963310f67369a379"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_group_manager.html#a7600fc05f8540db35c4eca2a67616f4a">GetMaxGC</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Возвращаает максимальное значение обобщенной координаты.  <a href="#a7600fc05f8540db35c4eca2a67616f4a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_group_manager.html#a72841948a7eba9945ac748db4eac7134">GetMinGC</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Возвращаает минимально значение обобщенной координаты.  <a href="#a72841948a7eba9945ac748db4eac7134"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_group_manager.html#a12e6e41645ff6f838cd6816529e1fc9c">SetJump</a> (bool x)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Устанавливает режим "прыжка".  <a href="#a12e6e41645ff6f838cd6816529e1fc9c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_group_manager.html#a9d61ed908fb2c4b55b3bc832d1910e8a">GetJump</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Возвращает, установлен ли режим прыжка.  <a href="#a9d61ed908fb2c4b55b3bc832d1910e8a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_group_manager.html#ac7985f9186c573796ce0d6b693d1059c">GroupManager</a> (<a class="el" href="class_comp_manager.html">CompManager</a> *cm)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Конструктор, производится начальная инициализация.  <a href="#ac7985f9186c573796ce0d6b693d1059c"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">list&lt; <a class="el" href="class_group.html">Group</a> * &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_group_manager.html#ab8a15542235512daae8cdab78042d891">groups</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Список групп.  <a href="#ab8a15542235512daae8cdab78042d891"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Подробное описание</h2>
+<p>Класс для управления группами. </p>
+<dl class="warning"><dt><b>Предупреждения:</b></dt><dd>Нет полной документации для этого класса! Дописать! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Необходимо сделать:</a></b></dt><dd>Дописать документацию! </dd></dl>
+<p>После того, как части механизма созданы с помощью <a class="el" href="class_comp_manager.html" title="Менеджер компонентов.">CompManager</a>, надо использовать <a class="el" href="class_group_manager.html" title="Класс для управления группами.">GroupManager</a> для анализа групп. Данный класс позволяет: </p>
+<ul>
+<li>
+Добавлять группы "вручную", указывая, из каких звеньев и КП они состоят </li>
+<li>
+Просчитывать параметры механизма для данного состояния первой группы </li>
+<li>
+Задавать такие параметры механизма, как ограничения, которым подчиняется 1-ая группа и стиль ее движения (об этом ниже) </li>
+<li>
+Изменять состояние первой группы (делать шаг), с учетом параметров механизма </li>
+<li>
+Задавать стиль движения первой группы. Обобщенная координата первой группы сначала меняетс от minGC до maxGC. Потом если установлен флаг jump, координата меняется сразу на minGC и процесс повторяется. Если же jump=false, то сначала координата уменьшается от maxGC до minGC и процесс повторяется. </li>
+<li>
+Разбивать механизм на группы в автоматическом режиме </li>
+<li>
+Получать список групп механизма </li>
+</ul>
+<p>Для использования данного класса, надо создать его экземпляр, связав его с экземляром класса <a class="el" href="class_comp_manager.html" title="Менеджер компонентов.">CompManager</a> (см. конструктор). Далее, необходимо установить параметры, вызывая методы SetJump, SetMaxGC, SetMinGC. После этого надо добавить первую группу, т.е. ту, с которой будут начинаться анализ и расчеты: AddFirstGroupByName. </p>
+<hr/><h2>Конструктор(ы)</h2>
+<a class="anchor" id="ac7985f9186c573796ce0d6b693d1059c"></a><!-- doxytag: member="GroupManager::GroupManager" ref="ac7985f9186c573796ce0d6b693d1059c" args="(CompManager *cm)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GroupManager::GroupManager </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_comp_manager.html">CompManager</a> *&nbsp;</td>
+          <td class="paramname"> <em>cm</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Конструктор, производится начальная инициализация. </p>
+<ol>
+<li>
+Устанавливается внутренний указатель на <a class="el" href="class_comp_manager.html" title="Менеджер компонентов.">CompManager</a> </li>
+<li>
+Мин. и макс. допустимые значения GC приравниваются к 0 </li>
+<li>
+Устанавливается режим движения вперед (GC имзеняется в сторону увеличения) </li>
+<li>
+Устанавливается режим прыжка в true </li>
+</ol>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000022">Ошибка:</a></b></dt><dd>Не проверяется, доступен ли <a class="el" href="class_comp_manager.html" title="Менеджер компонентов.">CompManager</a>. А вдруг переданный указатель - NULL? </dd></dl>
+
+</div>
+</div>
+<hr/><h2>Методы</h2>
+<a class="anchor" id="a1c120746c1fc72043791c64c6e24699a"></a><!-- doxytag: member="GroupManager::AddFirstGroupByName" ref="a1c120746c1fc72043791c64c6e24699a" args="(string KPName, string SegmentName1, string SegmentName2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GroupManager::AddFirstGroupByName </td>
+          <td>(</td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>KPName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>SegmentName1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>SegmentName2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Добавляет первую группу. </p>
+<ol>
+<li>
+Создает новую группу 1-го класса, называет ее "("+S1-&gt;name+","+S2-&gt;name+")". </li>
+<li>
+Добавляет группу в список групп механизма (важно, чтобы первой была добавлена группа, с которой надо начинать расчет!) </li>
+<li>
+Отмечает данные звенья и КП как "черные" (см. Analyze) </li>
+</ol>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>KPName,SegmentName1,SegmentName2</em>&nbsp;</td><td>Имена соответственно КП, первого звена и второго звеньев группы </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afbbb35e0682e1f8d09b157e28fd3b7ee"></a><!-- doxytag: member="GroupManager::AddGround" ref="afbbb35e0682e1f8d09b157e28fd3b7ee" args="(string GroundName)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GroupManager::AddGround </td>
+          <td>(</td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>GroundName</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Делает звено "землей". </p>
+<p>Ищет звено с нужным именем и отмечает его как "земля", добавляя во внутренний список "черных вершин" </p>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>GroundName</em>&nbsp;</td><td>Имя звена, которое нужно отметить землёй </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac9a283899c762a7b9d223068b49921d5"></a><!-- doxytag: member="GroupManager::AddSecondGroupByName" ref="ac9a283899c762a7b9d223068b49921d5" args="(string KP1Name, string KP2Name, string KP3Name, string SegmentName1, string SegmentName2, signed char mj1=1, signed char mj2=1)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GroupManager::AddSecondGroupByName </td>
+          <td>(</td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>KP1Name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>KP2Name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>KP3Name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>SegmentName1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>SegmentName2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">signed char&nbsp;</td>
+          <td class="paramname"> <em>mj1</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">signed char&nbsp;</td>
+          <td class="paramname"> <em>mj2</em> = <code>1</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Добавляет вторую группу. </p>
+<ol>
+<li>
+Создает новую группу 2-го класса, называет ее "("+S1-&gt;name+","+S2-&gt;name+")". </li>
+<li>
+Добавляет группу в список групп механизма </li>
+</ol>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>KP1Name,KP2Name,KP3Name,SegmentName1,SegmentName2</em>&nbsp;</td><td>Имена соответственно первой, второй и третьй КП, а также первого и второго звеньев группы </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>mj1,mj2</em>&nbsp;</td><td>Признаки сборки группы </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000019">Ошибка:</a></b></dt><dd>Нет проверок существования КП и сегментов с нужными именами </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abbbf104fb7ed58d2113cdffbf070f0df"></a><!-- doxytag: member="GroupManager::Analyze" ref="abbbf104fb7ed58d2113cdffbf070f0df" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GroupManager::Analyze </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Необходимо сделать:</a></b></dt><dd>Написать подробное объяснение </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a94be481fda67cbbf340b9a32c1f52f0d"></a><!-- doxytag: member="GroupManager::BuildEdgesSets" ref="a94be481fda67cbbf340b9a32c1f52f0d" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GroupManager::BuildEdgesSets </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Строит списки вершин для каждого ребра графа. </p>
+<p>Ребрами графа являются КП, а вершинами - звенья. Еще раз: ребрами графа являются КП, а вершинами - звенья. Внутренний АМ edges по указателю на звено позволит получать список КП, связанных с этим звеном. </p>
+
+</div>
+</div>
+<a class="anchor" id="a21932a91e45badc4247884883d8c91b0"></a><!-- doxytag: member="GroupManager::CalcNextStep" ref="a21932a91e45badc4247884883d8c91b0" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GroupManager::CalcNextStep </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Производит расчет механизма. </p>
+<p>Проходит по всем элементам списка groups, вызывает метод TF0. Потом тоже самое, но вызывает TF1. Потом TF2. </p>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000018">Ошибка:</a></b></dt><dd>Имя метода не соответсвтует действиям. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9d61ed908fb2c4b55b3bc832d1910e8a"></a><!-- doxytag: member="GroupManager::GetJump" ref="a9d61ed908fb2c4b55b3bc832d1910e8a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GroupManager::GetJump </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Возвращает, установлен ли режим прыжка. </p>
+<dl class="return"><dt><b>Возвращает:</b></dt><dd>true, если установлен режим прыжка, false, если не установлен </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7600fc05f8540db35c4eca2a67616f4a"></a><!-- doxytag: member="GroupManager::GetMaxGC" ref="a7600fc05f8540db35c4eca2a67616f4a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double GroupManager::GetMaxGC </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Возвращаает максимальное значение обобщенной координаты. </p>
+<dl class="return"><dt><b>Возвращает:</b></dt><dd>Максимально допустимое значение обобщенной координаты </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a72841948a7eba9945ac748db4eac7134"></a><!-- doxytag: member="GroupManager::GetMinGC" ref="a72841948a7eba9945ac748db4eac7134" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double GroupManager::GetMinGC </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Возвращаает минимально значение обобщенной координаты. </p>
+<dl class="return"><dt><b>Возвращает:</b></dt><dd>Минимально допустимое значение обобщенной координаты </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae1823aa7f061fef2ae743ff54292e877"></a><!-- doxytag: member="GroupManager::GetStepSize" ref="ae1823aa7f061fef2ae743ff54292e877" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double GroupManager::GetStepSize </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Возвращает текущую величину шага. </p>
+<dl class="return"><dt><b>Возвращает:</b></dt><dd>Величина шага </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa7f89b216d9d7e090f256c99a868f3c7"></a><!-- doxytag: member="GroupManager::MakeStep" ref="aa7f89b216d9d7e090f256c99a868f3c7" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GroupManager::MakeStep </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Делает шаг для первой группы (т.е. вычисляет ее следующее положение). </p>
+<p>Изменяет обобщенную координату первой группы. Она меняется на step_size в зависимости от того, в каком направлении сейчас движется механизм и ограничений mingc, maxgc. Если координата становится больше допустимой ( &gt; maxgc), то </p>
+<ul>
+<li>
+Если jump==true, то координата приравнивается к mingc </li>
+<li>
+Если jump==false, то меняется направление движения (move_forward=false). Теперь координата будет медленно убывать до mingc. </li>
+</ul>
+<p>Если координата становится меньше допстимой ( &lt; mingc), то изменяется направление движения (move_forward=true). </p>
+
+</div>
+</div>
+<a class="anchor" id="a12e6e41645ff6f838cd6816529e1fc9c"></a><!-- doxytag: member="GroupManager::SetJump" ref="a12e6e41645ff6f838cd6816529e1fc9c" args="(bool x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GroupManager::SetJump </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>x</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Устанавливает режим "прыжка". </p>
+<p>При движении механизма, обобщенная координата 1-ой группы может превысить свое максимально допустимое значение. Тогда если режим прыжка установлен в true, то обобщенная координата сразу приравнивается к своему минимально допустимму значению. Иначе (режим прыжка в false) обобщенная координата остается равной своему макс. допустимому значению, но меняется направление ее изменения. Т.е. теперь GC начинает уменьшаться до минимально допустимого значения и тогда направление опять меняется. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2160abd085f628511331d8fb950ba226"></a><!-- doxytag: member="GroupManager::SetMaxGC" ref="a2160abd085f628511331d8fb950ba226" args="(double x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GroupManager::SetMaxGC </td>
+          <td>(</td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>x</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Устанавливает максимально допустимое значение обобщенной координаты. </p>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>Устанавливаемое значение </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000020">Ошибка:</a></b></dt><dd>Никаких проверок </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3902f2dd35ec3bad963310f67369a379"></a><!-- doxytag: member="GroupManager::SetMinGC" ref="a3902f2dd35ec3bad963310f67369a379" args="(double x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GroupManager::SetMinGC </td>
+          <td>(</td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>x</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Устанавливает минимально допустимое значение обобщенной координаты. </p>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>Устанавливаемое значение </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000021">Ошибка:</a></b></dt><dd>Никаких проверок </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a94361a7ba680e812f0b340efe7d109f4"></a><!-- doxytag: member="GroupManager::SetStepSize" ref="a94361a7ba680e812f0b340efe7d109f4" args="(double s)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GroupManager::SetStepSize </td>
+          <td>(</td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>s</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Устанавливает величину шага. </p>
+<p>Заносит величину шага в step_size. Отрицательную величину умножает на -1. </p>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>s</em>&nbsp;</td><td>Величина шага, которую надо установить. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>Данные класса</h2>
+<a class="anchor" id="ab8a15542235512daae8cdab78042d891"></a><!-- doxytag: member="GroupManager::groups" ref="ab8a15542235512daae8cdab78042d891" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list&lt;<a class="el" href="class_group.html">Group</a> *&gt; <a class="el" href="class_group_manager.html#ab8a15542235512daae8cdab78042d891">GroupManager::groups</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Список групп. </p>
+<p>Список групп механизма. Пути, приводящие к добавлению элемента в этот список: </p>
+<ul>
+<li>
+Вызов метода <a class="el" href="class_group_manager.html#abbbf104fb7ed58d2113cdffbf070f0df">Analyze()</a>, который нашел еще группы в механизме </li>
+<li>
+Вызов методов AddFirstGroup(), AddSecondGroup() </li>
+<li>
+Добавление какого-нибудь мусора путем обращения в списку извне! Плохо! <b>Очень плохо!</b> </li>
+</ul>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000023">Ошибка:</a></b></dt><dd>Архитектурная ошибка, нельзя оставлять этот список в public </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>D:/dzen/project/project/tmm/<a class="el" href="_group_manager_8h_source.html">GroupManager.h</a></li>
+<li>D:/dzen/project/project/tmm/GroupManager.cpp</li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Переменные</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Документация по Tmmproject. Последние изменения: Thu Sep 9 2010 01:42:33. Создано системой&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

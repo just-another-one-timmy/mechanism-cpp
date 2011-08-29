@@ -1,0 +1,37 @@
+Hi.
+Today is 30 of August, 2011 and I'm writing this text.
+
+This is home grown project, started from about 2009.
+Kysil Arcadii, my friend, was trying to solve his university task related to
+analyzing flat mechanisms: divide mechanism on Assur's groups, analyze each group
+and so on. He was supposed to do everything manually.
+
+So, he decided that there should be way to automatize this task somehow and in some time he wrote program, that can draw some mechanisms.
+He found that it's not so easy to extend program and add new features, because the whole program was, mainly, in one big file.
+
+He asked me for some help and we started thinking on this problem.
+In ~ 6 months, he-he, we clarified every detail of our future project, tried out some ideas and we were ready to start working.
+
+Here you can see result of our work, as it was on 14 of August, 2010.
+It means more than 1 year ago.
+
+Our code is not perfect.
+Something we did really wrong.
+But what we have is our project, that we were writing line by line, carefully thinking about details.
+We learned many new things and improved our thinking, communicating and coding ability a lot.
+I believe that we learned OOP, STL, OpenGL, XML processing and Doxygen documentation system at least; I am sure there are many things that I forgot to write here.
+We also tried cross-platform development and our program worked both under Linux and Windows.
+
+But there are still so many things to try and to do!
+It was really hard decision for us to switch to the new programming language and start our work from scratch. New language was Java.
+
+I believe, Java allows us to concentrate on *what* we are doing, not *how* we are doing something. Soon I will create repository for our Java code with live project version.
+We are still working actively on our project and I hope we will have release soon! :)
+
+Once again, this is old and unmaintained version of our project. Let it be part of our history. I'm just saving all things as they were (but will delete some binaries).
+If you want to recompile this project you should use Code::Blocks IDE with minGW compiler.
+Sorry for this, maybe I should create makefile later.
+
+Sorry for my bad English and I hope that was not hard to read for you!
+
+Iaroslav Tymchenko

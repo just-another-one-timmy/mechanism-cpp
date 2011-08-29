@@ -1,0 +1,101 @@
+\documentclass[a4paper]{book}
+\usepackage{a4wide}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{textcomp}
+\usepackage{alltt}
+\usepackage{times}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[pdftex,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\else
+\usepackage[ps2pdf,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\usepackage{pspicture}
+\fi
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+
+\usepackage{doxygen}
+\lstset{language=C++,inputencoding=utf8,basicstyle=\footnotesize,breaklines=true,breakatwhitespace=true,tabsize=8,numbers=left }
+\makeindex
+\setcounter{tocdepth}{3}
+\renewcommand{\footrulewidth}{0.4pt}
+\begin{document}
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}
+{\Large Tmmproject }\\
+\vspace*{1cm}
+{\large Создано системой Doxygen 1.7.1}\\
+\vspace*{0.5cm}
+{\small Thu Sep 9 2010 01:42:32}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+\chapter{TMM Project}
+\label{index}\hypertarget{index}{}\input{index}
+\chapter{Список задач}
+\label{todo}
+\hypertarget{todo}{}
+\input{todo}
+\chapter{Ошибки}
+\label{bug}
+\hypertarget{bug}{}
+\input{bug}
+\chapter{Алфавитный указатель классов}
+\input{hierarchy}
+\chapter{Алфавитный указатель классов}
+\input{annotated}
+\chapter{Классы}
+\input{class_comp_manager}
+\input{struct_connector}
+\input{struct_connector_sliding}
+\input{struct_connector_turn}
+\input{class_force}
+\input{class_group}
+\input{class_group1}
+\input{class_group2}
+\input{class_group_builder}
+\input{class_group_manager}
+\input{class_group_s}
+\input{class_group_s_t_s}
+\input{class_group_t}
+\input{class_group_t_s_s}
+\input{class_group_t_s_t}
+\input{class_group_t_t_s}
+\input{class_group_t_t_t}
+\input{class_k_pair}
+\input{class_k_p_sliding}
+\input{class_k_p_turn}
+\input{struct_linear_t_f}
+\input{class_mechan}
+\input{class_segment}
+\input{class_s_f_m_l_vizualizer}
+\input{struct_t_f}
+\input{struct_turn_t_f}
+\input{class_vizualizer}
+\input{class_x_m_l_loader}
+\input{class_x_m_l_saver}
+\printindex
+\end{document}

@@ -1,0 +1,602 @@
+\hypertarget{class_comp_manager}{
+\section{Класс CompManager}
+\label{class_comp_manager}\index{CompManager@{CompManager}}
+}
+
+
+Менеджер компонентов.  
+
+
+
+
+{\ttfamily \#include $<$CompManager.h$>$}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_segment}{Segment} $\ast$ \hyperlink{class_comp_manager_a7ecbf9a15c3fc964ab7d6ab4024f25ac}{AddSegment} (string name, double mass=1000, double rot\_\-inertia=1000)
+\begin{DoxyCompactList}\small\item\em Добавляет сегмент. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_comp_manager_ab8b0643ca8728557894ab34f47e47ae9}{DelSegment} (string name)
+\begin{DoxyCompactList}\small\item\em Удаляет сегмент. \item\end{DoxyCompactList}\item 
+\hyperlink{class_segment}{Segment} $\ast$ \hyperlink{class_comp_manager_a27e3139830fad4ef9585d614cafadfe4}{GetSegment} (string name)
+\begin{DoxyCompactList}\small\item\em Ищет сегмент по имени. \item\end{DoxyCompactList}\item 
+\hyperlink{struct_connector}{Connector} $\ast$ \hyperlink{class_comp_manager_a912b25c0acff2591015e958bedd1d159}{AddCMass} (string seg\_\-name, double ro, double phi)
+\begin{DoxyCompactList}\small\item\em Добавляет центр масс для данного сегмента. \item\end{DoxyCompactList}\item 
+\hyperlink{class_k_pair}{KPair} $\ast$ \hyperlink{class_comp_manager_ad772ce1d11dc2e636f02cf9b56cf90fb}{AddKPTurn} (string name, string c1name, string c2name)
+\begin{DoxyCompactList}\small\item\em Добавляет кинематическую пару вращательного типа. \item\end{DoxyCompactList}\item 
+\hyperlink{class_k_pair}{KPair} $\ast$ \hyperlink{class_comp_manager_a4686577f86845ea8df4f3b2682782fac}{AddKPSliding} (string name, string c1name, string c2name)
+\begin{DoxyCompactList}\small\item\em Добавляет кинематическую пару поступательного типа. \item\end{DoxyCompactList}\item 
+\hyperlink{class_k_pair}{KPair} $\ast$ \hyperlink{class_comp_manager_a339db4176aa621f6ee5571ac0b26635a}{GetKPair} (string name)
+\begin{DoxyCompactList}\small\item\em Ищет КП по имени. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_comp_manager_acf9a726c050661051e19eca9b6a7d51d}{DelKPair} (string name)
+\begin{DoxyCompactList}\small\item\em Удаляет КП по имени. \item\end{DoxyCompactList}\item 
+\hyperlink{struct_connector}{Connector} $\ast$ \hyperlink{class_comp_manager_a11f96f8ae164686d883b92605e3601d5}{AddConnectorTurn} (string name, string segment\_\-name, double ro, double phi)
+\begin{DoxyCompactList}\small\item\em Добавляет вращательный коннектор. \item\end{DoxyCompactList}\item 
+\hyperlink{struct_connector}{Connector} $\ast$ \hyperlink{class_comp_manager_a1cf12ded84bf7d17ebbd4c042971133a}{AddConnectorSliding} (string name, string segment\_\-name, double ro, double phi, double alpha)
+\begin{DoxyCompactList}\small\item\em Добавляет поступательный коннектор. \item\end{DoxyCompactList}\item 
+\hyperlink{struct_connector}{Connector} $\ast$ \hyperlink{class_comp_manager_ab780d475031982a4f8630fbcae3f36f5}{AddConnectorTurnD} (string name, string segment\_\-name, double x, double y)
+\begin{DoxyCompactList}\small\item\em Добавляет вращательный коннектор. \item\end{DoxyCompactList}\item 
+\hyperlink{struct_connector}{Connector} $\ast$ \hyperlink{class_comp_manager_a26f530dc0ce0747bad73f7c25f4aaa8e}{AddConnectorSlidingD} (string name, string segment\_\-name, double x, double y, double alpha)
+\begin{DoxyCompactList}\small\item\em Добавляет поступательный коннектор. \item\end{DoxyCompactList}\item 
+\hyperlink{struct_connector}{Connector} $\ast$ \hyperlink{class_comp_manager_a7c71c8cd9c3d554bdad12e20e1fe5385}{GetConnector} (string name)
+\begin{DoxyCompactList}\small\item\em Ищет коннектор по имени. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_comp_manager_a94587a431d85adb01d8cf016f115f32a}{DelConnector} (string name)
+\begin{DoxyCompactList}\small\item\em Удаляет коннектор по имени. \item\end{DoxyCompactList}\item 
+\hyperlink{class_force}{Force} $\ast$ \hyperlink{class_comp_manager_ae0d3f85a00d2413d78a7379592515266}{AddTechnoForce} (string name, string con\_\-name, double fx, double fy, double torque)
+\begin{DoxyCompactList}\small\item\em Добавляет силу с нужными параметрами. \item\end{DoxyCompactList}\item 
+\hyperlink{class_force}{Force} $\ast$ \hyperlink{class_comp_manager_a3fb340abc60404300b573ecbd3194e48}{GetForce} (string name)
+\begin{DoxyCompactList}\small\item\em Ищет силу по имени. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_comp_manager_a9029ca9d910c0a768cde3ba354d8b2cc}{DelTechnoForce} (string name)
+\begin{DoxyCompactList}\small\item\em Удаляет силу по имени. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_comp_manager_a1ed6c3cf414fd38d18193457c01a59e8}{UnsetCalculated} ()
+\begin{DoxyCompactList}\small\item\em Сбросить флаги \char`\"{}Вычислено\char`\"{}. \item\end{DoxyCompactList}\item 
+\hyperlink{class_comp_manager_a028278fd6a765ccd63b7b8f2596b501f}{$\sim$CompManager} ()
+\begin{DoxyCompactList}\small\item\em Деструктор механизма. \item\end{DoxyCompactList}\item 
+const map$<$ string, \hyperlink{class_segment}{Segment} $\ast$ $>$ \hyperlink{class_comp_manager_ad06433257a643f6c256d0f5d6a886266}{GetSegments} ()
+\begin{DoxyCompactList}\small\item\em Возвращает АМ сегментов. \item\end{DoxyCompactList}\item 
+const map$<$ string, \hyperlink{class_k_pair}{KPair} $\ast$ $>$ \hyperlink{class_comp_manager_a8f9c981e2d449679b7c2e41d6904d6f0}{GetKPairs} ()
+\begin{DoxyCompactList}\small\item\em Возвращает АМ КП. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Друзья}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_comp_manager_a6b39947aaeec9f8319012e66f7469bcf}{
+void {\bfseries PrintCompManagerInfo} (\hyperlink{class_comp_manager}{CompManager} $\ast$cm, int level)}
+\label{class_comp_manager_a6b39947aaeec9f8319012e66f7469bcf}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Менеджер компонентов. Класс нужен для более удобного управления составляющими механизма. Пользователю можно не объявлять все переменные самому, достаточно вызвать нужные методы этого класса.
+
+В целом, класс позволяет добавлять:
+\begin{DoxyItemize}
+\item именованые сегменты
+\item именованые коннекторы (с указанием имени сегмента, на который нужно добавить коннектор)
+\item именованые кинематические пары (с указанием имён коннекторов, с которыми нужно связать КП)
+\item именованые силы (с указанием коннектора, который будет являться точкой приложения силы)
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Автор}
+jtim 
+\end{DoxyAuthor}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_comp_manager_a028278fd6a765ccd63b7b8f2596b501f}{
+\index{CompManager@{CompManager}!$\sim$CompManager@{$\sim$CompManager}}
+\index{$\sim$CompManager@{$\sim$CompManager}!CompManager@{CompManager}}
+\subsubsection[{$\sim$CompManager}]{\setlength{\rightskip}{0pt plus 5cm}CompManager::$\sim$CompManager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_comp_manager_a028278fd6a765ccd63b7b8f2596b501f}
+
+
+Деструктор механизма. 
+
+
+\begin{DoxyEnumerate}
+\item Для каждого звена -\/ удаляет его коннекторы, а потом само звено (вызывает деструкторы) 
+\item Удаляет все оставшиеся коннекторы (вызывая деструктор) 
+\item Удаляет все КП (вызывая деструктор) 
+\item Очищает внутренние АМ звеньев, коннекторов, КП и сил 
+\end{DoxyEnumerate}
+
+\subsection{Методы}
+\hypertarget{class_comp_manager_a912b25c0acff2591015e958bedd1d159}{
+\index{CompManager@{CompManager}!AddCMass@{AddCMass}}
+\index{AddCMass@{AddCMass}!CompManager@{CompManager}}
+\subsubsection[{AddCMass}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Connector} $\ast$ CompManager::AddCMass (
+\begin{DoxyParamCaption}
+\item[{string}]{ seg\_\-name, }
+\item[{double}]{ ro, }
+\item[{double}]{ phi}
+\end{DoxyParamCaption}
+)}}
+\label{class_comp_manager_a912b25c0acff2591015e958bedd1d159}
+
+
+Добавляет центр масс для данного сегмента. 
+
+Более детально, метод делает следующее: 
+\begin{DoxyEnumerate}
+\item Создает новый \hyperlink{struct_connector_turn}{ConnectorTurn} с именем seg\_\-name+\char`\"{}cS\char`\"{}, сохраняет указатель на него во внутреннем АМ коннекторов механизма 
+\item Ищет сегмент с именем seg\_\-name, присваивает его полю cmass указатель на созданный коннектор 
+\item Создает \hyperlink{struct_linear_t_f}{LinearTF} и записывает указатель на него в поле linear созданного коннектора 
+\item Создает новую силу гравитационного типа с именем \char`\"{}G\_\-\char`\"{}+seg\_\-name, равную силе mg (сила тяжести) для данного сегмента 
+\item Добавляет созданную силу во внутренний АМ механизма 
+\item Свойству linear данной силы присваивает linear коннектора, созданного в п1. 
+\end{DoxyEnumerate}
+\begin{DoxyParams}{Аргументы}
+\item[{\em seg\_\-name}]Имя сегмента, для которого создается ЦМ \item[{\em ro,phi}]Координаты ЦМ в полярной системе \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Указатель на коннектор, созданный в качестве ЦМ 
+\end{DoxyReturn}
+\hypertarget{class_comp_manager_a1cf12ded84bf7d17ebbd4c042971133a}{
+\index{CompManager@{CompManager}!AddConnectorSliding@{AddConnectorSliding}}
+\index{AddConnectorSliding@{AddConnectorSliding}!CompManager@{CompManager}}
+\subsubsection[{AddConnectorSliding}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Connector} $\ast$ CompManager::AddConnectorSliding (
+\begin{DoxyParamCaption}
+\item[{string}]{ name, }
+\item[{string}]{ segment\_\-name, }
+\item[{double}]{ ro, }
+\item[{double}]{ phi, }
+\item[{double}]{ alpha}
+\end{DoxyParamCaption}
+)}}
+\label{class_comp_manager_a1cf12ded84bf7d17ebbd4c042971133a}
+
+
+Добавляет поступательный коннектор. 
+
+Происходит следующее: 
+\begin{DoxyEnumerate}
+\item Создается новый коннектор 
+\item Ему присваивается имя 
+\item Ищется нужный сегмент, указатель на коннектор добавляется в список сегмента 
+\item Коннектор добавляется во внутренний АМ механизма 
+\item Устанавливаются свойства коннектора 
+\item Для коннектора создается новый \hyperlink{struct_linear_t_f}{LinearTF} 
+\end{DoxyEnumerate}
+\begin{DoxyParams}{Аргументы}
+\item[{\em name}]Имя, которое будет присвоено коннектору \item[{\em segment\_\-name}]Имя звена, на котором будет размещен коннектор \item[{\em ro,phi}]Координаты коннектора в полярной системе \item[{\em alpha}]??????????????????????????????????????????? \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Указатель на созданный коннектор 
+\end{DoxyReturn}
+\begin{Desc}
+\item[\hyperlink{bug__bug000010}{Ошибка}]Нет проверок, был ли такой сегмент в механизме и не было ли такого коннектора в механизме \end{Desc}
+\begin{DoxyWarning}{Предупреждения}
+Я не знаю, что делает параметр alpha 
+\end{DoxyWarning}
+\hypertarget{class_comp_manager_a26f530dc0ce0747bad73f7c25f4aaa8e}{
+\index{CompManager@{CompManager}!AddConnectorSlidingD@{AddConnectorSlidingD}}
+\index{AddConnectorSlidingD@{AddConnectorSlidingD}!CompManager@{CompManager}}
+\subsubsection[{AddConnectorSlidingD}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Connector} $\ast$ CompManager::AddConnectorSlidingD (
+\begin{DoxyParamCaption}
+\item[{string}]{ name, }
+\item[{string}]{ segment\_\-name, }
+\item[{double}]{ x, }
+\item[{double}]{ y, }
+\item[{double}]{ alpha}
+\end{DoxyParamCaption}
+)}}
+\label{class_comp_manager_a26f530dc0ce0747bad73f7c25f4aaa8e}
+
+
+Добавляет поступательный коннектор. 
+
+Обертка для метода AddConnectorSliding, но сюда передаются координаты в декартовой системе. 
+\begin{DoxyParams}{Аргументы}
+\item[{\em name}]Имя, которое будет присвоено коннектору \item[{\em segment\_\-name}]Имя звена, на котором будет размещен коннектор \item[{\em x,y}]Координаты коннектора в декартовой системе \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Указатель на созданный коннектор 
+\end{DoxyReturn}
+\hypertarget{class_comp_manager_a11f96f8ae164686d883b92605e3601d5}{
+\index{CompManager@{CompManager}!AddConnectorTurn@{AddConnectorTurn}}
+\index{AddConnectorTurn@{AddConnectorTurn}!CompManager@{CompManager}}
+\subsubsection[{AddConnectorTurn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Connector} $\ast$ CompManager::AddConnectorTurn (
+\begin{DoxyParamCaption}
+\item[{string}]{ name, }
+\item[{string}]{ segment\_\-name, }
+\item[{double}]{ ro, }
+\item[{double}]{ phi}
+\end{DoxyParamCaption}
+)}}
+\label{class_comp_manager_a11f96f8ae164686d883b92605e3601d5}
+
+
+Добавляет вращательный коннектор. 
+
+Происходит следующее: 
+\begin{DoxyEnumerate}
+\item Создается новый коннектор 
+\item Ему присваивается имя 
+\item Ищется нужный сегмент, указатель на коннектор добавляется в список сегмента 
+\item Коннектор добавляется во внутренний АМ механизма 
+\item Устанавливаются свойства коннектора 
+\end{DoxyEnumerate}
+\begin{DoxyParams}{Аргументы}
+\item[{\em name}]Имя, которое будет присвоено коннектору \item[{\em segment\_\-name}]Имя звена, на котором будет размещен коннектор \item[{\em ro,phi}]Координаты коннектора в полярной системе \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Указатель на созданный коннектор 
+\end{DoxyReturn}
+\begin{Desc}
+\item[\hyperlink{bug__bug000009}{Ошибка}]Нет проверок, был ли такой сегмент в механизме и не было ли такого коннектора в механизме \end{Desc}
+\hypertarget{class_comp_manager_ab780d475031982a4f8630fbcae3f36f5}{
+\index{CompManager@{CompManager}!AddConnectorTurnD@{AddConnectorTurnD}}
+\index{AddConnectorTurnD@{AddConnectorTurnD}!CompManager@{CompManager}}
+\subsubsection[{AddConnectorTurnD}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Connector} $\ast$ CompManager::AddConnectorTurnD (
+\begin{DoxyParamCaption}
+\item[{string}]{ name, }
+\item[{string}]{ segment\_\-name, }
+\item[{double}]{ x, }
+\item[{double}]{ y}
+\end{DoxyParamCaption}
+)}}
+\label{class_comp_manager_ab780d475031982a4f8630fbcae3f36f5}
+
+
+Добавляет вращательный коннектор. 
+
+Обертка для метода AddConnectorTurn, но сюда передаются координаты в декартовой системе. 
+\begin{DoxyParams}{Аргументы}
+\item[{\em name}]Имя, которое будет присвоено коннектору \item[{\em segment\_\-name}]Имя звена, на котором будет размещен коннектор \item[{\em x,y}]Координаты коннектора в декартовой системе \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Указатель на созданный коннектор 
+\end{DoxyReturn}
+\hypertarget{class_comp_manager_a4686577f86845ea8df4f3b2682782fac}{
+\index{CompManager@{CompManager}!AddKPSliding@{AddKPSliding}}
+\index{AddKPSliding@{AddKPSliding}!CompManager@{CompManager}}
+\subsubsection[{AddKPSliding}]{\setlength{\rightskip}{0pt plus 5cm}{\bf KPair} $\ast$ CompManager::AddKPSliding (
+\begin{DoxyParamCaption}
+\item[{string}]{ name, }
+\item[{string}]{ c1name, }
+\item[{string}]{ c2name}
+\end{DoxyParamCaption}
+)}}
+\label{class_comp_manager_a4686577f86845ea8df4f3b2682782fac}
+
+
+Добавляет кинематическую пару поступательного типа. 
+
+Метод выполняет следующее: 
+\begin{DoxyEnumerate}
+\item Создает КП поступательного типа 
+\item Связывает ее с коннекторами c1name, c2name 
+\item Помещает КП во внутренний АМ механизма 
+\item Помещает силы реакции, созданные в конструкторе КП, во внутренний АМ механизма 
+\end{DoxyEnumerate}
+\begin{DoxyParams}{Аргументы}
+\item[{\em name}]Имя, которое будет присвоено КП \item[{\em c1name}]Имя первого коннектора \item[{\em c2name}]Имя второго коннектора \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Указатель на созданную КП 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+\item[{\em AddKPSliding: i1-\/$>$second-\/$>$Type() != CONNECTOR\_\-TYPE\_\-SLIDING}]В случае неподходящего типа первого коннетора. \item[{\em AddKPSliding: i2-\/$>$second-\/$>$Type() != CONNECTOR\_\-TYPE\_\-SLIDING}]В случае неподходящего типа второго коннетора. \end{DoxyExceptions}
+\begin{Desc}
+\item[\hyperlink{bug__bug000006}{Ошибка}]Не проверяется, действительно ли есть такие коннекторы в механизме \end{Desc}
+\hypertarget{class_comp_manager_ad772ce1d11dc2e636f02cf9b56cf90fb}{
+\index{CompManager@{CompManager}!AddKPTurn@{AddKPTurn}}
+\index{AddKPTurn@{AddKPTurn}!CompManager@{CompManager}}
+\subsubsection[{AddKPTurn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf KPair} $\ast$ CompManager::AddKPTurn (
+\begin{DoxyParamCaption}
+\item[{string}]{ name, }
+\item[{string}]{ c1name, }
+\item[{string}]{ c2name}
+\end{DoxyParamCaption}
+)}}
+\label{class_comp_manager_ad772ce1d11dc2e636f02cf9b56cf90fb}
+
+
+Добавляет кинематическую пару вращательного типа. 
+
+Метод выполняет следующее: 
+\begin{DoxyEnumerate}
+\item Создает КП поступательного типа 
+\item Связывает ее с коннекторами c1name, c2name 
+\item Помещает КП во внутренний АМ механизма 
+\item Помещает силы реакции, созданные в конструкторе КП, во внутренний АМ механизма 
+\end{DoxyEnumerate}
+\begin{DoxyParams}{Аргументы}
+\item[{\em name}]Имя, которое будет присвоено КП \item[{\em c1name}]Имя первого коннектора \item[{\em c2name}]Имя второго коннектора \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Указатель на созданную КП 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+\item[{\em AddKPTurn: i1-\/$>$second-\/$>$Type() != CONNECTOR\_\-TYPE\_\-TURN}]В случае неподходящего типа первого коннетора. \item[{\em AddKPTurn: i2-\/$>$second-\/$>$Type() != CONNECTOR\_\-TYPE\_\-TURN}]В случае неподходящего типа второго коннетора. \end{DoxyExceptions}
+\begin{Desc}
+\item[\hyperlink{bug__bug000005}{Ошибка}]Не проверяется, действительно ли есть такие коннекторы в механизме \end{Desc}
+\hypertarget{class_comp_manager_a7ecbf9a15c3fc964ab7d6ab4024f25ac}{
+\index{CompManager@{CompManager}!AddSegment@{AddSegment}}
+\index{AddSegment@{AddSegment}!CompManager@{CompManager}}
+\subsubsection[{AddSegment}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Segment} $\ast$ CompManager::AddSegment (
+\begin{DoxyParamCaption}
+\item[{string}]{ name, }
+\item[{double}]{ mass = {\ttfamily 1000}, }
+\item[{double}]{ rot\_\-inertia = {\ttfamily 1000}}
+\end{DoxyParamCaption}
+)}}
+\label{class_comp_manager_a7ecbf9a15c3fc964ab7d6ab4024f25ac}
+
+
+Добавляет сегмент. 
+
+Метод делает в точности следующее: 
+\begin{DoxyEnumerate}
+\item Выделяет память для нового сегмента и создает его 
+\item Инициализирует поля созданного сегмента 
+\item Добавляет сегмент во внутренний АМ сегментов (private) механизма 
+\item Создает новый коннектор с именем \char`\"{}имя\_\-сегмента+cP\char`\"{} (без кавычек) и делает его полюсом сегмента (т.е. в polus записывает указатель на новосозданный коннектор 
+\item Создает новый \hyperlink{struct_linear_t_f}{LinearTF} и записывает указатель на него в linear 
+\end{DoxyEnumerate}
+\begin{DoxyParams}{Аргументы}
+\item[{\em name}]Имя создаваемого сегмента \item[{\em mass}]Масса сегмента \item[{\em rot\_\-inertia}]Вращательный момент \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Указатель на созданный сегмент 
+\end{DoxyReturn}
+\begin{Desc}
+\item[\hyperlink{bug__bug000002}{Ошибка}]Нет проверки, был ли уже сегмент с таким именем. \end{Desc}
+\hypertarget{class_comp_manager_ae0d3f85a00d2413d78a7379592515266}{
+\index{CompManager@{CompManager}!AddTechnoForce@{AddTechnoForce}}
+\index{AddTechnoForce@{AddTechnoForce}!CompManager@{CompManager}}
+\subsubsection[{AddTechnoForce}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Force} $\ast$ CompManager::AddTechnoForce (
+\begin{DoxyParamCaption}
+\item[{string}]{ name, }
+\item[{string}]{ con\_\-name, }
+\item[{double}]{ fx, }
+\item[{double}]{ fy, }
+\item[{double}]{ torque}
+\end{DoxyParamCaption}
+)}}
+\label{class_comp_manager_ae0d3f85a00d2413d78a7379592515266}
+
+
+Добавляет силу с нужными параметрами. 
+
+
+\begin{DoxyEnumerate}
+\item Ищет коннектор с именем con\_\-name 
+\item Проверяет тип коннектора, если не CONNECTOR\_\-TYPE\_\-TURNING -\/ исключение 
+\item Создает новую силу с нужными параметрами, тип силы -\/ FORCE\_\-TYPE\_\-TECHNO 
+\item Добавляет силу во внутренний АМ механизма 
+\item Делает это: f-\/$>$linear = ct-\/$>$linear; f-\/$>$turn = \&(s-\/$>$turn); 
+\end{DoxyEnumerate}
+\begin{DoxyParams}{Аргументы}
+\item[{\em name}]Имя силы, которая будет создана \item[{\em con\_\-name}]Имя коннектора, к которому будет приложена сила \item[{\em fx,fy}]Проекции вектора силы на оси координат \item[{\em torque}]Вращательный момент (??? точно?) \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Указатель на созданную силу 
+\end{DoxyReturn}
+\begin{Desc}
+\item[\hyperlink{bug__bug000013}{Ошибка}]Не проверяется, был ли коннектор с именем con\_\-name, не было ли силы с именем name 
+\begin{DoxyExceptions}{Исключения}
+\item[{\em Force $\ast$ CompManager::AddTechnoForce: c-\/$>$Type() != CONNECTOR\_\-TYPE\_\-TURN}]Если тип коннектора не CONNECTOR\_\-TYPE\_\-TURN \end{DoxyExceptions}
+\end{Desc}
+\hypertarget{class_comp_manager_a94587a431d85adb01d8cf016f115f32a}{
+\index{CompManager@{CompManager}!DelConnector@{DelConnector}}
+\index{DelConnector@{DelConnector}!CompManager@{CompManager}}
+\subsubsection[{DelConnector}]{\setlength{\rightskip}{0pt plus 5cm}void CompManager::DelConnector (
+\begin{DoxyParamCaption}
+\item[{string}]{ name}
+\end{DoxyParamCaption}
+)}}
+\label{class_comp_manager_a94587a431d85adb01d8cf016f115f32a}
+
+
+Удаляет коннектор по имени. 
+
+
+\begin{DoxyEnumerate}
+\item Ищет коннектор с таким именем во внутреннем АМ механизма 
+\item Удаляет коннектор из списка сегмента (в коннекторе есть указатель на сегмент, содеержащий этот коннектор) 
+\item Удаляет коннектор из внутреннего АМ механизма 
+\item Вызывает деструктор коннектора 
+\end{DoxyEnumerate}
+\begin{DoxyParams}{Аргументы}
+\item[{\em name}]Имя коннектора, который надо удалить \end{DoxyParams}
+\begin{Desc}
+\item[\hyperlink{bug__bug000012}{Ошибка}]Если коннектора с таким именем нет, то будет плохо \end{Desc}
+\hypertarget{class_comp_manager_acf9a726c050661051e19eca9b6a7d51d}{
+\index{CompManager@{CompManager}!DelKPair@{DelKPair}}
+\index{DelKPair@{DelKPair}!CompManager@{CompManager}}
+\subsubsection[{DelKPair}]{\setlength{\rightskip}{0pt plus 5cm}void CompManager::DelKPair (
+\begin{DoxyParamCaption}
+\item[{string}]{ name}
+\end{DoxyParamCaption}
+)}}
+\label{class_comp_manager_acf9a726c050661051e19eca9b6a7d51d}
+
+
+Удаляет КП по имени. 
+
+Удаляет КП из внутреннего АМ механизма, вызывает деструктор КП 
+\begin{DoxyParams}{Аргументы}
+\item[{\em name}]Имя удаляемой КП \end{DoxyParams}
+\begin{Desc}
+\item[\hyperlink{bug__bug000008}{Ошибка}]Нет проверки, была ли такая КП в механизме \end{Desc}
+\hypertarget{class_comp_manager_ab8b0643ca8728557894ab34f47e47ae9}{
+\index{CompManager@{CompManager}!DelSegment@{DelSegment}}
+\index{DelSegment@{DelSegment}!CompManager@{CompManager}}
+\subsubsection[{DelSegment}]{\setlength{\rightskip}{0pt plus 5cm}void CompManager::DelSegment (
+\begin{DoxyParamCaption}
+\item[{string}]{ name}
+\end{DoxyParamCaption}
+)}}
+\label{class_comp_manager_ab8b0643ca8728557894ab34f47e47ae9}
+
+
+Удаляет сегмент. 
+
+Метод делает следующее: 
+\begin{DoxyEnumerate}
+\item Ищет данный сегмент по имени во внутреннем АМ механизма 
+\item Проходится по списку коннекторов данного сегмента и удаляет их из списка коннекторов механизма 
+\item Удаляет сегмент (освобождает память) 
+\item Удаляет указатель на сегмент из списка сегментов механизма 
+\end{DoxyEnumerate}
+
+Важно заметить, что освобождение памяти, выделенной для коннекторов, происходит в деструкторе сегмента. Поэтому в данном методе всего лишь удаляются элементы списка коннекторов механизма (указатели). 
+\begin{DoxyParams}{Аргументы}
+\item[{\em name}]Имя удаляемого сегмента \end{DoxyParams}
+\begin{Desc}
+\item[\hyperlink{bug__bug000003}{Ошибка}]Нет проверки, был ли в механизме сегмент с таким именем. \end{Desc}
+\hypertarget{class_comp_manager_a9029ca9d910c0a768cde3ba354d8b2cc}{
+\index{CompManager@{CompManager}!DelTechnoForce@{DelTechnoForce}}
+\index{DelTechnoForce@{DelTechnoForce}!CompManager@{CompManager}}
+\subsubsection[{DelTechnoForce}]{\setlength{\rightskip}{0pt plus 5cm}void CompManager::DelTechnoForce (
+\begin{DoxyParamCaption}
+\item[{string}]{ name}
+\end{DoxyParamCaption}
+)}}
+\label{class_comp_manager_a9029ca9d910c0a768cde3ba354d8b2cc}
+
+
+Удаляет силу по имени. 
+
+
+\begin{DoxyEnumerate}
+\item Ищет силу в списке сил механизма 
+\item Сила приложена к коннектору, коннектор лежит на звене. Сила добавлялась в список сил звена. Сейчас она оттуда удаляется. 
+\item Сила удаляется из внутреннего АМ механизма 
+\item Вызывается деструктор 
+\end{DoxyEnumerate}
+\begin{DoxyParams}{Аргументы}
+\item[{\em name}]Имя силы, которую нужно удалить \end{DoxyParams}
+\begin{Desc}
+\item[\hyperlink{bug__bug000015}{Ошибка}]Не проверяется, была ли такая сила в механизме. Не проверяется, был ли тип силы FORCE\_\-TYPE\_\-TECHNO \end{Desc}
+\hypertarget{class_comp_manager_a7c71c8cd9c3d554bdad12e20e1fe5385}{
+\index{CompManager@{CompManager}!GetConnector@{GetConnector}}
+\index{GetConnector@{GetConnector}!CompManager@{CompManager}}
+\subsubsection[{GetConnector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Connector} $\ast$ CompManager::GetConnector (
+\begin{DoxyParamCaption}
+\item[{string}]{ name}
+\end{DoxyParamCaption}
+)}}
+\label{class_comp_manager_a7c71c8cd9c3d554bdad12e20e1fe5385}
+
+
+Ищет коннектор по имени. 
+
+Ищет коннектор во внутреннем АМ механизма по имени. 
+\begin{DoxyParams}{Аргументы}
+\item[{\em name}]Имя коннектора, который нужно найти \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Указатель на коннектор с именем name 
+\end{DoxyReturn}
+\begin{Desc}
+\item[\hyperlink{bug__bug000011}{Ошибка}]Если коннектора с таким именем нет, то будет плохо \end{Desc}
+\hypertarget{class_comp_manager_a3fb340abc60404300b573ecbd3194e48}{
+\index{CompManager@{CompManager}!GetForce@{GetForce}}
+\index{GetForce@{GetForce}!CompManager@{CompManager}}
+\subsubsection[{GetForce}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Force} $\ast$ CompManager::GetForce (
+\begin{DoxyParamCaption}
+\item[{string}]{ name}
+\end{DoxyParamCaption}
+)}}
+\label{class_comp_manager_a3fb340abc60404300b573ecbd3194e48}
+
+
+Ищет силу по имени. 
+
+Ищет силу по имени во внутреннем АМ механизма 
+\begin{DoxyParams}{Аргументы}
+\item[{\em name}]Имя силы, которую нужно найти \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Указатель на найденную силу 
+\end{DoxyReturn}
+\begin{Desc}
+\item[\hyperlink{bug__bug000014}{Ошибка}]Если силы с таким именем нет, будет плохо \end{Desc}
+\hypertarget{class_comp_manager_a339db4176aa621f6ee5571ac0b26635a}{
+\index{CompManager@{CompManager}!GetKPair@{GetKPair}}
+\index{GetKPair@{GetKPair}!CompManager@{CompManager}}
+\subsubsection[{GetKPair}]{\setlength{\rightskip}{0pt plus 5cm}{\bf KPair} $\ast$ CompManager::GetKPair (
+\begin{DoxyParamCaption}
+\item[{string}]{ name}
+\end{DoxyParamCaption}
+)}}
+\label{class_comp_manager_a339db4176aa621f6ee5571ac0b26635a}
+
+
+Ищет КП по имени. 
+
+Ищет КП по имени во внутреннем АМ механизме 
+\begin{DoxyParams}{Аргументы}
+\item[{\em name}]Имя КП \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Указатель на найденную КП 
+\end{DoxyReturn}
+\begin{Desc}
+\item[\hyperlink{bug__bug000007}{Ошибка}]Не проверяется, есть ли такая КП во внутреннем АМ механизма \end{Desc}
+\hypertarget{class_comp_manager_a8f9c981e2d449679b7c2e41d6904d6f0}{
+\index{CompManager@{CompManager}!GetKPairs@{GetKPairs}}
+\index{GetKPairs@{GetKPairs}!CompManager@{CompManager}}
+\subsubsection[{GetKPairs}]{\setlength{\rightskip}{0pt plus 5cm}const map$<$ string, {\bf KPair} $\ast$ $>$ CompManager::GetKPairs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_comp_manager_a8f9c981e2d449679b7c2e41d6904d6f0}
+
+
+Возвращает АМ КП. 
+
+\begin{Desc}
+\item[\hyperlink{bug__bug000017}{Ошибка}]У пользователя есть возможность удалить КП, узнав её указатель с помощью этого АМ. Будет плохо. \end{Desc}
+\hypertarget{class_comp_manager_a27e3139830fad4ef9585d614cafadfe4}{
+\index{CompManager@{CompManager}!GetSegment@{GetSegment}}
+\index{GetSegment@{GetSegment}!CompManager@{CompManager}}
+\subsubsection[{GetSegment}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Segment} $\ast$ CompManager::GetSegment (
+\begin{DoxyParamCaption}
+\item[{string}]{ name}
+\end{DoxyParamCaption}
+)}}
+\label{class_comp_manager_a27e3139830fad4ef9585d614cafadfe4}
+
+
+Ищет сегмент по имени. 
+
+Ищет сегмент с нужным именем во внутреннем АМ механизма 
+\begin{DoxyParams}{Аргументы}
+\item[{\em name}]Имя сегмента для поиска \end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Указатель на сегмент с именем name 
+\end{DoxyReturn}
+\begin{Desc}
+\item[\hyperlink{bug__bug000004}{Ошибка}]Нет проверки, был ли в механизме сегмент с таким именем. \end{Desc}
+\hypertarget{class_comp_manager_ad06433257a643f6c256d0f5d6a886266}{
+\index{CompManager@{CompManager}!GetSegments@{GetSegments}}
+\index{GetSegments@{GetSegments}!CompManager@{CompManager}}
+\subsubsection[{GetSegments}]{\setlength{\rightskip}{0pt plus 5cm}const map$<$ string, {\bf Segment} $\ast$ $>$ CompManager::GetSegments (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_comp_manager_ad06433257a643f6c256d0f5d6a886266}
+
+
+Возвращает АМ сегментов. 
+
+\begin{Desc}
+\item[\hyperlink{bug__bug000016}{Ошибка}]У пользователя есть возможность удалить сегмент, узнав его указатель с помощью этого АМ. Будет плохо. \end{Desc}
+\hypertarget{class_comp_manager_a1ed6c3cf414fd38d18193457c01a59e8}{
+\index{CompManager@{CompManager}!UnsetCalculated@{UnsetCalculated}}
+\index{UnsetCalculated@{UnsetCalculated}!CompManager@{CompManager}}
+\subsubsection[{UnsetCalculated}]{\setlength{\rightskip}{0pt plus 5cm}void CompManager::UnsetCalculated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_comp_manager_a1ed6c3cf414fd38d18193457c01a59e8}
+
+
+Сбросить флаги \char`\"{}Вычислено\char`\"{}. 
+
+Проходит по всем силам и коннекторам механизма, ставит им флаг calculated в false. Это нужно делать перед тем, как вызывать процедуру просчета механизма. 
+
+Объявления и описания членов классов находятся в файлах:\begin{DoxyCompactItemize}
+\item 
+D:/dzen/project/project/tmm/CompManager.h\item 
+D:/dzen/project/project/tmm/CompManager.cpp\end{DoxyCompactItemize}

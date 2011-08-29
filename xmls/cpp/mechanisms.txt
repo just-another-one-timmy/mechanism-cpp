@@ -1,0 +1,181 @@
+/*
+    cm.AddSegment("Ground", 10000, 0);
+    cm.AddConnectorTurnD("s0c1", "Ground", 0,0.35);
+    cm.AddConnectorTurnD("s0c2", "Ground", 0, 0);
+    cm.AddConnectorSlidingD("s0c3","Ground",-0.3,0.6, pi/2.05);
+
+    cm.AddSegment("s1");
+    cm.AddConnectorTurn("s1c1", "s1", 0, 0);
+    cm.AddConnectorTurn("s1c2", "s1", 0.2,0);
+
+    cm.AddSegment("s2");
+    cm.AddConnectorTurn("s2c1", "s2", 0, 0);
+    cm.AddConnectorTurn("s2c2", "s2", 0.4, 0);
+
+    cm.AddSegment("s3");
+    cm.AddConnectorTurn("s3c1", "s3", 0, 0);
+    cm.AddConnectorTurn("s3c2", "s3", 0.3, 0);
+    cm.AddConnectorSliding("s3c3", "s3", 0, 0, pi);
+    cm.AddConnectorSliding("s3c4", "s3", 0, 0, 0);
+
+    cm.AddSegment("s4");
+    cm.AddConnectorTurn("s4c1", "s4", 0, 0);
+    cm.AddConnectorSliding("s4c2", "s4", 0, 0, 0);
+
+    cm.AddSegment("s5");
+    cm.AddConnectorTurn("s5c1", "s5", 0, 0);
+    cm.AddConnectorTurn("s5c3", "s5", 0.5, 0);
+    cm.AddConnectorSliding("s5c2", "s5", 0, 0, 0);
+
+    cm.AddSegment("s6");
+    cm.AddConnectorTurn("s6c1", "s6", 0, 0);
+    cm.AddConnectorTurn("s6c2", "s6", 0.810, 0);
+
+    cm.AddSegment("s7");
+    cm.AddConnectorTurn("s7c1", "s7", 0, 0);
+    cm.AddConnectorSliding("s7c2", "s7", 0, 0, 1);
+
+    cm.AddKPTurn("O", "s0c1", "s1c1");
+    cm.AddKPTurn("A", "s1c2", "s2c1");
+    cm.AddKPTurn("B", "s2c2", "s3c2");
+    cm.AddKPTurn("C", "s3c1", "s0c2");
+
+    cm.AddKPSliding("D", "s3c4", "s4c2");
+    cm.AddKPTurn("K", "s4c1", "s5c3");
+    cm.AddKPSliding("L", "s0c3", "s5c2");
+    cm.AddKPTurn("E", "s5c1", "s6c1");
+    cm.AddKPTurn("F", "s6c2", "s7c1");
+    cm.AddKPSliding("G", "s3c3", "s7c2");
+*/
+
+
+
+/*
+ cm.AddSegment("Ground", 10000, 0);
+    cm.AddConnectorTurnD("s0c1", "Ground", 0,0.835);
+    cm.AddConnectorTurnD("s0c2", "Ground", 0.0, 0);
+
+    cm.AddSegment("s1");
+    cm.AddConnectorTurn("s1c1", "s1",0, 0);
+    cm.AddConnectorTurn("s1c2", "s1",0.2, pi/2);
+
+    cm.AddSegment("s6");
+    cm.AddConnectorTurnD("s6c1", "s6", 0, 0);
+    cm.AddConnectorSlidingD("s6c2", "s6", 0.3, 0.4, 0);
+
+    cm.AddSegment("s7");
+    cm.AddConnectorTurnD("s7c1", "s7", 0, 0);
+    cm.AddConnectorSlidingD("s7c2", "s7", 0.1, -0.1, 0);
+
+
+    cm.AddKPTurn("O", "s0c2", "s1c1");
+    cm.AddKPTurn("F", "s1c2", "s6c1");
+    cm.AddKPSliding("M","s6c2","s7c2");
+    cm.AddKPTurn("H", "s7c1", "s0c1");
+*/
+
+/*
+
+    cm.AddSegment("Ground", 10000, 0);
+    cm.AddConnectorTurnD("s0c1", "Ground", 0.35,0.0);
+    cm.AddConnectorTurnD("s0c2", "Ground", 0, 0);
+    cm.AddConnectorSlidingD("s0c3","Ground",-0.3,0.4, pi/1);
+
+    cm.AddSegment("s1");
+    cm.AddConnectorTurn("s1c1", "s1", 0, 0);
+    cm.AddConnectorTurn("s1c2", "s1", 0.1,0);
+
+    cm.AddSegment("s2");
+    cm.AddConnectorTurn("s2c1", "s2", 0, 0);
+    cm.AddConnectorTurn("s2c2", "s2", 0.4, 0);
+
+    cm.AddSegment("s3");
+    cm.AddConnectorTurn("s3c1", "s3", 0, 0);
+    cm.AddConnectorTurn("s3c2", "s3", 0.3, 0);
+    cm.AddConnectorSlidingD("s3c3", "s3", -0.0, 0, pi);
+    cm.AddConnectorSlidingD("s3c4", "s3", 0.0, 0.0, 0);
+
+    cm.AddSegment("s4");
+    cm.AddConnectorTurn("s4c1", "s4", 0.1, pi/2);
+    cm.AddConnectorSliding("s4c2", "s4", 0, 0, 0);
+
+    cm.AddSegment("s5");
+    cm.AddConnectorTurn("s5c1", "s5", 0.1, pi);
+    cm.AddConnectorTurn("s5c3", "s5", -0.4, 0);
+    cm.AddConnectorSlidingD("s5c2", "s5", 0.2, 0.1, 0);
+
+    cm.AddSegment("s6");
+    cm.AddConnectorTurn("s6c1", "s6", 0, 0);
+    cm.AddConnectorTurn("s6c2", "s6", 0.810, 0);
+
+    cm.AddSegment("s7");
+    cm.AddConnectorTurn("s7c1", "s7", 0.1, pi/2);
+    cm.AddConnectorSliding("s7c2", "s7", 0, 0, 0);
+
+    cm.AddKPTurn("O", "s0c1", "s1c1");
+    cm.AddKPTurn("A", "s1c2", "s2c1");
+    cm.AddKPTurn("B", "s2c2", "s3c2");
+    cm.AddKPTurn("C", "s3c1", "s0c2");
+
+    cm.AddKPSliding("D", "s3c3", "s4c2");
+    cm.AddKPTurn("K", "s4c1", "s5c1");
+    cm.AddKPSliding("L", "s0c3", "s5c2");
+
+    cm.AddKPTurn("E", "s5c3", "s6c1");
+    cm.AddKPTurn("F", "s6c2", "s7c1");
+    cm.AddKPSliding("G", "s3c4", "s7c2");
+
+  /*
+
+  cm.AddSegment("Ground", 10000, 0);
+    cm.AddConnectorTurnD("s0c1", "Ground", 0.0,0.0);
+    cm.AddConnectorTurnD("s0c2", "Ground", -0.2, 0.05);
+    cm.AddConnectorSlidingD("s0c3","Ground",0.2,-0.3, pi/19);
+
+    cm.AddSegment("s1");
+    cm.AddConnectorTurn("s1c1", "s1", 0, 0);
+    cm.AddConnectorTurn("s1c2", "s1", 0.2,0);
+
+    cm.AddSegment("s2");
+    cm.AddConnectorTurnD("s2c1", "s2", 0, 0.1);
+    cm.AddConnectorSliding("s2c2", "s2", 0, 0, 0);
+
+    cm.AddSegment("s3");
+    cm.AddConnectorSliding("s3c3", "s3", 0, 0, 6.5/18.0*pi);  // 70 dgg
+    cm.AddConnectorSliding("s3c2", "s3", 0, 0, 0);
+    cm.AddConnectorTurn("s3c1", "s3", 0.1, pi);
+    cm.AddConnectorSliding("s3c4", "s3", 0, 0, -pi);
+
+    cm.AddSegment("s4");
+    cm.AddConnectorTurn("s4c1", "s4", 0, 0);
+    cm.AddConnectorTurn("s4c2", "s4", 0.2, 0);
+
+    cm.AddSegment("s5");
+    cm.AddConnectorTurn("s5c1", "s5", 0.0, 0);
+    cm.AddConnectorTurn("s5c2", "s5", 0.4, 0);
+    cm.AddConnectorSliding("s5c3", "s5", 0,0, pi);
+
+    cm.AddSegment("s6");
+    cm.AddConnectorTurn("s6c1", "s6", 0, 0);
+    cm.AddConnectorSliding("s6c2", "s6", 0, 0, 0);
+
+    cm.AddSegment("s7");
+    cm.AddConnectorTurn("s7c1", "s7", 0, 0);
+    cm.AddConnectorSliding("s7c2", "s7", 0, 0, 0);
+
+    cm.AddKPTurn("O", "s0c1", "s1c1");
+    cm.AddKPTurn("A", "s1c2", "s2c1");
+    cm.AddKPSliding("D", "s2c2", "s3c3");
+
+    cm.AddKPSliding("S", "s3c2", "s0c3");
+    cm.AddKPTurn("E", "s3c1", "s4c2");
+    cm.AddKPTurn("B", "s4c1", "s5c1");
+
+    cm.AddKPTurn("C", "s5c2", "s0c2");
+    cm.AddKPSliding("G", "s5c3", "s6c2");
+    cm.AddKPSliding("F", "s3c4", "s7c2");
+
+    cm.AddKPTurn("H", "s6c1", "s7c1");
+
+    cm.AddTechnoForce("F", "s7c1", 1, 2, 3);
+*/

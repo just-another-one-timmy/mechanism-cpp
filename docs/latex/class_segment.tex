@@ -1,0 +1,108 @@
+\hypertarget{class_segment}{
+\section{Класс Segment}
+\label{class_segment}\index{Segment@{Segment}}
+}
+
+
+звено.  
+
+
+
+
+{\ttfamily \#include $<$Segment.h$>$}
+
+
+
+Граф связей класса Segment:
+% FIG 0
+\subsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_segment_a75cbf2471c706e881fb87ff71247a2fa}{
+list$<$ \hyperlink{struct_connector}{Connector} $\ast$ $>$ \hyperlink{class_segment_a75cbf2471c706e881fb87ff71247a2fa}{connectors}}
+\label{class_segment_a75cbf2471c706e881fb87ff71247a2fa}
+
+\begin{DoxyCompactList}\small\item\em список коннекторов. \item\end{DoxyCompactList}\item 
+\hypertarget{class_segment_a5cf022f056558cef34766627bf4f1ecb}{
+list$<$ \hyperlink{class_force}{Force} $\ast$ $>$ \hyperlink{class_segment_a5cf022f056558cef34766627bf4f1ecb}{forces}}
+\label{class_segment_a5cf022f056558cef34766627bf4f1ecb}
+
+\begin{DoxyCompactList}\small\item\em список сил. \item\end{DoxyCompactList}\item 
+\hyperlink{struct_connector_turn}{ConnectorTurn} $\ast$ \hyperlink{class_segment_a0f3dc25d68321cd5c3e8595fcdbc2ea8}{cmass}
+\begin{DoxyCompactList}\small\item\em коннектор в центре масс звена. \item\end{DoxyCompactList}\item 
+\hyperlink{struct_connector_turn}{ConnectorTurn} $\ast$ \hyperlink{class_segment_ab137465e247c4b7f5584e4ad558e4138}{polus}
+\begin{DoxyCompactList}\small\item\em коннектор -\/ полюс системы координат звена. \item\end{DoxyCompactList}\item 
+string \hyperlink{class_segment_a0317dfdef4af06341f86ffbd77aeefd8}{name}
+\begin{DoxyCompactList}\small\item\em имя звена. \item\end{DoxyCompactList}\item 
+double \hyperlink{class_segment_ae2ac875b86cea3b0dbd60b318d953588}{mass}
+\begin{DoxyCompactList}\small\item\em масса. \item\end{DoxyCompactList}\item 
+double \hyperlink{class_segment_a9559a2939e6df5ff37f8b30bd2e489ad}{rot\_\-inertia}
+\begin{DoxyCompactList}\small\item\em момент инерции. \item\end{DoxyCompactList}\item 
+\hyperlink{struct_turn_t_f}{TurnTF} \hyperlink{class_segment_af72f1d60a478761af1f157a4d949e660}{turn}
+\begin{DoxyCompactList}\small\item\em наклон звена. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+звено. 
+
+\subsection{Данные класса}
+\hypertarget{class_segment_a0f3dc25d68321cd5c3e8595fcdbc2ea8}{
+\index{Segment@{Segment}!cmass@{cmass}}
+\index{cmass@{cmass}!Segment@{Segment}}
+\subsubsection[{cmass}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ConnectorTurn}$\ast$ {\bf Segment::cmass}}}
+\label{class_segment_a0f3dc25d68321cd5c3e8595fcdbc2ea8}
+
+
+коннектор в центре масс звена. 
+
+к этому коннектору нужно подсоединять силы гравитации и инерции \hypertarget{class_segment_ae2ac875b86cea3b0dbd60b318d953588}{
+\index{Segment@{Segment}!mass@{mass}}
+\index{mass@{mass}!Segment@{Segment}}
+\subsubsection[{mass}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf Segment::mass}}}
+\label{class_segment_ae2ac875b86cea3b0dbd60b318d953588}
+
+
+масса. 
+
+необязательна в расчетах ПФ , но необходима для силового расчета \hypertarget{class_segment_a0317dfdef4af06341f86ffbd77aeefd8}{
+\index{Segment@{Segment}!name@{name}}
+\index{name@{name}!Segment@{Segment}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf Segment::name}}}
+\label{class_segment_a0317dfdef4af06341f86ffbd77aeefd8}
+
+
+имя звена. 
+
+глобальное имя звена, идентификатор \hypertarget{class_segment_ab137465e247c4b7f5584e4ad558e4138}{
+\index{Segment@{Segment}!polus@{polus}}
+\index{polus@{polus}!Segment@{Segment}}
+\subsubsection[{polus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ConnectorTurn}$\ast$ {\bf Segment::polus}}}
+\label{class_segment_ab137465e247c4b7f5584e4ad558e4138}
+
+
+коннектор -\/ полюс системы координат звена. 
+
+используется при расчетах, как опорная точка добавляется автоматически \hypertarget{class_segment_a9559a2939e6df5ff37f8b30bd2e489ad}{
+\index{Segment@{Segment}!rot\_\-inertia@{rot\_\-inertia}}
+\index{rot\_\-inertia@{rot\_\-inertia}!Segment@{Segment}}
+\subsubsection[{rot\_\-inertia}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf Segment::rot\_\-inertia}}}
+\label{class_segment_a9559a2939e6df5ff37f8b30bd2e489ad}
+
+
+момент инерции. 
+
+необязательный в расчетах ПФ , но необходим для силового расчета \hypertarget{class_segment_af72f1d60a478761af1f157a4d949e660}{
+\index{Segment@{Segment}!turn@{turn}}
+\index{turn@{turn}!Segment@{Segment}}
+\subsubsection[{turn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TurnTF} {\bf Segment::turn}}}
+\label{class_segment_af72f1d60a478761af1f157a4d949e660}
+
+
+наклон звена. 
+
+наклон оси звена по отношению к глобальной системе координат 
+
+Объявления и описания членов классов находятся в файлах:\begin{DoxyCompactItemize}
+\item 
+D:/dzen/project/project/tmm/Segment.h\item 
+D:/dzen/project/project/tmm/Segment.cpp\end{DoxyCompactItemize}

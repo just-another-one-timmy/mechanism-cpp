@@ -1,0 +1,51 @@
+// прес
+/*
+
+
+    cm.AddSegment("Ground", 10000, 0);
+
+    cm.AddConnectorSlidingD("s0c1","Ground",0.300,0.050, pi*5/6);
+    cm.AddConnectorTurnD("s0c2", "Ground", -0.150,-0.200);
+    cm.AddConnectorSlidingD("s0c3","Ground",-0.150,-0.200, pi/2);
+
+    cm.AddSegment("s1");
+    cm.AddConnectorTurn("s1c1", "s1", 0, 0);
+    cm.AddConnectorSliding("s1c2", "s1", 0, 0, 0);
+
+
+    cm.AddSegment("s2");
+    cm.AddConnectorTurn("s2c1", "s2", 0, 0.0);
+    cm.AddConnectorTurn("s2c2", "s2", 0.266, 0.0);
+    cm.AddConnectorTurn("s2c3", "s2", 0.266, 0.0);
+
+
+    cm.AddSegment("s3");
+    cm.AddConnectorTurn("s3c1", "s3", 0, 0.0);
+    cm.AddConnectorTurn("s3c2", "s3", 0.490, 0.0);
+
+
+    cm.AddSegment("s4");
+    cm.AddConnectorTurn("s4c1", "s4", 0, 0);
+    cm.AddConnectorTurn("s4c2", "s4", 0.260, 0);
+
+
+    cm.AddSegment("s5");
+    cm.AddConnectorTurn("s5c1", "s5", 0, 0);
+    cm.AddConnectorSliding("s5c2", "s5", 0, 0, 0);
+
+    cm.AddKPSliding("O", "s0c1", "s1c2");
+    cm.AddKPTurn("A", "s1c1", "s2c1");
+    cm.AddKPTurn("B", "s2c2", "s3c1");
+    cm.AddKPTurn("C", "s3c2", "s0c2");
+
+    cm.AddKPTurn("E", "s2c3", "s4c1");
+    cm.AddKPTurn("D", "s4c2", "s5c1");
+    cm.AddKPSliding("F", "s5c2", "s0c3");
+
+
+    //    if (gc>0.250) dgc=-fabs(dgc);
+    //    if (gc<0.0) dgc=fabs(dgc);
+
+*/
+
+

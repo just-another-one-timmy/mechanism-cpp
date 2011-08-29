@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$class_k_pair.html" title="класс для описания КП." alt="" coords="432,328,485,357"/>
+<area shape="rect" id="node4" href="$class_force.html" title="Force" alt="" coords="305,213,358,243"/>
+<area shape="rect" id="node6" href="$struct_connector.html" title="коннектор." alt="" coords="64,117,144,147"/>
+<area shape="rect" id="node10" href="$struct_connector_turn.html" title="вращательный коннектор." alt="" coords="30,213,137,243"/>
+<area shape="rect" id="node23" href="$struct_connector_sliding.html" title="поступательный коннектор." alt="" coords="161,213,281,243"/>
+<area shape="rect" id="node8" href="$class_segment.html" title="звено." alt="" coords="46,328,121,357"/>
+<area shape="rect" id="node13" href="$struct_linear_t_f.html" title="Структура для хранения линейных ПФ." alt="" coords="268,117,340,147"/>
+<area shape="rect" id="node15" href="$struct_t_f.html" title="TF" alt="" coords="342,5,380,35"/>
+<area shape="rect" id="node17" href="$struct_turn_t_f.html" title="Структура для хранения угловых ПФ." alt="" coords="389,117,450,147"/>
+</map>
